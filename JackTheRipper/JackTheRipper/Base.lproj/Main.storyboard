@@ -20,40 +20,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="139"/>
-        </scene>
-        <!--Map1 View Controller-->
-        <scene sceneID="Csw-LT-40S">
-            <objects>
-                <viewController id="wli-kY-h2f" customClass="Map1ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="F6x-v9-AWH" customClass="UIWindow">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HgC-ou-j8J">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="414" id="7Nb-Sd-Iqs"/>
-                                    <constraint firstAttribute="height" constant="818" id="Lr9-Hj-fNZ"/>
-                                </constraints>
-                            </mapView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="qf4-XY-8RJ" firstAttribute="trailing" secondItem="HgC-ou-j8J" secondAttribute="trailing" id="MkI-82-L7E"/>
-                            <constraint firstItem="HgC-ou-j8J" firstAttribute="top" secondItem="qf4-XY-8RJ" secondAttribute="top" id="TMl-tJ-EhN"/>
-                            <constraint firstItem="qf4-XY-8RJ" firstAttribute="bottom" secondItem="HgC-ou-j8J" secondAttribute="bottom" id="W5n-eH-IJq"/>
-                            <constraint firstItem="HgC-ou-j8J" firstAttribute="leading" secondItem="qf4-XY-8RJ" secondAttribute="leading" id="sER-AV-ocl"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="qf4-XY-8RJ"/>
-                    </view>
-                    <connections>
-                        <outlet property="mapView" destination="HgC-ou-j8J" id="JRX-hu-4TF"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pDU-QU-4mq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="819" y="139"/>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>
