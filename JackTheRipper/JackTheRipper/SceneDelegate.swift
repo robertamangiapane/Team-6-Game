@@ -1,9 +1,9 @@
 //
 //  SceneDelegate.swift
-//  Jack the Ripper
+//  JackTheRipper
 //
-//  Created by Jay Issuree on 25/11/2019.
-//  Copyright © 2019 Team-6. All rights reserved.
+//  Created by Danielle Inkster on 2019-11-26.
+//  Copyright © 2019 Team6. All rights reserved.
 //
 
 import UIKit

@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7250F0C1238D82E000DF02FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0C0238D82E000DF02FF /* AppDelegate.swift */; };
+		7250F0C3238D82E000DF02FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0C2238D82E000DF02FF /* SceneDelegate.swift */; };
+		7250F0C5238D82E000DF02FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0C4238D82E000DF02FF /* ViewController.swift */; };
+		7250F0C8238D82E000DF02FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7250F0C6238D82E000DF02FF /* Main.storyboard */; };
+		7250F0CA238D82E000DF02FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7250F0C9238D82E000DF02FF /* Assets.xcassets */; };
+		7250F0CD238D82E000DF02FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7250F0CB238D82E000DF02FF /* LaunchScreen.storyboard */; };
+		7250F0D8238D82E000DF02FF /* JackTheRipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0D7238D82E000DF02FF /* JackTheRipperTests.swift */; };
+		7250F0E3238D82E000DF02FF /* JackTheRipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0E2238D82E000DF02FF /* JackTheRipperUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7250F0D4238D82E000DF02FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7250F0B5238D82E000DF02FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7250F0BC238D82E000DF02FF;
+			remoteInfo = JackTheRipper;
+		};
+		7250F0DF238D82E000DF02FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7250F0B5238D82E000DF02FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7250F0BC238D82E000DF02FF;
+			remoteInfo = JackTheRipper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7250F0BD238D82E000DF02FF /* JackTheRipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JackTheRipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7250F0C0238D82E000DF02FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7250F0C2238D82E000DF02FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7250F0C4238D82E000DF02FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7250F0C7238D82E000DF02FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7250F0C9238D82E000DF02FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7250F0CC238D82E000DF02FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7250F0CE238D82E000DF02FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7250F0D3238D82E000DF02FF /* JackTheRipperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JackTheRipperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7250F0D7238D82E000DF02FF /* JackTheRipperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JackTheRipperTests.swift; sourceTree = "<group>"; };
+		7250F0D9238D82E000DF02FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7250F0DE238D82E000DF02FF /* JackTheRipperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JackTheRipperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7250F0E2238D82E000DF02FF /* JackTheRipperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JackTheRipperUITests.swift; sourceTree = "<group>"; };
+		7250F0E4238D82E000DF02FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7250F0BA238D82E000DF02FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7250F0D0238D82E000DF02FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7250F0DB238D82E000DF02FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7250F0B4238D82E000DF02FF = {
+			isa = PBXGroup;
+			children = (
+				7250F0BF238D82E000DF02FF /* JackTheRipper */,
+				7250F0D6238D82E000DF02FF /* JackTheRipperTests */,
+				7250F0E1238D82E000DF02FF /* JackTheRipperUITests */,
+				7250F0BE238D82E000DF02FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7250F0BE238D82E000DF02FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7250F0BD238D82E000DF02FF /* JackTheRipper.app */,
+				7250F0D3238D82E000DF02FF /* JackTheRipperTests.xctest */,
+				7250F0DE238D82E000DF02FF /* JackTheRipperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7250F0BF238D82E000DF02FF /* JackTheRipper */ = {
+			isa = PBXGroup;
+			children = (
+				7250F0C0238D82E000DF02FF /* AppDelegate.swift */,
+				7250F0C2238D82E000DF02FF /* SceneDelegate.swift */,
+				7250F0C4238D82E000DF02FF /* ViewController.swift */,
+				7250F0C6238D82E000DF02FF /* Main.storyboard */,
+				7250F0C9238D82E000DF02FF /* Assets.xcassets */,
+				7250F0CB238D82E000DF02FF /* LaunchScreen.storyboard */,
+				7250F0CE238D82E000DF02FF /* Info.plist */,
+			);
+			path = JackTheRipper;
+			sourceTree = "<group>";
+		};
+		7250F0D6238D82E000DF02FF /* JackTheRipperTests */ = {
+			isa = PBXGroup;
+			children = (
+				7250F0D7238D82E000DF02FF /* JackTheRipperTests.swift */,
+				7250F0D9238D82E000DF02FF /* Info.plist */,
+			);
+			path = JackTheRipperTests;
+			sourceTree = "<group>";
+		};
+		7250F0E1238D82E000DF02FF /* JackTheRipperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7250F0E2238D82E000DF02FF /* JackTheRipperUITests.swift */,
+				7250F0E4238D82E000DF02FF /* Info.plist */,
+			);
+			path = JackTheRipperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7250F0BC238D82E000DF02FF /* JackTheRipper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7250F0E7238D82E100DF02FF /* Build configuration list for PBXNativeTarget "JackTheRipper" */;
+			buildPhases = (
+				7250F0B9238D82E000DF02FF /* Sources */,
+				7250F0BA238D82E000DF02FF /* Frameworks */,
+				7250F0BB238D82E000DF02FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JackTheRipper;
+			productName = JackTheRipper;
+			productReference = 7250F0BD238D82E000DF02FF /* JackTheRipper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7250F0D2238D82E000DF02FF /* JackTheRipperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7250F0EA238D82E100DF02FF /* Build configuration list for PBXNativeTarget "JackTheRipperTests" */;
+			buildPhases = (
+				7250F0CF238D82E000DF02FF /* Sources */,
+				7250F0D0238D82E000DF02FF /* Frameworks */,
+				7250F0D1238D82E000DF02FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7250F0D5238D82E000DF02FF /* PBXTargetDependency */,
+			);
+			name = JackTheRipperTests;
+			productName = JackTheRipperTests;
+			productReference = 7250F0D3238D82E000DF02FF /* JackTheRipperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7250F0DD238D82E000DF02FF /* JackTheRipperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7250F0ED238D82E100DF02FF /* Build configuration list for PBXNativeTarget "JackTheRipperUITests" */;
+			buildPhases = (
+				7250F0DA238D82E000DF02FF /* Sources */,
+				7250F0DB238D82E000DF02FF /* Frameworks */,
+				7250F0DC238D82E000DF02FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7250F0E0238D82E000DF02FF /* PBXTargetDependency */,
+			);
+			name = JackTheRipperUITests;
+			productName = JackTheRipperUITests;
+			productReference = 7250F0DE238D82E000DF02FF /* JackTheRipperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7250F0B5238D82E000DF02FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Team6;
+				TargetAttributes = {
+					7250F0BC238D82E000DF02FF = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					7250F0D2238D82E000DF02FF = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 7250F0BC238D82E000DF02FF;
+					};
+					7250F0DD238D82E000DF02FF = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 7250F0BC238D82E000DF02FF;
+					};
+				};
+			};
+			buildConfigurationList = 7250F0B8238D82E000DF02FF /* Build configuration list for PBXProject "JackTheRipper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7250F0B4238D82E000DF02FF;
+			productRefGroup = 7250F0BE238D82E000DF02FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7250F0BC238D82E000DF02FF /* JackTheRipper */,
+				7250F0D2238D82E000DF02FF /* JackTheRipperTests */,
+				7250F0DD238D82E000DF02FF /* JackTheRipperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7250F0BB238D82E000DF02FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7250F0CD238D82E000DF02FF /* LaunchScreen.storyboard in Resources */,
+				7250F0CA238D82E000DF02FF /* Assets.xcassets in Resources */,
+				7250F0C8238D82E000DF02FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7250F0D1238D82E000DF02FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7250F0DC238D82E000DF02FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7250F0B9238D82E000DF02FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7250F0C5238D82E000DF02FF /* ViewController.swift in Sources */,
+				7250F0C1238D82E000DF02FF /* AppDelegate.swift in Sources */,
+				7250F0C3238D82E000DF02FF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7250F0CF238D82E000DF02FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7250F0D8238D82E000DF02FF /* JackTheRipperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7250F0DA238D82E000DF02FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7250F0E3238D82E000DF02FF /* JackTheRipperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7250F0D5238D82E000DF02FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7250F0BC238D82E000DF02FF /* JackTheRipper */;
+			targetProxy = 7250F0D4238D82E000DF02FF /* PBXContainerItemProxy */;
+		};
+		7250F0E0238D82E000DF02FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7250F0BC238D82E000DF02FF /* JackTheRipper */;
+			targetProxy = 7250F0DF238D82E000DF02FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7250F0C6238D82E000DF02FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7250F0C7238D82E000DF02FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7250F0CB238D82E000DF02FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7250F0CC238D82E000DF02FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7250F0E5238D82E100DF02FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7250F0E6238D82E100DF02FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7250F0E8238D82E100DF02FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JackTheRipper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Team6.JackTheRipper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7250F0E9238D82E100DF02FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JackTheRipper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Team6.JackTheRipper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7250F0EB238D82E100DF02FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JackTheRipperTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Team6.JackTheRipperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JackTheRipper.app/JackTheRipper";
+			};
+			name = Debug;
+		};
+		7250F0EC238D82E100DF02FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JackTheRipperTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Team6.JackTheRipperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JackTheRipper.app/JackTheRipper";
+			};
+			name = Release;
+		};
+		7250F0EE238D82E100DF02FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JackTheRipperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Team6.JackTheRipperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JackTheRipper;
+			};
+			name = Debug;
+		};
+		7250F0EF238D82E100DF02FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JackTheRipperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Team6.JackTheRipperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JackTheRipper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7250F0B8238D82E000DF02FF /* Build configuration list for PBXProject "JackTheRipper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7250F0E5238D82E100DF02FF /* Debug */,
+				7250F0E6238D82E100DF02FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7250F0E7238D82E100DF02FF /* Build configuration list for PBXNativeTarget "JackTheRipper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7250F0E8238D82E100DF02FF /* Debug */,
+				7250F0E9238D82E100DF02FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7250F0EA238D82E100DF02FF /* Build configuration list for PBXNativeTarget "JackTheRipperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7250F0EB238D82E100DF02FF /* Debug */,
+				7250F0EC238D82E100DF02FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7250F0ED238D82E100DF02FF /* Build configuration list for PBXNativeTarget "JackTheRipperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7250F0EE238D82E100DF02FF /* Debug */,
+				7250F0EF238D82E100DF02FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7250F0B5238D82E000DF02FF /* Project object */;
+}
