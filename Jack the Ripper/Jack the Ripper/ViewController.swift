@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         annotation.subtitle = "Whitechapel"
         mapView.addAnnotation(annotation)
         
+    
     }
 
     @IBOutlet weak var mapView: MKMapView!
