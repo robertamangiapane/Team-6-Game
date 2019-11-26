@@ -1,15 +1,15 @@
 //
-//  Jack_the_RipperTests.swift
-//  Jack the RipperTests
+//  JackTheRipperTests.swift
+//  JackTheRipperTests
 //
-//  Created by Jay Issuree on 25/11/2019.
-//  Copyright © 2019 Team-6. All rights reserved.
+//  Created by Danielle Inkster on 2019-11-26.
+//  Copyright © 2019 Team6. All rights reserved.
 //
 
 import XCTest
-@testable import Jack_the_Ripper
+@testable import JackTheRipper
 
-class Jack_the_RipperTests: XCTestCase {
+class JackTheRipperTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
