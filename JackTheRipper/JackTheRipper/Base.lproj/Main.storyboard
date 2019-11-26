@@ -26,15 +26,13 @@
         <!--Title View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" userLabel="Title View Controller" customClass="ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jack The Ripper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGj-9W-Frh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Jack The Ripper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGj-9W-Frh">
                                 <rect key="frame" x="89" y="208" width="236" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <color key="textColor" red="0.50196078430000002" green="0.074509803920000006" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.50196078431372548" green="0.074509803921568626" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
@@ -47,6 +45,7 @@
                                     <color key="titleColor" red="0.7803921568627451" green="0.17254901960784313" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="startGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WQg-d3-JOO"/>
                                     <segue destination="Ihq-dX-moD" kind="push" id="UWM-w4-96s">
                                         <segue key="commit" inheritsFrom="parent" id="shK-uk-hqL"/>
                                         <segue key="preview" inheritsFrom="commit" id="ETn-rq-nib"/>
@@ -55,10 +54,19 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882352941" green="0.074509803921568626" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xGj-9W-Frh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="T7C-vV-O1r"/>
+                            <constraint firstItem="xGj-9W-Frh" firstAttribute="centerX" secondItem="Pu6-zi-69s" secondAttribute="centerX" id="huO-rN-ekW"/>
+                            <constraint firstItem="xGj-9W-Frh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="89" id="v6K-5e-JhM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="a98-xi-Ti5"/>
+                    <connections>
+                        <outlet property="TitleLabel" destination="xGj-9W-Frh" id="UEQ-4p-8Oj"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="139"/>
         </scene>
@@ -70,21 +78,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A new message from Scotland Yard: There's been a murder, you need to go to Buck's Street immediately and look for clues" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpV-tO-gNf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A new message from Scotland Yard: There's been a murder, you need to go to Buck's Street immediately and look for clues" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpV-tO-gNf">
                                 <rect key="frame" x="0.0" y="123" width="401" height="265"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="265" id="DZV-qU-f6G"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvM-hg-ark">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvM-hg-ark">
                                 <rect key="frame" x="161" y="685" width="95" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Continue"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882352941" green="0.074509803921568626" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jpV-tO-gNf" firstAttribute="leading" secondItem="UAV-8T-Iif" secondAttribute="leading" id="1E9-aS-LpG"/>
+                            <constraint firstItem="jpV-tO-gNf" firstAttribute="top" secondItem="UAV-8T-Iif" secondAttribute="top" constant="35" id="9uf-d3-DAG"/>
+                            <constraint firstItem="RvM-hg-ark" firstAttribute="leading" secondItem="UAV-8T-Iif" secondAttribute="leading" constant="161" id="PII-p2-YTL"/>
+                            <constraint firstItem="UAV-8T-Iif" firstAttribute="trailing" secondItem="jpV-tO-gNf" secondAttribute="trailing" constant="13" id="bzQ-ON-FYk"/>
+                            <constraint firstItem="UAV-8T-Iif" firstAttribute="bottom" secondItem="RvM-hg-ark" secondAttribute="bottom" constant="136" id="e92-ow-w5h"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UAV-8T-Iif"/>
                     </view>
                     <navigationItem key="navigationItem" id="0dz-sz-xIS"/>
