@@ -14,6 +14,14 @@
 		3F9EDB8D238E81980088E1B9 /* Challenge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9EDB8C238E81980088E1B9 /* Challenge.storyboard */; };
 		3F9EDB8F238E81B00088E1B9 /* ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9EDB8E238E81B00088E1B9 /* ChallengeTests.swift */; };
 		3F9EDB91238E81CA0088E1B9 /* ChallengeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9EDB90238E81CA0088E1B9 /* ChallengeViewTests.swift */; };
+		612B5560238E7D22002B168C /* Map2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612B555F238E7D22002B168C /* Map2.storyboard */; };
+		612B5562238E7D48002B168C /* Map2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B5561238E7D48002B168C /* Map2ViewController.swift */; };
+		612B5564238E855C002B168C /* Map3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612B5563238E855C002B168C /* Map3.storyboard */; };
+		612B5566238E8573002B168C /* Map3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B5565238E8573002B168C /* Map3ViewController.swift */; };
+		612B5568238E88E3002B168C /* Map4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612B5567238E88E3002B168C /* Map4.storyboard */; };
+		612B556A238E8905002B168C /* Map4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B5569238E8905002B168C /* Map4ViewController.swift */; };
+		612B556C238E8AF2002B168C /* Map5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612B556B238E8AF2002B168C /* Map5.storyboard */; };
+		612B556E238E8B01002B168C /* Map5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B556D238E8B01002B168C /* Map5ViewController.swift */; };
 		7250F0C1238D82E000DF02FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0C0238D82E000DF02FF /* AppDelegate.swift */; };
 		7250F0C3238D82E000DF02FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0C2238D82E000DF02FF /* SceneDelegate.swift */; };
 		7250F0C5238D82E000DF02FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0C4238D82E000DF02FF /* ViewController.swift */; };
@@ -51,6 +59,14 @@
 		3F9EDB8C238E81980088E1B9 /* Challenge.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Challenge.storyboard; sourceTree = "<group>"; };
 		3F9EDB8E238E81B00088E1B9 /* ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTests.swift; sourceTree = "<group>"; };
 		3F9EDB90238E81CA0088E1B9 /* ChallengeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewTests.swift; sourceTree = "<group>"; };
+		612B555F238E7D22002B168C /* Map2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map2.storyboard; sourceTree = "<group>"; };
+		612B5561238E7D48002B168C /* Map2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map2ViewController.swift; sourceTree = "<group>"; };
+		612B5563238E855C002B168C /* Map3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map3.storyboard; sourceTree = "<group>"; };
+		612B5565238E8573002B168C /* Map3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map3ViewController.swift; sourceTree = "<group>"; };
+		612B5567238E88E3002B168C /* Map4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map4.storyboard; sourceTree = "<group>"; };
+		612B5569238E8905002B168C /* Map4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map4ViewController.swift; sourceTree = "<group>"; };
+		612B556B238E8AF2002B168C /* Map5.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map5.storyboard; sourceTree = "<group>"; };
+		612B556D238E8B01002B168C /* Map5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map5ViewController.swift; sourceTree = "<group>"; };
 		7250F0BD238D82E000DF02FF /* JackTheRipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JackTheRipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7250F0C0238D82E000DF02FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7250F0C2238D82E000DF02FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +146,14 @@
 				3F9EDB88238E817B0088E1B9 /* Challenge.swift */,
 				3F9EDB8A238E81880088E1B9 /* ChallengeViewController.swift */,
 				3F9EDB8C238E81980088E1B9 /* Challenge.storyboard */,
+				612B5561238E7D48002B168C /* Map2ViewController.swift */,
+				612B555F238E7D22002B168C /* Map2.storyboard */,
+				612B5565238E8573002B168C /* Map3ViewController.swift */,
+				612B5563238E855C002B168C /* Map3.storyboard */,
+				612B5569238E8905002B168C /* Map4ViewController.swift */,
+				612B5567238E88E3002B168C /* Map4.storyboard */,
+				612B556D238E8B01002B168C /* Map5ViewController.swift */,
+				612B556B238E8AF2002B168C /* Map5.storyboard */,
 			);
 			path = JackTheRipper;
 			sourceTree = "<group>";
@@ -261,6 +285,10 @@
 			files = (
 				3F9EDB8D238E81980088E1B9 /* Challenge.storyboard in Resources */,
 				7250F0CD238D82E000DF02FF /* LaunchScreen.storyboard in Resources */,
+				612B556C238E8AF2002B168C /* Map5.storyboard in Resources */,
+				612B5564238E855C002B168C /* Map3.storyboard in Resources */,
+				612B5560238E7D22002B168C /* Map2.storyboard in Resources */,
+				612B5568238E88E3002B168C /* Map4.storyboard in Resources */,
 				AFB9FF89238D8F2C001381C5 /* Map1.storyboard in Resources */,
 				7250F0CA238D82E000DF02FF /* Assets.xcassets in Resources */,
 				7250F0C8238D82E000DF02FF /* Main.storyboard in Resources */,
@@ -288,12 +316,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				612B5562238E7D48002B168C /* Map2ViewController.swift in Sources */,
 				7250F0C5238D82E000DF02FF /* ViewController.swift in Sources */,
 				3F9EDB89238E817B0088E1B9 /* Challenge.swift in Sources */,
 				AFB9FF87238D8976001381C5 /* Map1ViewController.swift in Sources */,
 				7250F0C1238D82E000DF02FF /* AppDelegate.swift in Sources */,
 				3F9EDB8B238E81880088E1B9 /* ChallengeViewController.swift in Sources */,
+				612B556E238E8B01002B168C /* Map5ViewController.swift in Sources */,
+				612B556A238E8905002B168C /* Map4ViewController.swift in Sources */,
 				7250F0C3238D82E000DF02FF /* SceneDelegate.swift in Sources */,
+				612B5566238E8573002B168C /* Map3ViewController.swift in Sources */,
 				3F41C2F6238D8F0D00A58B2E /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
