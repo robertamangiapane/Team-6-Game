@@ -14,20 +14,18 @@ class Map1ViewController: UIViewController {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
             
-            let location = CLLocationCoordinate2D(latitude: 51.520045,
+            let location1 = CLLocationCoordinate2D(latitude: 51.520045,
                 longitude: -0.060630)
             
-            // 2
             let span = MKCoordinateSpan(latitudeDelta: 0.04, longitudeDelta: 0.04)
-            let region = MKCoordinateRegion(center: location, span: span)
+            let region = MKCoordinateRegion(center: location1, span: span)
                 mapView.setRegion(region, animated: true)
                 
-            //3
-            let annotation = MKPointAnnotation()
-            annotation.coordinate = location
-            annotation.title = "Victim 1"
-            annotation.subtitle = "Whitechapel"
-            mapView.addAnnotation(annotation)
+            let annotation1 = MKPointAnnotation()
+            annotation1.coordinate = location1
+            annotation1.title = "Victim 1"
+            annotation1.subtitle = "Whitechapel"
+            mapView.addAnnotation(annotation1)
             
         
         }

@@ -1,5 +1,5 @@
 //
-//  Map2ViewController.swift
+//  Map3ViewController.swift
 //  JackTheRipper
 //
 //  Created by Jay Issuree on 27/11/2019.
@@ -9,7 +9,7 @@
 import MapKit
 import UIKit
 
-class Map2ViewController: UIViewController {
+class Map3ViewController: UIViewController {
 
      override func viewDidLoad() {
             super.viewDidLoad()
@@ -37,11 +37,22 @@ class Map2ViewController: UIViewController {
             annotation2.title = "Victim 2"
             annotation2.subtitle = "Spitalfields"
             mapView.addAnnotation(annotation2)
+        
+            
+            let location3 = CLLocationCoordinate2D(latitude: 51.513959,
+                longitude: -0.065441)
+            
+            let annotation3 = MKPointAnnotation()
+            annotation3.coordinate = location3
+            annotation3.title = "Victim 3"
+            annotation3.subtitle = "Whitechapel"
+            mapView.addAnnotation(annotation3)
             
         
         }
 
 
+    
     @IBOutlet weak var mapView: MKMapView!
     
     
