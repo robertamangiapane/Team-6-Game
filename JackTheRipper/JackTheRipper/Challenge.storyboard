@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Challenge View Controller-->
+        <scene sceneID="vaj-9P-mNt">
+            <objects>
+                <viewController storyboardIdentifier="ChallengeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NCk-Yy-ckD" customClass="ChallengeViewController" customModule="JackTheRipper" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mu3-aL-aYZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Challenge 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ije-0y-FZz">
+                                <rect key="frame" x="107" y="114" width="200" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.52204710249999997" green="0.1457915306" blue="0.30193710330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here is the question/riddle to solve" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="va7-4N-pUq">
+                                <rect key="frame" x="32" y="248" width="357" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dQm-9a-mMT">
+                                <rect key="frame" x="32" y="332" width="357" height="488"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yd5-eX-Kss">
+                                        <rect key="frame" x="78" y="42" width="200" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.4527049065" green="0.1309083402" blue="0.28048408029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                        <state key="normal" title="Correct">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="correctUserAction:" destination="NCk-Yy-ckD" eventType="touchUpInside" id="A6V-AG-U72"/>
+                                            <segue destination="Xef-m7-6mV" kind="show" id="vvC-Kz-7tW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVI-KL-rGM">
+                                        <rect key="frame" x="80" y="247" width="196" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.4527049065" green="0.1309083402" blue="0.28048408029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Incorrect">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="incorrectUserActionB:" destination="NCk-Yy-ckD" eventType="touchUpInside" id="axK-dk-jXP"/>
+                                            <segue destination="yFv-pO-5wl" kind="show" id="VRI-e7-wbY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evD-ZO-UML">
+                                        <rect key="frame" x="80" y="142" width="196" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.4527049065" green="0.1309083402" blue="0.28048408029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Incorrect">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="incorrectUserAction:" destination="NCk-Yy-ckD" eventType="touchUpInside" id="1Av-7v-Ynf"/>
+                                            <segue destination="yFv-pO-5wl" kind="show" id="a9L-At-DGq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGk-dL-EA8">
+                                        <rect key="frame" x="80" y="352" width="196" height="74"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.4527049065" green="0.1309083402" blue="0.28048408029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Incorrect">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="incorrectUserActionC:" destination="NCk-Yy-ckD" eventType="touchUpInside" id="li7-aD-Dgs"/>
+                                            <segue destination="yFv-pO-5wl" kind="show" id="VvU-X5-P0H"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26445755360000001" green="0.1160041168" blue="0.26423871519999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Hya-EU-SXT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XaM-mj-aGn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-241" y="-24"/>
+        </scene>
+        <!--Challenge Correct Answer View Controller-->
+        <scene sceneID="Zcl-nX-SOb">
+            <objects>
+                <viewController storyboardIdentifier="ChallengeCorrectAnswerViewController" id="Xef-m7-6mV" customClass="ChallengeCorrectAnswerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UAx-Aa-c0H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Next location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWM-bc-LQM">
+                                <rect key="frame" x="71" y="431" width="284" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28506221858564029" green="0.12783331362761982" blue="0.29461004415595859" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="D68-eu-VKL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tTX-cP-9E0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ue9-4o-U1Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504" y="-427"/>
+        </scene>
+        <!--Challenge Wrong Answer View Controller-->
+        <scene sceneID="vgL-yJ-riM">
+            <objects>
+                <viewController storyboardIdentifier="ChallengeWrongAnswerViewController" id="yFv-pO-5wl" customClass="ChallengeWrongAnswerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iBX-Cu-qeR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wrong Answer" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEP-eB-uC1">
+                                <rect key="frame" x="51" y="412" width="313" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27959836515680431" green="0.12538310295975502" blue="0.28896318534766841" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="eTk-oV-6ha"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zQv-Xo-ONm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GKt-xB-Ov9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1203" y="-107"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="VvU-X5-P0H"/>
+    </inferredMetricsTieBreakers>
+</document>
