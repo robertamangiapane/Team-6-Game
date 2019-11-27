@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NCk-Yy-ckD">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -10,7 +10,7 @@
         <!--Challenge View Controller-->
         <scene sceneID="vaj-9P-mNt">
             <objects>
-                <viewController storyboardIdentifier="ChallengeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NCk-Yy-ckD" customClass="ChallengeViewController" customModule="JackTheRipper" sceneMemberID="viewController">
+                <viewController id="NCk-Yy-ckD" customClass="ChallengeViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mu3-aL-aYZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,59 +30,55 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dQm-9a-mMT">
-                                <rect key="frame" x="32" y="332" width="357" height="488"/>
+                                <rect key="frame" x="32" y="367" width="357" height="495"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yd5-eX-Kss">
-                                        <rect key="frame" x="78" y="42" width="200" height="76"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNm-yX-n7i">
+                                        <rect key="frame" x="76" y="32" width="196" height="76"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.4527049065" green="0.1309083402" blue="0.28048408029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                        <color key="backgroundColor" red="0.48767006397247314" green="0.14638921618461609" blue="0.32460141181945801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Correct">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="correctUserAction:" destination="NCk-Yy-ckD" eventType="touchUpInside" id="A6V-AG-U72"/>
-                                            <segue destination="Xef-m7-6mV" kind="show" id="vvC-Kz-7tW"/>
+                                            <segue destination="QDF-eL-G9g" kind="show" id="Vy3-xz-cCX"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVI-KL-rGM">
-                                        <rect key="frame" x="80" y="247" width="196" height="75"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDL-vU-rlU">
+                                        <rect key="frame" x="76" y="142" width="196" height="76"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.4527049065" green="0.1309083402" blue="0.28048408029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.48767006400000001" green="0.14638921620000001" blue="0.32460141180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Incorrect">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="incorrectUserActionB:" destination="NCk-Yy-ckD" eventType="touchUpInside" id="axK-dk-jXP"/>
-                                            <segue destination="yFv-pO-5wl" kind="show" id="VRI-e7-wbY"/>
+                                            <segue destination="yFv-pO-5wl" kind="show" id="Hnb-0H-Pt9"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evD-ZO-UML">
-                                        <rect key="frame" x="80" y="142" width="196" height="76"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nw-Mk-WBf">
+                                        <rect key="frame" x="76" y="247" width="196" height="76"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.4527049065" green="0.1309083402" blue="0.28048408029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.48767006400000001" green="0.14638921620000001" blue="0.32460141180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Incorrect">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="incorrectUserAction:" destination="NCk-Yy-ckD" eventType="touchUpInside" id="1Av-7v-Ynf"/>
-                                            <segue destination="yFv-pO-5wl" kind="show" id="a9L-At-DGq"/>
+                                            <segue destination="yFv-pO-5wl" kind="show" id="rv3-el-xH2"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGk-dL-EA8">
-                                        <rect key="frame" x="80" y="352" width="196" height="74"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjB-IP-Ui2">
+                                        <rect key="frame" x="76" y="351" width="196" height="76"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.4527049065" green="0.1309083402" blue="0.28048408029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.48767006400000001" green="0.14638921620000001" blue="0.32460141180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Incorrect">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="incorrectUserActionC:" destination="NCk-Yy-ckD" eventType="touchUpInside" id="li7-aD-Dgs"/>
-                                            <segue destination="yFv-pO-5wl" kind="show" id="VvU-X5-P0H"/>
+                                            <segue destination="yFv-pO-5wl" kind="show" id="KOr-h6-qdQ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -94,32 +90,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XaM-mj-aGn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-241" y="-24"/>
+            <point key="canvasLocation" x="-242.0289855072464" y="-24.107142857142858"/>
         </scene>
-        <!--Challenge Correct Answer View Controller-->
-        <scene sceneID="Zcl-nX-SOb">
+        <!--Map2-->
+        <scene sceneID="CwV-SC-VmZ">
             <objects>
-                <viewController storyboardIdentifier="ChallengeCorrectAnswerViewController" id="Xef-m7-6mV" customClass="ChallengeCorrectAnswerViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UAx-Aa-c0H">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Next location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWM-bc-LQM">
-                                <rect key="frame" x="71" y="431" width="284" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.28506221858564029" green="0.12783331362761982" blue="0.29461004415595859" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="D68-eu-VKL"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="tTX-cP-9E0"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ue9-4o-U1Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Map2" id="QDF-eL-G9g" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Rzr-Sy-REU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e6V-mu-7x7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="504" y="-427"/>
+            <point key="canvasLocation" x="445" y="-488"/>
         </scene>
         <!--Challenge Wrong Answer View Controller-->
         <scene sceneID="vgL-yJ-riM">
@@ -144,10 +125,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GKt-xB-Ov9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1203" y="-107"/>
+            <point key="canvasLocation" x="1202.8985507246377" y="-107.14285714285714"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VvU-X5-P0H"/>
+        <segue reference="KOr-h6-qdQ"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
