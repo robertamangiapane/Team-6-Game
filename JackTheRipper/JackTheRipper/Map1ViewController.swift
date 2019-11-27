@@ -13,13 +13,16 @@ class Map1ViewController: UIViewController {
      override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
+        
+            let centerlocation = CLLocationCoordinate2D(latitude: 51.517762,
+                longitude: -0.068449)
+        
+            let span = MKCoordinateSpan(latitudeDelta: 0.025, longitudeDelta: 0.025)
+            let region = MKCoordinateRegion(center: centerlocation, span: span)
+                mapView.setRegion(region, animated: true)
             
             let location1 = CLLocationCoordinate2D(latitude: 51.520045,
                 longitude: -0.060630)
-            
-            let span = MKCoordinateSpan(latitudeDelta: 0.04, longitudeDelta: 0.04)
-            let region = MKCoordinateRegion(center: location1, span: span)
-                mapView.setRegion(region, animated: true)
                 
             let annotation1 = MKPointAnnotation()
             annotation1.coordinate = location1
