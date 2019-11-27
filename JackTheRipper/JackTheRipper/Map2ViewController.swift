@@ -10,10 +10,19 @@ import MapKit
 import UIKit
 
 class Map2ViewController: UIViewController {
+    
+    fileprivate let locationManager:CLLocationManager = CLLocationManager()
 
-     override func viewDidLoad() {
-            super.viewDidLoad()
-            // Do any additional setup after loading the view.
+    override func viewDidLoad() {
+           super.viewDidLoad()
+           // Do any additional setup after loading the view.
+       
+       locationManager.requestWhenInUseAuthorization()
+       locationManager.desiredAccuracy = kCLLocationAccuracyBest
+       locationManager.distanceFilter = kCLDistanceFilterNone
+       locationManager.startUpdatingLocation()
+       
+       mapView.showsUserLocation = true
         
             let centerlocation = CLLocationCoordinate2D(latitude: 51.517762,
                 longitude: -0.068449)
