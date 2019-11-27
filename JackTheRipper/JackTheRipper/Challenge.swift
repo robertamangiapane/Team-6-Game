@@ -9,11 +9,14 @@
 import Foundation
 
 class Challenge {
+    
+    let correct_answer = "yes"
+    
     func isSolved(answer: String) -> String {
-        if answer == "yes" {
-            return "correct"
+        if answer == correct_answer {
+            return "new location"
         } else {
-            return "incorrect"
+            return "try again"
         }
     }
 }

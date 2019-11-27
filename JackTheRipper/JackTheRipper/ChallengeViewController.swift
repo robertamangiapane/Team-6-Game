@@ -7,3 +7,19 @@
 //
 
 import Foundation
+import UIKit
+
+class ChallengeViewController: UIViewController {
+    let challenge = Challenge()
+
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+
+//    func checkAnswer(answer: String) -> String {
+//        return challenge.isSolved(answer: answer)
+//    }
+
+}

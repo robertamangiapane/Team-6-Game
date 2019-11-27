@@ -10,7 +10,7 @@ import XCTest
 @testable import JackTheRipper
 
 class ChallengeTests: XCTestCase {
-    let riddle = Challenge()
+    let challenge = Challenge()
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,13 +21,13 @@ class ChallengeTests: XCTestCase {
     }
 
     func testAnswerIsRight() {
-        let result = riddle.isSolved(answer: "yes")
-        XCTAssertEqual(result, "correct")
+        let result = challenge.isSolved(answer: "yes")
+        XCTAssertEqual(result, "new location")
     }
     
     func testAnswerIsWrong() {
-        let result = riddle.isSolved(answer: "no")
-        XCTAssertEqual(result, "incorrect")
+        let result = challenge.isSolved(answer: "no")
+        XCTAssertEqual(result, "try again")
     }
 
 }
