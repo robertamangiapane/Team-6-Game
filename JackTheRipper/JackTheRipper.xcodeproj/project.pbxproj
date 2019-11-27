@@ -22,6 +22,9 @@
 		612B556A238E8905002B168C /* Map4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B5569238E8905002B168C /* Map4ViewController.swift */; };
 		612B556C238E8AF2002B168C /* Map5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612B556B238E8AF2002B168C /* Map5.storyboard */; };
 		612B556E238E8B01002B168C /* Map5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B556D238E8B01002B168C /* Map5ViewController.swift */; };
+		721FC1F4238EF0070026E35E /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FC1F3238EF0070026E35E /* ViewControllerTests.swift */; };
+		721FC1FC238EF2B20026E35E /* IntroViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FC1FB238EF2B20026E35E /* IntroViewControllerTests.swift */; };
+		721FC1FE238EF2C60026E35E /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FC1FD238EF2C60026E35E /* IntroViewController.swift */; };
 		7250F0C1238D82E000DF02FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0C0238D82E000DF02FF /* AppDelegate.swift */; };
 		7250F0C3238D82E000DF02FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0C2238D82E000DF02FF /* SceneDelegate.swift */; };
 		7250F0C5238D82E000DF02FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0C4238D82E000DF02FF /* ViewController.swift */; };
@@ -67,6 +70,9 @@
 		612B5569238E8905002B168C /* Map4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map4ViewController.swift; sourceTree = "<group>"; };
 		612B556B238E8AF2002B168C /* Map5.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map5.storyboard; sourceTree = "<group>"; };
 		612B556D238E8B01002B168C /* Map5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map5ViewController.swift; sourceTree = "<group>"; };
+		721FC1F3238EF0070026E35E /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		721FC1FB238EF2B20026E35E /* IntroViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewControllerTests.swift; sourceTree = "<group>"; };
+		721FC1FD238EF2C60026E35E /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		7250F0BD238D82E000DF02FF /* JackTheRipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JackTheRipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7250F0C0238D82E000DF02FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7250F0C2238D82E000DF02FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +141,7 @@
 			children = (
 				7250F0C0238D82E000DF02FF /* AppDelegate.swift */,
 				7250F0C2238D82E000DF02FF /* SceneDelegate.swift */,
+				721FC1FD238EF2C60026E35E /* IntroViewController.swift */,
 				7250F0C4238D82E000DF02FF /* ViewController.swift */,
 				7250F0C6238D82E000DF02FF /* Main.storyboard */,
 				7250F0C9238D82E000DF02FF /* Assets.xcassets */,
@@ -166,6 +173,8 @@
 				3F41C2F7238D8F2B00A58B2E /* GameTests.swift */,
 				3F9EDB8E238E81B00088E1B9 /* ChallengeTests.swift */,
 				3F9EDB90238E81CA0088E1B9 /* ChallengeViewTests.swift */,
+				721FC1F3238EF0070026E35E /* ViewControllerTests.swift */,
+				721FC1FB238EF2B20026E35E /* IntroViewControllerTests.swift */,
 			);
 			path = JackTheRipperTests;
 			sourceTree = "<group>";
@@ -319,6 +328,7 @@
 				612B5562238E7D48002B168C /* Map2ViewController.swift in Sources */,
 				7250F0C5238D82E000DF02FF /* ViewController.swift in Sources */,
 				3F9EDB89238E817B0088E1B9 /* Challenge.swift in Sources */,
+				721FC1FE238EF2C60026E35E /* IntroViewController.swift in Sources */,
 				AFB9FF87238D8976001381C5 /* Map1ViewController.swift in Sources */,
 				7250F0C1238D82E000DF02FF /* AppDelegate.swift in Sources */,
 				3F9EDB8B238E81880088E1B9 /* ChallengeViewController.swift in Sources */,
@@ -334,10 +344,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				721FC1F4238EF0070026E35E /* ViewControllerTests.swift in Sources */,
 				3F9EDB91238E81CA0088E1B9 /* ChallengeViewTests.swift in Sources */,
 				7250F0D8238D82E000DF02FF /* JackTheRipperTests.swift in Sources */,
 				3F41C2F8238D8F2B00A58B2E /* GameTests.swift in Sources */,
 				3F9EDB8F238E81B00088E1B9 /* ChallengeTests.swift in Sources */,
+				721FC1FC238EF2B20026E35E /* IntroViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
