@@ -6,11 +6,11 @@
 //  Copyright © 2019 Team6. All rights reserved.
 //
 
-import Foundation
+//import Foundation
 import UIKit
 
 class ChallengeViewController: UIViewController {
-    let challenge = Challenge()
+//    let challenge = Challenge()
 
     
     override func viewDidLoad() {
