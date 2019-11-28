@@ -9,24 +9,32 @@
 import Foundation
 import UIKit
 
-class RiddleViewController: UIViewController {
+class RiddleViewController: UIViewController, UITextFieldDelegate {
     let riddle = Riddle()
+    var answer = ""
     
     @IBOutlet weak var userAnswer: UITextField!
     
-    
     override func viewDidLoad(){
         super.viewDidLoad()
+
+        self.userAnswer.delegate = self
     }
 
     func checkAnswer(answer: String) -> String {
         return riddle.isSolved(answer: answer)
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        userAnswer.resignFirstResponder()
+//        this method resignFirstResponder dismiss the keyboard
+
+//        self.view.endEditing(true) another way of doing resignFirstResponder
+        
+        answer = (userAnswer.text!)
+        print(checkAnswer(answer: answer))
+        return true
+    }
+    
 }
-//extension RiddleViewController: UITextFieldDelegate {
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-////        textField.resignFirstResponder() this method will dismiss the keyboard
-////        checkAnswer(answer: userAnswer)
-//        return true
-//    }
-//}
+

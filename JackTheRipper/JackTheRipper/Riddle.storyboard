@@ -28,6 +28,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
+                                    <action selector="answerTextFieldPrimAction:" destination="hXk-nd-0TA" eventType="primaryActionTriggered" id="ae9-Ww-g6P"/>
                                     <action selector="userAnswer:forEvent:" destination="Xy9-kB-NSM" eventType="editingDidEndOnExit" id="IbH-4s-vVh"/>
                                 </connections>
                             </textField>
