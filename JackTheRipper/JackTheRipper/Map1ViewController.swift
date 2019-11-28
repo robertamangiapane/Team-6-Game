@@ -57,12 +57,12 @@ class Map1ViewController: UIViewController, CLLocationManagerDelegate, UNUserNot
     
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
         print("Arrived at: \(region.identifier)")
-        postLocalNotifications(eventTitle: "Test")
+        vic1alert()
     }
     
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
         print("Departed: \(region.identifier)")
-        postLocalNotifications(eventTitle: "Test2")
+//        vic1alert()
     }
     
     
@@ -121,28 +121,46 @@ class Map1ViewController: UIViewController, CLLocationManagerDelegate, UNUserNot
         }
     }
     
-    func postLocalNotifications(eventTitle:String){
-        let center = UNUserNotificationCenter.current()
-        
-        let content = UNMutableNotificationContent()
-        content.title = eventTitle
-        content.body = "You've entered a new region"
-        content.sound = UNNotificationSound.default
-        
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
-        
-        let notificationRequest:UNNotificationRequest = UNNotificationRequest(identifier: "Region", content: content, trigger: trigger)
-        
-        center.add(notificationRequest, withCompletionHandler: { (error) in
-            if let error = error {
-                // Something went wrong
-                print(error)
-            }
-            else{
-                print("added")
-            }
-        })
+    func vic1alert() {
+        let alert = UIAlertController(title: "Success", message:   "Logged In", preferredStyle: .alert)
+
+        let OKAction = UIAlertAction(title: "OK", style: .default, handler: { _ -> Void in
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+//        self.presentViewController(nextViewController, animated: true, completion: nil)
+    })
+
+    alert.addAction(OKAction)
+        self.present(alert, animated: true){}
     }
+    
+//    func postLocalNotifications(eventTitle:String){
+//        let center = UNUserNotificationCenter.current()
+//
+//        let content = UNMutableNotificationContent()
+//        content.title = eventTitle
+//        content.body = "You've entered a new region"
+//        content.sound = UNNotificationSound.default
+//
+//        let location1 = CLLocationCoordinate2D(latitude: 51.520045,
+//        longitude: -0.060630)
+//
+//        let geoFenceRegion:CLCircularRegion = CLCircularRegion(center: location1, radius: 10, identifier: "Victim 1")
+//        locationManager.startMonitoring(for: geoFenceRegion)
+//
+//        let trigger = UNLocationNotificationTrigger(region: geoFenceRegion, repeats: false)
+//
+//        let notificationRequest:UNNotificationRequest = UNNotificationRequest(identifier: "Region", content: content, trigger: trigger)
+//
+//        center.add(notificationRequest, withCompletionHandler: { (error) in
+//            if let error = error {
+//                // Something went wrong
+//                print(error)
+//            }
+//            else{
+//                print("added")
+//            }
+//        })
+//    }
 
     @IBOutlet weak var mapView: MKMapView!
     
