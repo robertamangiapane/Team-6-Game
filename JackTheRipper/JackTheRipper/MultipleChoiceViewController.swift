@@ -10,9 +10,9 @@
 import UIKit
 
 class MultipleChoiceViewController: UIViewController {
-    @IBOutlet weak var challengeTitle: UILabel?
-    @IBOutlet weak var questionLabel: UILabel!
-    @IBOutlet weak var answerView: UIView!
+//    @IBOutlet weak var challengeTitle: UILabel?
+//    @IBOutlet weak var challengeQuestion: UILabel!
+//    @IBOutlet weak var answerView: UIView!
     override func viewDidLoad() {
 //        challengeTitle?.text = "Hello"
         super.viewDidLoad()

@@ -8,13 +8,14 @@
 
 import Foundation
 
-class Riddle: Challenge {
-    let correct_answer = "Correct"
-//    func isSolved(answer: String) -> String {
-//        if answer == correctAnswer {
-//            return "new location"
-//        } else {
-//            return "try again"
-//        }
-//    }
+class Riddle {
+    var correctAnswer = "Correct"
+    
+    func isSolved(answer: String) -> String {
+        if answer == correctAnswer {
+            return "new location"
+        } else {
+            return "try again"
+        }
+    }
 }

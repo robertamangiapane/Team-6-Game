@@ -1,16 +1,17 @@
 //
-//  ChallengeTests.swift
+//  RiddleViewTests.swift
 //  JackTheRipperTests
 //
-//  Created by Student on 27/11/2019.
+//  Created by Student on 28/11/2019.
 //  Copyright © 2019 Team6. All rights reserved.
 //
 
 import XCTest
 @testable import JackTheRipper
 
-class ChallengeTests: XCTestCase {
-    let challenge = Challenge()
+class RiddleViewTests: XCTestCase {
+//    let riddle = Riddle()
+
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,12 +22,13 @@ class ChallengeTests: XCTestCase {
     }
 
 //    func testAnswerIsRight() {
-//        let result = challenge.isSolved(answer: "yes")
+//        riddle.correctAnswer = "Correct"
+//        let result = riddle.isSolved(answer: "Correct")
 //        XCTAssertEqual(result, "new location")
 //    }
 //    
 //    func testAnswerIsWrong() {
-//        let result = challenge.isSolved(answer: "no")
+//        let result = riddle.isSolved(answer: "no")
 //        XCTAssertEqual(result, "try again")
 //    }
 

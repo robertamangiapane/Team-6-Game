@@ -11,17 +11,21 @@ import UIKit
 
 class RiddleViewController: UIViewController {
     let riddle = Riddle()
+    
     @IBOutlet weak var userAnswer: UITextField!
+    
+    
     override func viewDidLoad(){
         super.viewDidLoad()
     }
+
     func checkAnswer(answer: String) -> String {
         return riddle.isSolved(answer: answer)
     }
 }
 //extension RiddleViewController: UITextFieldDelegate {
 //    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        textField.resignFirstResponder()
+////        textField.resignFirstResponder() this method will dismiss the keyboard
 ////        checkAnswer(answer: userAnswer)
 //        return true
 //    }

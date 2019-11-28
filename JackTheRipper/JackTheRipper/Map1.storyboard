@@ -11,11 +11,11 @@
         <scene sceneID="PN2-N0-aiE">
             <objects>
                 <viewController id="k9k-zb-kT3" customClass="Map1ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4cO-nY-Bhw">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="4cO-nY-Bhw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="50F-cD-zPv">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="50F-cD-zPv">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="2sH-qM-hZy"/>
@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="142.63392857142856"/>
         </scene>
-        <!--Challenge-->
+        <!--Riddle-->
         <scene sceneID="gzS-2Q-al1">
             <objects>
-                <viewControllerPlaceholder storyboardName="Challenge" id="MPf-ZX-Zam" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Riddle" id="MPf-ZX-Zam" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="vrk-pB-XJW"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yax-1s-OIJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
