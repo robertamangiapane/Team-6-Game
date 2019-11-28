@@ -10,7 +10,7 @@
         <!--Map2 View Controller-->
         <scene sceneID="UUC-0Y-YOD">
             <objects>
-                <viewController id="uZc-ue-58y" customClass="Map2ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="Map2Controller" storyboardIdentifier="Map2Controller" id="uZc-ue-58y" customClass="Map2ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="80x-06-RkG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

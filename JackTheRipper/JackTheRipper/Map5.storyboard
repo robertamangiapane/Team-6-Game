@@ -10,7 +10,7 @@
         <!--Map5 View Controller-->
         <scene sceneID="EZ4-d0-hsY">
             <objects>
-                <viewController id="goX-cu-hhN" customClass="Map5ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Map5Controller" id="goX-cu-hhN" customClass="Map5ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IHI-oy-Wrr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
