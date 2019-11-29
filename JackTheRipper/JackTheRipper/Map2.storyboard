@@ -40,5 +40,13 @@
             </objects>
             <point key="canvasLocation" x="126" y="153"/>
         </scene>
+        <!--Riddle-->
+        <scene sceneID="AI1-fL-zqD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Riddle" id="Yhe-UU-sKA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MPI-Im-wDX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="-114"/>
+        </scene>
     </scenes>
 </document>

@@ -11,7 +11,7 @@
         <scene sceneID="PN2-N0-aiE">
             <objects>
                 <viewController id="k9k-zb-kT3" customClass="Map1ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4cO-nY-Bhw">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="4cO-nY-Bhw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -67,10 +67,10 @@
             </objects>
             <point key="canvasLocation" x="1166.6666666666667" y="184.82142857142856"/>
         </scene>
-        <!--Challenge-->
+        <!--MultipleChoice-->
         <scene sceneID="gzS-2Q-al1">
             <objects>
-                <viewControllerPlaceholder storyboardName="Challenge" id="MPf-ZX-Zam" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="MultipleChoice" id="MPf-ZX-Zam" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="vrk-pB-XJW"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yax-1s-OIJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
