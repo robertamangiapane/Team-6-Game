@@ -9,7 +9,7 @@ https://trello.com/b/oH5M5yBU/jack-the-ripper-game
 ------
 ## Authors
 [Alec Walker](https://github.com/AlecDWalker)  
-[Danielle Inkster](https://github.com/)  
+[Danielle Inkster](https://github.com/DanielleInkster)  
 [Heli Sivunen](https://github.com/PacificRebel)  
 [Jay Issuree](https://github.com/JayIssuree)  
 [Josh Davies](https://github.com/JoshDavies)    
