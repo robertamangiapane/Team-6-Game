@@ -15,11 +15,13 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var userAnswer: UITextField!
     @IBOutlet weak var tryAgainLabel: UILabel!
+    @IBOutlet weak var toCongrats2: UIButton!
     
     override func viewDidLoad(){
         super.viewDidLoad()
         
         tryAgainLabel.isHidden = true
+        toCongrats2.isHidden = true
 
         self.userAnswer.delegate = self
     }
@@ -34,6 +36,7 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
                } else {
             tryAgainLabel.text = "right answer"
             tryAgainLabel.isHidden = false
+            toCongrats2.isHidden = false
 //            insert the link to next page here
                }
     }
