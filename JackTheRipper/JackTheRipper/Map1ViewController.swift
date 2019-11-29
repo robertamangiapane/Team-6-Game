@@ -41,32 +41,19 @@ class Map1ViewController: UIViewController, CLLocationManagerDelegate, UNUserNot
             annotation1.subtitle = "Whitechapel"
             mapView.addAnnotation(annotation1)
 
-            let geoFenceRegion:CLCircularRegion = CLCircularRegion(center: location1, radius: 10, identifier: "Victim 1")
+            let geoFenceRegion:CLCircularRegion = CLCircularRegion(center: location1, radius: 20, identifier: "Victim 1")
             locationManager.startMonitoring(for: geoFenceRegion)
-            
-
+        
         }
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        for currentLocation in locations{
-            print("\(index): \(currentLocation)")
-        }
-    }
     
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-        print("Arrived at: \(region.identifier)")
-        vic1alert()
+        crimescene1entered()
     }
-    
-    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
-        print("Departed: \(region.identifier)")
-//        vic1alert()
-    }
-    
-    func vic1alert() {
         
-        let alert = UIAlertController(title: "Success", message: "Logged In", preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .default) { (action) -> Void in
+    func crimescene1entered() {
+        
+        let alert = UIAlertController(title: "You arrive at the crimescene", message: "On the floor lays the bloody corpse of a young woman", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Investigate the area for clues", style: .default) { (action) -> Void in
             let viewControllerYouWantToPresent = self.storyboard?.instantiateViewController(withIdentifier: "ChallengeLink")
             self.present(viewControllerYouWantToPresent!, animated: true, completion: nil)
         }
@@ -74,9 +61,8 @@ class Map1ViewController: UIViewController, CLLocationManagerDelegate, UNUserNot
         self.present(alert, animated: true, completion: nil)
         
     }
-
-
-
+    
+    
     @IBOutlet weak var mapView: MKMapView!
     
     
