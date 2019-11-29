@@ -17,8 +17,6 @@ class Map1ViewController: UIViewController, CLLocationManagerDelegate, UNUserNot
             super.viewDidLoad()
             // Do any additional setup after loading the view.
         
-        requestPermissionNotifications()
-        
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -65,102 +63,19 @@ class Map1ViewController: UIViewController, CLLocationManagerDelegate, UNUserNot
 //        vic1alert()
     }
     
-    
-    
-    func requestPermissionNotifications(){
-        let application =  UIApplication.shared
-        
-        if #available(iOS 10.0, *) {
-            // For iOS 10 display notification (sent via APNS)
-            UNUserNotificationCenter.current().delegate = self
-            
-            let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-            UNUserNotificationCenter.current().requestAuthorization(options: authOptions) { (isAuthorized, error) in
-                if( error != nil ){
-                    print(error!)
-                }
-                else{
-                    if( isAuthorized ){
-                        print("authorized")
-                        NotificationCenter.default.post(Notification(name: Notification.Name("AUTHORIZED")))
-                    }
-                    else{
-                        let pushPreference = UserDefaults.standard.bool(forKey: "PREF_PUSH_NOTIFICATIONS")
-                        if pushPreference == false {
-                            let alert = UIAlertController(title: "Turn on Notifications", message: "Push notifications are turned off.", preferredStyle: .alert)
-                            alert.addAction(UIAlertAction(title: "Turn on notifications", style: .default, handler: { (alertAction) in
-                                guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
-                                    return
-                                }
-                                
-                                if UIApplication.shared.canOpenURL(settingsUrl) {
-                                    UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
-                                        // Checking for setting is opened or not
-                                        print("Setting is opened: \(success)")
-                                    })
-                                }
-                                UserDefaults.standard.set(true, forKey: "PREF_PUSH_NOTIFICATIONS")
-                            }))
-                            alert.addAction(UIAlertAction(title: "No thanks.", style: .default, handler: { (actionAlert) in
-                                print("user denied")
-                                UserDefaults.standard.set(true, forKey: "PREF_PUSH_NOTIFICATIONS")
-                            }))
-                            let viewController = UIApplication.shared.keyWindow!.rootViewController
-                            DispatchQueue.main.async {
-                                viewController?.present(alert, animated: true, completion: nil)
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        else {
-            let settings: UIUserNotificationSettings =
-                UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
-            application.registerUserNotificationSettings(settings)
-        }
-    }
-    
     func vic1alert() {
-        let alert = UIAlertController(title: "Success", message:   "Logged In", preferredStyle: .alert)
-
-        let OKAction = UIAlertAction(title: "OK", style: .default, handler: { _ -> Void in
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-//        self.presentViewController(nextViewController, animated: true, completion: nil)
-    })
-
-    alert.addAction(OKAction)
-        self.present(alert, animated: true){}
+        
+        let alert = UIAlertController(title: "Success", message: "Logged In", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default) { (action) -> Void in
+            let viewControllerYouWantToPresent = self.storyboard?.instantiateViewController(withIdentifier: "ChallengeLink")
+            self.present(viewControllerYouWantToPresent!, animated: true, completion: nil)
+        }
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
+        
     }
-    
-//    func postLocalNotifications(eventTitle:String){
-//        let center = UNUserNotificationCenter.current()
-//
-//        let content = UNMutableNotificationContent()
-//        content.title = eventTitle
-//        content.body = "You've entered a new region"
-//        content.sound = UNNotificationSound.default
-//
-//        let location1 = CLLocationCoordinate2D(latitude: 51.520045,
-//        longitude: -0.060630)
-//
-//        let geoFenceRegion:CLCircularRegion = CLCircularRegion(center: location1, radius: 10, identifier: "Victim 1")
-//        locationManager.startMonitoring(for: geoFenceRegion)
-//
-//        let trigger = UNLocationNotificationTrigger(region: geoFenceRegion, repeats: false)
-//
-//        let notificationRequest:UNNotificationRequest = UNNotificationRequest(identifier: "Region", content: content, trigger: trigger)
-//
-//        center.add(notificationRequest, withCompletionHandler: { (error) in
-//            if let error = error {
-//                // Something went wrong
-//                print(error)
-//            }
-//            else{
-//                print("added")
-//            }
-//        })
-//    }
+
+
 
     @IBOutlet weak var mapView: MKMapView!
     
