@@ -7,8 +7,9 @@
 //
 import MapKit
 import UIKit
+import UserNotifications
 
-class Map1ViewController: UIViewController {
+class Map1ViewController: UIViewController, CLLocationManagerDelegate, UNUserNotificationCenterDelegate {
     
     fileprivate let locationManager:CLLocationManager = CLLocationManager()
 
@@ -16,7 +17,8 @@ class Map1ViewController: UIViewController {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
         
-        locationManager.requestWhenInUseAuthorization()
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.distanceFilter = kCLDistanceFilterNone
         locationManager.startUpdatingLocation()
@@ -39,10 +41,28 @@ class Map1ViewController: UIViewController {
             annotation1.subtitle = "Whitechapel"
             mapView.addAnnotation(annotation1)
 
-
+            let geoFenceRegion:CLCircularRegion = CLCircularRegion(center: location1, radius: 20, identifier: "Victim 1")
+            locationManager.startMonitoring(for: geoFenceRegion)
+        
         }
-
-
+    
+    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        crimescene1entered()
+    }
+        
+    func crimescene1entered() {
+        
+        let alert = UIAlertController(title: "You arrive at the crimescene", message: "On the floor lays the bloody corpse of a young woman", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Investigate the area for clues", style: .default) { (action) -> Void in
+            let viewControllerYouWantToPresent = self.storyboard?.instantiateViewController(withIdentifier: "ChallengeLink")
+            self.present(viewControllerYouWantToPresent!, animated: true, completion: nil)
+        }
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
+    
     @IBOutlet weak var mapView: MKMapView!
     
     
