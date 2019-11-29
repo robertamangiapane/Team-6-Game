@@ -46,6 +46,14 @@
                                 <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbE-J9-gC8">
+                                <rect key="frame" x="89" y="693" width="243" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Link to Info"/>
+                                <connections>
+                                    <segue destination="68D-9H-NKI" kind="show" id="nqb-l2-Jqx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.29457813500000002" green="0.13166794179999999" blue="0.30434530970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="wf9-42-bZN"/>
@@ -59,6 +67,42 @@
                 <exit id="Xy9-kB-NSM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="963.76811594202911" y="-521.65178571428567"/>
+        </scene>
+        <!--Congrats2-->
+        <scene sceneID="NLh-Ae-gX4">
+            <objects>
+                <viewController title="Congrats2" id="68D-9H-NKI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zc2-3d-NAs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNs-z3-E5T">
+                                <rect key="frame" x="59" y="153" width="303" height="492"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Link to Map3"/>
+                                <connections>
+                                    <segue destination="enf-7o-1Zq" kind="show" id="G0h-1z-Ysx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="CCJ-Jn-DMf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oSv-AR-cTF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sgp-fB-gti" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1724.6376811594205" y="-516.29464285714289"/>
+        </scene>
+        <!--Map3-->
+        <scene sceneID="O1U-fo-jFJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Map3" id="enf-7o-1Zq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="z8g-ZR-H5h"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rIy-ap-988" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2260" y="-672"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.29457813500000002" green="0.13166794179999999" blue="0.30434530970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

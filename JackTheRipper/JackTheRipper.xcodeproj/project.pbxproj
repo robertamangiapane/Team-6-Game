@@ -20,6 +20,9 @@
 		612B556A238E8905002B168C /* Map4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B5569238E8905002B168C /* Map4ViewController.swift */; };
 		612B556C238E8AF2002B168C /* Map5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612B556B238E8AF2002B168C /* Map5.storyboard */; };
 		612B556E238E8B01002B168C /* Map5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B556D238E8B01002B168C /* Map5ViewController.swift */; };
+		613406D023916778002BE64A /* Challenge3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613406CF23916778002BE64A /* Challenge3.storyboard */; };
+		613406D223916862002BE64A /* Challenge4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613406D123916862002BE64A /* Challenge4.storyboard */; };
+		613406D423916A08002BE64A /* Challenge5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613406D323916A08002BE64A /* Challenge5.storyboard */; };
 		721FC1F4238EF0070026E35E /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FC1F3238EF0070026E35E /* ViewControllerTests.swift */; };
 		721FC1FC238EF2B20026E35E /* IntroViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FC1FB238EF2B20026E35E /* IntroViewControllerTests.swift */; };
 		721FC1FE238EF2C60026E35E /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FC1FD238EF2C60026E35E /* IntroViewController.swift */; };
@@ -69,6 +72,9 @@
 		612B5569238E8905002B168C /* Map4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map4ViewController.swift; sourceTree = "<group>"; };
 		612B556B238E8AF2002B168C /* Map5.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map5.storyboard; sourceTree = "<group>"; };
 		612B556D238E8B01002B168C /* Map5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map5ViewController.swift; sourceTree = "<group>"; };
+		613406CF23916778002BE64A /* Challenge3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Challenge3.storyboard; sourceTree = "<group>"; };
+		613406D123916862002BE64A /* Challenge4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Challenge4.storyboard; sourceTree = "<group>"; };
+		613406D323916A08002BE64A /* Challenge5.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Challenge5.storyboard; sourceTree = "<group>"; };
 		721FC1F3238EF0070026E35E /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		721FC1FB238EF2B20026E35E /* IntroViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewControllerTests.swift; sourceTree = "<group>"; };
 		721FC1FD238EF2C60026E35E /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
@@ -157,10 +163,13 @@
 				612B555F238E7D22002B168C /* Map2.storyboard */,
 				612B5565238E8573002B168C /* Map3ViewController.swift */,
 				612B5563238E855C002B168C /* Map3.storyboard */,
+				613406CF23916778002BE64A /* Challenge3.storyboard */,
 				612B5569238E8905002B168C /* Map4ViewController.swift */,
 				612B5567238E88E3002B168C /* Map4.storyboard */,
+				613406D123916862002BE64A /* Challenge4.storyboard */,
 				612B556D238E8B01002B168C /* Map5ViewController.swift */,
 				612B556B238E8AF2002B168C /* Map5.storyboard */,
+				613406D323916A08002BE64A /* Challenge5.storyboard */,
 				AFB9FF8E239032A0001381C5 /* Riddle.swift */,
 				AFB9FF9023903328001381C5 /* RiddleViewController.swift */,
 				AFB9FF922390336F001381C5 /* Riddle.storyboard */,
@@ -299,12 +308,15 @@
 				7250F0CD238D82E000DF02FF /* LaunchScreen.storyboard in Resources */,
 				612B556C238E8AF2002B168C /* Map5.storyboard in Resources */,
 				612B5564238E855C002B168C /* Map3.storyboard in Resources */,
+				613406D423916A08002BE64A /* Challenge5.storyboard in Resources */,
 				612B5560238E7D22002B168C /* Map2.storyboard in Resources */,
 				612B5568238E88E3002B168C /* Map4.storyboard in Resources */,
 				AFB9FF932390336F001381C5 /* Riddle.storyboard in Resources */,
 				AFB9FF89238D8F2C001381C5 /* Map1.storyboard in Resources */,
 				7250F0CA238D82E000DF02FF /* Assets.xcassets in Resources */,
 				7250F0C8238D82E000DF02FF /* Main.storyboard in Resources */,
+				613406D023916778002BE64A /* Challenge3.storyboard in Resources */,
+				613406D223916862002BE64A /* Challenge4.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
