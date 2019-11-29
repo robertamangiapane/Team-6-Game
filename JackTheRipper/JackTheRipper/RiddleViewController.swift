@@ -45,6 +45,7 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
 //        self.view.endEditing(true) another way of doing resignFirstResponder
         
         answer = userAnswer.text!
+        userAnswer.text = ""
         checkAnswer(answer: answer)
         return true
     }
