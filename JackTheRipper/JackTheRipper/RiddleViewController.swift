@@ -20,6 +20,7 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad(){
         super.viewDidLoad()
         
+        userAnswer.placeholder = "Enter your answer here"
         tryAgainLabel.isHidden = true
         toCongrats2.isHidden = true
 
@@ -37,7 +38,6 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
             tryAgainLabel.text = "right answer"
             tryAgainLabel.isHidden = false
             toCongrats2.isHidden = false
-//            insert the link to next page here
                }
     }
     
