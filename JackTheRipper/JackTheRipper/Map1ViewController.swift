@@ -54,7 +54,7 @@ class Map1ViewController: UIViewController, CLLocationManagerDelegate, UNUserNot
         
         let alert = UIAlertController(title: "You arrive at the crimescene", message: "On the floor lays the bloody corpse of a young woman", preferredStyle: .alert)
         let action = UIAlertAction(title: "Investigate the area for clues", style: .default) { (action) -> Void in
-            let viewControllerYouWantToPresent = self.storyboard?.instantiateViewController(withIdentifier: "ChallengeLink")
+            let viewControllerYouWantToPresent = self.storyboard?.instantiateViewController(withIdentifier: "Info1")
             self.present(viewControllerYouWantToPresent!, animated: true, completion: nil)
         }
         alert.addAction(action)

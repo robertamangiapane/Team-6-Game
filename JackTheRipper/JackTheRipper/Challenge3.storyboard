@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="c2b-a2-eBL">
             <objects>
-                <viewController id="D7x-ss-cdA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Challenge3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="D7x-ss-cdA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PXI-i9-R3k">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,7 +35,7 @@
         <!--Congrats3-->
         <scene sceneID="0Gj-O0-w34">
             <objects>
-                <viewController title="Congrats3" id="8f4-ns-83K" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Congrats3" title="Congrats3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8f4-ns-83K" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jJf-lp-Olm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

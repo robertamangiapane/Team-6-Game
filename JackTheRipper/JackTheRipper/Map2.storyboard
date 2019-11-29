@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Map2 View Controller-->
+        <!--MapView2-->
         <scene sceneID="UUC-0Y-YOD">
             <objects>
-                <viewController id="uZc-ue-58y" customClass="Map2ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapView2" title="MapView2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uZc-ue-58y" customClass="Map2ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="80x-06-RkG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,7 +50,7 @@
         <!--Info2-->
         <scene sceneID="RhX-dL-c3H">
             <objects>
-                <viewController title="Info2" id="9qr-XN-6av" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Info2" title="Info2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9qr-XN-6av" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dT8-TY-8W0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Riddle View Controller-->
+        <!--Riddle-->
         <scene sceneID="eqo-pl-xuB">
             <objects>
-                <viewController id="hXk-nd-0TA" customClass="RiddleViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Riddle" title="Riddle" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hXk-nd-0TA" customClass="RiddleViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PJ6-Yq-edc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,7 +49,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbE-J9-gC8">
                                 <rect key="frame" x="89" y="693" width="243" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Link to Info"/>
+                                <state key="normal" title="BUTTON!">
+                                    <color key="titleColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="68D-9H-NKI" kind="show" id="nqb-l2-Jqx"/>
                                 </connections>
@@ -71,7 +73,7 @@
         <!--Congrats2-->
         <scene sceneID="NLh-Ae-gX4">
             <objects>
-                <viewController title="Congrats2" id="68D-9H-NKI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Congrats2" title="Congrats2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="68D-9H-NKI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zc2-3d-NAs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
