@@ -50,7 +50,7 @@
         <!--Info4-->
         <scene sceneID="to8-iB-TAd">
             <objects>
-                <viewController title="Info4" id="dJ3-RP-cOZ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Info4" title="Info4" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dJ3-RP-cOZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nby-vu-7U1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

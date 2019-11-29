@@ -50,7 +50,7 @@
         <!--Info5-->
         <scene sceneID="67a-ax-Pnq">
             <objects>
-                <viewController title="Info5" id="u9e-hG-kxH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Info5" title="Info5" useStoryboardIdentifierAsRestorationIdentifier="YES" id="u9e-hG-kxH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lQZ-jm-ucF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

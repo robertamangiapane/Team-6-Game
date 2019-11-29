@@ -23,7 +23,6 @@ class Map2ViewController:  UIViewController, CLLocationManagerDelegate, UNUserNo
        locationManager.desiredAccuracy = kCLLocationAccuracyBest
        locationManager.distanceFilter = kCLDistanceFilterNone
        locationManager.startUpdatingLocation()
-       
        mapView.showsUserLocation = true
         
             let centerlocation = CLLocationCoordinate2D(latitude: 51.517762,
@@ -58,7 +57,7 @@ class Map2ViewController:  UIViewController, CLLocationManagerDelegate, UNUserNo
              }
          
          func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-             crimescene2entered()
+            crimescene2entered()
          }
              
          func crimescene2entered() {
