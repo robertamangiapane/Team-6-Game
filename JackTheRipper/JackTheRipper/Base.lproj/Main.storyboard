@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ui2-LN-hSZ">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -26,17 +26,13 @@
         <!--Title View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+
                 <viewController storyboardIdentifier="TitleController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" userLabel="Title View Controller" customClass="ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
+
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Jack The Ripper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGj-9W-Frh">
-                                <rect key="frame" x="89" y="208" width="236" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <color key="textColor" red="0.50196078430000002" green="0.074509803920000006" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" red="0.50196078431372548" green="0.074509803921568626" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pu6-zi-69s">
                                 <rect key="frame" x="144" y="730" width="127" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -52,28 +48,30 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JTR" translatesAutoresizingMaskIntoConstraints="NO" id="oYp-xX-jSx">
+                                <rect key="frame" x="74" y="205" width="266" height="240"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.23376208540000001" green="0.1051767245" blue="0.22756356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xGj-9W-Frh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="T7C-vV-O1r"/>
-                            <constraint firstItem="xGj-9W-Frh" firstAttribute="centerX" secondItem="Pu6-zi-69s" secondAttribute="centerX" id="huO-rN-ekW"/>
-                            <constraint firstItem="xGj-9W-Frh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="89" id="v6K-5e-JhM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oYp-xX-jSx" secondAttribute="trailing" constant="74" id="31O-J5-w7b"/>
+                            <constraint firstItem="oYp-xX-jSx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="117" id="ayq-LS-xMI"/>
+                            <constraint firstItem="oYp-xX-jSx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dVU-uE-lHn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="a98-xi-Ti5"/>
-                    <connections>
-                        <outlet property="TitleLabel" destination="xGj-9W-Frh" id="UEQ-4p-8Oj"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="139"/>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
         <!--Intro View Controller-->
         <scene sceneID="gUj-bG-Xcq">
             <objects>
-                <viewController restorationIdentifier="IntroController" storyboardIdentifier="IntroController" id="Ihq-dX-moD" userLabel="Intro View Controller" sceneMemberID="viewController">
+
+                <viewController storyboardIdentifier="IntroViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ihq-dX-moD" userLabel="Intro View Controller" customClass="IntroViewController" customModule="JackTheRipper" sceneMemberID="viewController">
+
                     <view key="view" contentMode="scaleToFill" id="vcp-vz-fHv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,6 +121,9 @@
             <point key="canvasLocation" x="922" y="579"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="JTR" width="485" height="240"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="UWM-w4-96s"/>
     </inferredMetricsTieBreakers>

@@ -26,8 +26,34 @@ class GameTests: XCTestCase {
     }
     
     func testGameProgressStartsAtZero() {
-    XCTAssertTrue(game.progress == 0)
+        XCTAssertTrue(game.progress == 0)
     }
+    
+    func testGameTitleStartsAtJunior() {
+        XCTAssertTrue(game.title == "Junior Detective")
+    }
+    
+    func testGameTitleLevelsUpToFull() {
+        game.play()
+        game.play()
+        XCTAssertTrue(game.title == "Full Detective")
+    }
+    
+    func testGameScoreIncrements() {
+        game.play()
+        XCTAssertTrue(game.score == 5)
+       }
+    
+    func testGameScoreStopsAt25() {
+        game.play()
+        game.play()
+        game.play()
+        game.play()
+        game.play()
+        game.play()
+        XCTAssertTrue(game.score == 25)
+       }
+        
 
     
 }
