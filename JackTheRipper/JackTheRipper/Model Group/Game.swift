@@ -12,11 +12,13 @@ class Game{
     var progress: Int
     var title: String
     var scoreMax: Int
+    var turnMin: Int
 
     
     init(){
        score = 0
-        turnScore = 0
+        turnScore = 5
+        turnMin = 1
         scoreMax = 25
         progress = 0
         title = "Junior Detective"
@@ -34,35 +36,27 @@ class Game{
            }
        }
     
-//    func play () {
-//        if score <= 20 {
-//        score += 5
-//        } else {
-//        score = scoreMax
-//        }
-//        changeTitle()
-//
-//    }
     
     func wrongAnswer() {
-        if turnScore < -4 {
-            turnScore -= 1
+        if turnScore == turnMin {
+            turnScore = turnMin
          } else {
-            turnScore = -4
+            turnScore = turnScore - 1
          }
      }
-    
-    func addToTurnScore(){
-        turnScore += 5
-    }
-    
+        
     func addToGameScore(){
-        score += turnScore
+         if score <= (25 - turnScore) {
+            score += turnScore
+         } else {
+            score = scoreMax
+        }
     }
      
      func rightAnswer() {
-        addToTurnScore()
         addToGameScore()
+        turnScore = 0
+        changeTitle()
     }
 }
 import Foundation

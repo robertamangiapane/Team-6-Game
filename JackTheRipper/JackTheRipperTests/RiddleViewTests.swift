@@ -10,7 +10,7 @@ import XCTest
 @testable import JackTheRipper
 
 class RiddleViewTests: XCTestCase {
-    let riddle = Riddle()
+    var viewController : RiddleViewController!
 
 
     override func setUp() {
@@ -21,14 +21,14 @@ class RiddleViewTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testAnswerIsRight() {
-        let result = riddle.isSolved(answer: "Correct")
-        XCTAssertEqual(result, "new location")
-    }
-    
-    func testAnswerIsWrong() {
-        let result = riddle.isSolved(answer: "no")
-        XCTAssertEqual(result, "try again")
-    }
+//    func testAnswerIsRight() {
+//        let result = viewcontroller.riddle.isSolved(answer: "Correct")
+//        XCTAssertEqual(result, "new location")
+//    }
+//
+//    func testAnswerIsWrong() {
+//        let result = viewcontroller.riddle.isSolved(answer: "no")
+//        XCTAssertEqual(result, "try again")
+//    }
 
 }
