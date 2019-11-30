@@ -29,9 +29,12 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
         let riddleOutcome = riddle.isSolved(answer: answer)
         
         if riddleOutcome == "try again" {
+            riddle.game.wrongAnswer()
             tryAgainLabel.text = "Wrong answer, try again!"
             tryAgainLabel.isHidden = false
                } else {
+            riddle.game.rightAnswer()
+            riddle.game.changeTitle()
             tryAgainLabel.text = "right answer"
             tryAgainLabel.isHidden = false
 //            insert the link to next page here

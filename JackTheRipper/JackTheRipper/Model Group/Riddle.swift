@@ -10,6 +10,7 @@ import Foundation
 
 class Riddle {
     var correctAnswer = "Correct"
+    let game = Game()
     
     func isSolved(answer: String) -> String {
         if answer == correctAnswer {

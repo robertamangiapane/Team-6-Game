@@ -124,6 +124,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		722CC62923931BA50065618D /* ViewController Group */ = {
+			isa = PBXGroup;
+			children = (
+				7250F0C4238D82E000DF02FF /* ViewController.swift */,
+				721FC1FD238EF2C60026E35E /* IntroViewController.swift */,
+				AFB9FF86238D8976001381C5 /* Map1ViewController.swift */,
+				612B5561238E7D48002B168C /* Map2ViewController.swift */,
+				AFB9FF9023903328001381C5 /* RiddleViewController.swift */,
+				612B5565238E8573002B168C /* Map3ViewController.swift */,
+				612B5569238E8905002B168C /* Map4ViewController.swift */,
+				612B556D238E8B01002B168C /* Map5ViewController.swift */,
+			);
+			path = "ViewController Group";
+			sourceTree = "<group>";
+		};
+		722CC62A23931C430065618D /* Model Group */ = {
+			isa = PBXGroup;
+			children = (
+				3F41C2F5238D8F0D00A58B2E /* Game.swift */,
+				AFB9FF8E239032A0001381C5 /* Riddle.swift */,
+			);
+			path = "Model Group";
+			sourceTree = "<group>";
+		};
+		722CC62B23931C690065618D /* Storyboard Group */ = {
+			isa = PBXGroup;
+			children = (
+				7250F0CB238D82E000DF02FF /* LaunchScreen.storyboard */,
+				7250F0C6238D82E000DF02FF /* Main.storyboard */,
+				AFB9FF88238D8F2C001381C5 /* Map1.storyboard */,
+				3F9EDB8C238E81980088E1B9 /* MultipleChoice.storyboard */,
+				612B555F238E7D22002B168C /* Map2.storyboard */,
+				AFB9FF922390336F001381C5 /* Riddle.storyboard */,
+				612B5563238E855C002B168C /* Map3.storyboard */,
+				613406CF23916778002BE64A /* Challenge3.storyboard */,
+				612B5567238E88E3002B168C /* Map4.storyboard */,
+				613406D123916862002BE64A /* Challenge4.storyboard */,
+				612B556B238E8AF2002B168C /* Map5.storyboard */,
+				613406D323916A08002BE64A /* Challenge5.storyboard */,
+			);
+			path = "Storyboard Group";
+			sourceTree = "<group>";
+		};
 		7250F0B4238D82E000DF02FF = {
 			isa = PBXGroup;
 			children = (
@@ -147,32 +190,13 @@
 		7250F0BF238D82E000DF02FF /* JackTheRipper */ = {
 			isa = PBXGroup;
 			children = (
+				722CC62923931BA50065618D /* ViewController Group */,
+				722CC62B23931C690065618D /* Storyboard Group */,
+				722CC62A23931C430065618D /* Model Group */,
 				7250F0C0238D82E000DF02FF /* AppDelegate.swift */,
 				7250F0C2238D82E000DF02FF /* SceneDelegate.swift */,
-				721FC1FD238EF2C60026E35E /* IntroViewController.swift */,
-				7250F0C4238D82E000DF02FF /* ViewController.swift */,
-				7250F0C6238D82E000DF02FF /* Main.storyboard */,
 				7250F0C9238D82E000DF02FF /* Assets.xcassets */,
-				7250F0CB238D82E000DF02FF /* LaunchScreen.storyboard */,
 				7250F0CE238D82E000DF02FF /* Info.plist */,
-				3F41C2F5238D8F0D00A58B2E /* Game.swift */,
-				AFB9FF86238D8976001381C5 /* Map1ViewController.swift */,
-				AFB9FF88238D8F2C001381C5 /* Map1.storyboard */,
-				3F9EDB8C238E81980088E1B9 /* MultipleChoice.storyboard */,
-				612B5561238E7D48002B168C /* Map2ViewController.swift */,
-				612B555F238E7D22002B168C /* Map2.storyboard */,
-				612B5565238E8573002B168C /* Map3ViewController.swift */,
-				612B5563238E855C002B168C /* Map3.storyboard */,
-				613406CF23916778002BE64A /* Challenge3.storyboard */,
-				612B5569238E8905002B168C /* Map4ViewController.swift */,
-				612B5567238E88E3002B168C /* Map4.storyboard */,
-				613406D123916862002BE64A /* Challenge4.storyboard */,
-				612B556D238E8B01002B168C /* Map5ViewController.swift */,
-				612B556B238E8AF2002B168C /* Map5.storyboard */,
-				613406D323916A08002BE64A /* Challenge5.storyboard */,
-				AFB9FF8E239032A0001381C5 /* Riddle.swift */,
-				AFB9FF9023903328001381C5 /* RiddleViewController.swift */,
-				AFB9FF922390336F001381C5 /* Riddle.storyboard */,
 			);
 			path = JackTheRipper;
 			sourceTree = "<group>";
