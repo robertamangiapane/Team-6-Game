@@ -8,15 +8,17 @@
 
 import MapKit
 import UIKit
+import UserNotifications
 
-class Map3ViewController: UIViewController {
+class Map3ViewController: UIViewController, CLLocationManagerDelegate, UNUserNotificationCenterDelegate {
     
     fileprivate let locationManager:CLLocationManager = CLLocationManager()
 
     override func viewDidLoad() {
            super.viewDidLoad()
            // Do any additional setup after loading the view.
-       
+        
+       locationManager.delegate = self
        locationManager.requestWhenInUseAuthorization()
        locationManager.desiredAccuracy = kCLLocationAccuracyBest
        locationManager.distanceFilter = kCLDistanceFilterNone
@@ -60,13 +62,30 @@ class Map3ViewController: UIViewController {
             annotation3.subtitle = "Whitechapel"
             mapView.addAnnotation(annotation3)
             
+      let geoFenceRegion:CLCircularRegion = CLCircularRegion(center: location3, radius: 20, identifier: "Victim 3")
+            locationManager.startMonitoring(for: geoFenceRegion)
+                 
+        }
+             
+    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+            crimescene3entered()
+             }
+                 
+    func crimescene3entered() {
+                 
+        let alert = UIAlertController(title: "You arrive at the crimescene", message: "On the floor lays the bloody corpse of a young woman", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Investigate the area for clues", style: .default) { (action) -> Void in
+        let viewControllerYouWantToPresent = self.storyboard?.instantiateViewController(withIdentifier: "Info3")
+        self.present(viewControllerYouWantToPresent!, animated: true, completion: nil)
+                 }
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+                 
+             }
+
+
+        @IBOutlet weak var mapView: MKMapView!
+        
+        
         
         }
-
-
-    
-    @IBOutlet weak var mapView: MKMapView!
-    
-    
-    
-    }
