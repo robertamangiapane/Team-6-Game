@@ -11,6 +11,7 @@
 		3F41C2F8238D8F2B00A58B2E /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F41C2F7238D8F2B00A58B2E /* GameTests.swift */; };
 		3F41C31A23955ED500A58B2E /* ScrambleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F41C31923955ED500A58B2E /* ScrambleViewController.swift */; };
 		3F41C31C23955F3C00A58B2E /* Scramble.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F41C31B23955F3C00A58B2E /* Scramble.storyboard */; };
+		3F41C320239565DE00A58B2E /* ImageViewCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F41C31F239565DE00A58B2E /* ImageViewCVCell.swift */; };
 		3F5E52F1239039BC003A2D2B /* RiddleViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E52F0239039BC003A2D2B /* RiddleViewTests.swift */; };
 		3F5E52F323903A15003A2D2B /* RiddleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E52F223903A15003A2D2B /* RiddleTests.swift */; };
 		3F9EDB8D238E81980088E1B9 /* MultipleChoice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9EDB8C238E81980088E1B9 /* MultipleChoice.storyboard */; };
@@ -65,6 +66,7 @@
 		3F41C2F7238D8F2B00A58B2E /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		3F41C31923955ED500A58B2E /* ScrambleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrambleViewController.swift; sourceTree = "<group>"; };
 		3F41C31B23955F3C00A58B2E /* Scramble.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Scramble.storyboard; sourceTree = "<group>"; };
+		3F41C31F239565DE00A58B2E /* ImageViewCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewCVCell.swift; sourceTree = "<group>"; };
 		3F5E52F0239039BC003A2D2B /* RiddleViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleViewTests.swift; sourceTree = "<group>"; };
 		3F5E52F223903A15003A2D2B /* RiddleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleTests.swift; sourceTree = "<group>"; };
 		3F9EDB8C238E81980088E1B9 /* MultipleChoice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultipleChoice.storyboard; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				7250F0CE238D82E000DF02FF /* Info.plist */,
 				3F41C31923955ED500A58B2E /* ScrambleViewController.swift */,
 				3F41C31B23955F3C00A58B2E /* Scramble.storyboard */,
+				3F41C31F239565DE00A58B2E /* ImageViewCVCell.swift */,
 			);
 			path = JackTheRipper;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				7250F0C3238D82E000DF02FF /* SceneDelegate.swift in Sources */,
 				612B5566238E8573002B168C /* Map3ViewController.swift in Sources */,
 				3F41C2F6238D8F0D00A58B2E /* Game.swift in Sources */,
+				3F41C320239565DE00A58B2E /* ImageViewCVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

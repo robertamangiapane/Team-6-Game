@@ -12,7 +12,7 @@ import UIKit
 class ScrambleViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     let questionImageArray = [#imageLiteral(resourceName: "12"), #imageLiteral(resourceName: "11"), #imageLiteral(resourceName: "10"), #imageLiteral(resourceName: "9"), #imageLiteral(resourceName: "8"), #imageLiteral(resourceName: "7"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "5"), #imageLiteral(resourceName: "4"), #imageLiteral(resourceName: "3"), #imageLiteral(resourceName: "2"), #imageLiteral(resourceName: "1")]
-    let correctAns = [0,3,1,4,2,5,6,7,8]
+    let correctAns = [0,1,2,3,4,5,6,7,8,9,10,11,12]
     var wrongAns = Array(0..<13)
     var wrongImageArray=[UIImage]()
     var undoMovesArray = [(first: IndexPath, second: IndexPath)]()
@@ -92,7 +92,7 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     //MARK: CollectionView
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 9
+        return 13
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -105,14 +105,14 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
         collectionView.deselectItem(at: indexPath, animated: true)
         if firstIndexPath == nil {
             firstIndexPath = indexPath
-            collectionView.selectItem(at: firstIndexPath, animated: true, scrollPosition: UICollectionViewScrollPosition(rawValue: 0))
+            collectionView.selectItem(at: firstIndexPath, animated: true, scrollPosition: UICollectionView.ScrollPosition(rawValue: 0))
         } else if secondIndexPath == nil {
             secondIndexPath = indexPath
-            collectionView.selectItem(at: secondIndexPath, animated: true, scrollPosition: UICollectionViewScrollPosition(rawValue: 0))
+            collectionView.selectItem(at: secondIndexPath, animated: true, scrollPosition: UICollectionView.ScrollPosition(rawValue: 0))
         } else {
             collectionView.deselectItem(at: secondIndexPath!, animated: true)
             secondIndexPath = indexPath
-            collectionView.selectItem(at: secondIndexPath, animated: true, scrollPosition: UICollectionViewScrollPosition(rawValue: 0))
+            collectionView.selectItem(at: secondIndexPath, animated: true, scrollPosition: UICollectionView.ScrollPosition(rawValue: 0))
         }
     }
     
