@@ -17,7 +17,6 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="50F-cD-zPv">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="2sH-qM-hZy"/>
                                     <constraint firstAttribute="height" constant="818" id="Ygg-pL-JZx"/>
@@ -75,9 +74,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moZ-iJ-QYP">
-                                <rect key="frame" x="31" y="164" width="363" height="502"/>
+                                <rect key="frame" x="26" y="88" width="363" height="502"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">At approximately 3:45 a.m., Officer Neill made a gruesome discovery of a woman's body. She was examined by local surgeon, Dr. Llewellyn and pronounced dead. His examiniation of the deceased found that her throat was cut down to the vertebrae, as well as several dep cuts to her abdomen. All cuts ran left to right . The wounds suggest the murder was commited with a long-bladed knife and great violence.</string>
+                                <string key="text">The body was examined by local surgeon, Dr. Llewellyn and pronounced dead. His examiniation of the deceased found that her throat was cut down to the vertebrae, as well as several dep cuts in her abdomen. All cuts ran left to right . The wounds suggest the murder was commited with a long-bladed knife and great violence.</string>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

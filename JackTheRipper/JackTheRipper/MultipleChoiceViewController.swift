@@ -15,10 +15,17 @@ class MultipleChoiceViewController: UIViewController {
     
     @IBOutlet weak var scoreLable: UILabel!
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var answerLabel: UILabel!
     
-       override func viewDidLoad(){
+    
+    override func viewDidLoad(){
         super.viewDidLoad()
         nextButton.isHidden = true
+        titleLabel.text = "\(game.title)"
+        scoreLable.text = "Score: \(game.score)"
+        answerLabel.isHidden = true
+        
     }
 
     
@@ -28,9 +35,14 @@ class MultipleChoiceViewController: UIViewController {
             title = "Correct"
             game.rightAnswer()
             scoreLable.text = "Score: \(game.score)"
+            titleLabel.text = "\(game.title)"
+            answerLabel.text = "Correct!"
+            answerLabel.isHidden = false
             nextButton.isHidden = false
         } else {
             title = "Incorrect"
+            answerLabel.text = "Incorrect."
+            answerLabel.isHidden = false
             game.wrongAnswer()
         }
     }
