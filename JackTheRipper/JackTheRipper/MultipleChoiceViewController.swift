@@ -14,7 +14,9 @@ class MultipleChoiceViewController: UIViewController {
     
     
     
-    @IBAction func buttonTapped(_ sender: Any) {
+    @IBAction func buttonTapped(_ sender: UIButton) {
         game.rightAnswer()
     }
+    
+    
 }

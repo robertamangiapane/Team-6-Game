@@ -10,8 +10,8 @@
         <!--Multiple Choice View Controller-->
         <scene sceneID="vaj-9P-mNt">
             <objects>
-                <viewController storyboardIdentifier="MultipleChoiceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NCk-Yy-ckD" customClass="MultipleChoiceViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Mu3-aL-aYZ">
+                <viewController storyboardIdentifier="MultipleChoiceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NCk-Yy-ckD" customClass="MultipleChoiceViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mu3-aL-aYZ" customClass="MultipleChoice">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -33,52 +33,18 @@
                                 <rect key="frame" x="32" y="367" width="357" height="495"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNm-yX-n7i">
-                                        <rect key="frame" x="32" y="30" width="293" height="76"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21L-Fo-Jj6">
+                                        <rect key="frame" x="105" y="38" width="146" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.48767006397247314" green="0.14638921618461609" blue="0.32460141181945801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="A left-handed person">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="buttonTapped:" destination="NCk-Yy-ckD" eventType="touchUpInside" id="1sS-DB-Z0K"/>
-                                        </connections>
+                                        <state key="normal" title="A left-handed person"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nw-Mk-WBf">
-                                        <rect key="frame" x="30" y="247" width="295" height="76"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utH-Wq-731">
+                                        <rect key="frame" x="104" y="38" width="146" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.48767006400000001" green="0.14638921620000001" blue="0.32460141180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="A tall person">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
+                                        <state key="normal" title="A left-handed person"/>
                                         <connections>
-                                            <segue destination="yFv-pO-5wl" kind="show" id="rv3-el-xH2"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjB-IP-Ui2">
-                                        <rect key="frame" x="30" y="351" width="295" height="76"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.48767006400000001" green="0.14638921620000001" blue="0.32460141180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="A short person">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="yFv-pO-5wl" kind="show" id="KOr-h6-qdQ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDL-vU-rlU">
-                                        <rect key="frame" x="30" y="139" width="295" height="76"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.48767006400000001" green="0.14638921620000001" blue="0.32460141180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="A right-handed person">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="yFv-pO-5wl" kind="show" id="Hnb-0H-Pt9"/>
+                                            <action selector="buttonTapped:" destination="NCk-Yy-ckD" eventType="touchUpInside" id="D3m-wi-3pC"/>
+                                            <segue destination="pas-u7-d02" kind="show" id="aBt-OV-yzH"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -157,7 +123,7 @@
             <objects>
                 <viewController restorationIdentifier="ChallengeWrongAnswerViewController" storyboardIdentifier="ChallengeWrongAnswerViewController" id="yFv-pO-5wl" customClass="ChallengeWrongAnswerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iBX-Cu-qeR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wrong Answer" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEP-eB-uC1">
@@ -178,8 +144,5 @@
             <point key="canvasLocation" x="1202.8985507246377" y="-107.14285714285714"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="KOr-h6-qdQ"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
