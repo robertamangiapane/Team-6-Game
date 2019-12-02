@@ -15,13 +15,15 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var userAnswer: UITextField!
     @IBOutlet weak var tryAgainLabel: UILabel!
+    @IBOutlet weak var toCongrats2: UIButton!
 
-    
     
     override func viewDidLoad(){
         super.viewDidLoad()
         
+        userAnswer.placeholder = "Enter your answer here"
         tryAgainLabel.isHidden = true
+        toCongrats2.isHidden = true
 
         self.userAnswer.delegate = self
     }
@@ -38,7 +40,7 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
             riddle.game.rightAnswer()
             tryAgainLabel.text = "right answer"
             tryAgainLabel.isHidden = false
-//            insert the link to next page here
+            toCongrats2.isHidden = false
                }
     }
     
@@ -49,6 +51,7 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
 //        self.view.endEditing(true) another way of doing resignFirstResponder
         
         answer = userAnswer.text!
+        userAnswer.text = ""
         checkAnswer(answer: answer)
         return true
     }

@@ -17,6 +17,7 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="50F-cD-zPv">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="2sH-qM-hZy"/>
                                     <constraint firstAttribute="height" constant="818" id="Ygg-pL-JZx"/>

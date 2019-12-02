@@ -46,8 +46,8 @@
         <!--Map3 View Controller-->
         <scene sceneID="p0Q-zz-8zC">
             <objects>
-                <viewController id="6FU-Do-UHQ" customClass="Map3ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="uXV-uI-FkQ">
+                <viewController restorationIdentifier="Map3Controller" storyboardIdentifier="Map3Controller" id="6FU-Do-UHQ" customClass="Map3ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uXV-uI-FkQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
