@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="muj-Wu-45B">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="muj-Wu-45B">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="818" id="cf8-or-dx1"/>
@@ -52,7 +52,7 @@
         <!--Info2-->
         <scene sceneID="RhX-dL-c3H">
             <objects>
-                <viewController title="Info2" id="9qr-XN-6av" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Info2" title="Info2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9qr-XN-6av" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dT8-TY-8W0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
