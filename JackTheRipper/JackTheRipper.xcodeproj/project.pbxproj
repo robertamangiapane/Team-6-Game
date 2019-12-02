@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3F41C2F6238D8F0D00A58B2E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F41C2F5238D8F0D00A58B2E /* Game.swift */; };
 		3F41C2F8238D8F2B00A58B2E /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F41C2F7238D8F2B00A58B2E /* GameTests.swift */; };
+		3F41C31A23955ED500A58B2E /* ScrambleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F41C31923955ED500A58B2E /* ScrambleViewController.swift */; };
+		3F41C31C23955F3C00A58B2E /* Scramble.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F41C31B23955F3C00A58B2E /* Scramble.storyboard */; };
 		3F5E52F1239039BC003A2D2B /* RiddleViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E52F0239039BC003A2D2B /* RiddleViewTests.swift */; };
 		3F5E52F323903A15003A2D2B /* RiddleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E52F223903A15003A2D2B /* RiddleTests.swift */; };
 		3F9EDB8D238E81980088E1B9 /* MultipleChoice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9EDB8C238E81980088E1B9 /* MultipleChoice.storyboard */; };
@@ -61,6 +63,8 @@
 /* Begin PBXFileReference section */
 		3F41C2F5238D8F0D00A58B2E /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		3F41C2F7238D8F2B00A58B2E /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
+		3F41C31923955ED500A58B2E /* ScrambleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrambleViewController.swift; sourceTree = "<group>"; };
+		3F41C31B23955F3C00A58B2E /* Scramble.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Scramble.storyboard; sourceTree = "<group>"; };
 		3F5E52F0239039BC003A2D2B /* RiddleViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleViewTests.swift; sourceTree = "<group>"; };
 		3F5E52F223903A15003A2D2B /* RiddleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleTests.swift; sourceTree = "<group>"; };
 		3F9EDB8C238E81980088E1B9 /* MultipleChoice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultipleChoice.storyboard; sourceTree = "<group>"; };
@@ -173,6 +177,8 @@
 				7250F0C2238D82E000DF02FF /* SceneDelegate.swift */,
 				7250F0C9238D82E000DF02FF /* Assets.xcassets */,
 				7250F0CE238D82E000DF02FF /* Info.plist */,
+				3F41C31923955ED500A58B2E /* ScrambleViewController.swift */,
+				3F41C31B23955F3C00A58B2E /* Scramble.storyboard */,
 			);
 			path = JackTheRipper;
 			sourceTree = "<group>";
@@ -307,6 +313,7 @@
 				3F9EDB8D238E81980088E1B9 /* MultipleChoice.storyboard in Resources */,
 				7250F0CD238D82E000DF02FF /* LaunchScreen.storyboard in Resources */,
 				612B556C238E8AF2002B168C /* Map5.storyboard in Resources */,
+				3F41C31C23955F3C00A58B2E /* Scramble.storyboard in Resources */,
 				612B5564238E855C002B168C /* Map3.storyboard in Resources */,
 				613406D423916A08002BE64A /* Challenge5.storyboard in Resources */,
 				612B5560238E7D22002B168C /* Map2.storyboard in Resources */,
@@ -344,6 +351,7 @@
 				612B5562238E7D48002B168C /* Map2ViewController.swift in Sources */,
 				AFB9FF9123903328001381C5 /* RiddleViewController.swift in Sources */,
 				7250F0C5238D82E000DF02FF /* ViewController.swift in Sources */,
+				3F41C31A23955ED500A58B2E /* ScrambleViewController.swift in Sources */,
 				721FC1FE238EF2C60026E35E /* IntroViewController.swift in Sources */,
 				AFB9FF87238D8976001381C5 /* Map1ViewController.swift in Sources */,
 				7250F0C1238D82E000DF02FF /* AppDelegate.swift in Sources */,
