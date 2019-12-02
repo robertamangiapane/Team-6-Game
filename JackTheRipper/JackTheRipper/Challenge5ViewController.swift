@@ -10,7 +10,7 @@ import UIKit
 
 class Challenge5ViewController: UIViewController, UITextFieldDelegate {
     
-    var response: String?
+//    var response: String?
     var guessWho: GuessWho?
     
     override func viewDidLoad() {
@@ -22,11 +22,13 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
     }
 
-    func question(input: String) {
+    func question(input: String) -> String {
         guard let unwrappedGuessWho = guessWho else {
             print("GuessWho is nil!")
-            return
+            return "GuessWho is nil!"
         }
-        response = unwrappedGuessWho.question(input: "Did the suspect have a beard")
+        let response = unwrappedGuessWho.question(input: "Did the suspect have a beard")
+        return response
     }
+    
 }
