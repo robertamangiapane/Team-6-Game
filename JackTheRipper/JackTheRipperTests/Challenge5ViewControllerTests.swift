@@ -12,13 +12,13 @@ import XCTest
 class Challenge5ViewControllerTests: XCTestCase {
 
 
-        var viewController : ViewController!
+        var viewController : Challenge5ViewController!
 
         override func setUp() {
             super.setUp()
 
             let storyboard = UIStoryboard(name: "Challenge5", bundle: Bundle.main)
-            viewController = (storyboard.instantiateViewController(withIdentifier: "ViewController5") as! ViewController)
+            viewController = (storyboard.instantiateViewController(withIdentifier: "ViewController5") as! Challenge5ViewController)
             UIApplication.shared.keyWindow!.rootViewController = viewController
 
             let _ = viewController.view
@@ -37,8 +37,9 @@ class Challenge5ViewControllerTests: XCTestCase {
     }
     
     func testMove1IncrementsScore() {
-        let response = viewController.question(input: "Does he have a beard?")
+        let result = viewController.question(input: "Does he have a beard?")
+        let response = viewController.response
+//        XCTAssertTrue(result == "The suspect did not have a beard.")
         XCTAssertEqual(response, "The suspect did not have a beard.")
     }
-
 }
