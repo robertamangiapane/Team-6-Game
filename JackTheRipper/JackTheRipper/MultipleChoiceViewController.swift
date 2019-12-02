@@ -11,11 +11,28 @@ import UIKit
 
 class MultipleChoiceViewController: UIViewController {
     let game = Game()
+    let correctAnswer = 0
     
+    @IBOutlet weak var scoreLable: UILabel!
+    @IBOutlet weak var nextButton: UIButton!
+    
+       override func viewDidLoad(){
+        super.viewDidLoad()
+        nextButton.isHidden = true
+    }
+
     
     
     @IBAction func buttonTapped(_ sender: UIButton) {
-        game.rightAnswer()
+        if sender.tag == correctAnswer {
+            title = "Correct"
+            game.rightAnswer()
+            scoreLable.text = "Score: \(game.score)"
+            nextButton.isHidden = false
+        } else {
+            title = "Incorrect"
+            game.wrongAnswer()
+        }
     }
     
     
