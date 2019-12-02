@@ -8,15 +8,17 @@
 
 import MapKit
 import UIKit
+import UserNotifications
 
-class Map4ViewController: UIViewController {
+class Map4ViewController: UIViewController, CLLocationManagerDelegate, UNUserNotificationCenterDelegate {
     
     fileprivate let locationManager:CLLocationManager = CLLocationManager()
 
     override func viewDidLoad() {
            super.viewDidLoad()
            // Do any additional setup after loading the view.
-       
+        
+       locationManager.delegate = self
        locationManager.requestWhenInUseAuthorization()
        locationManager.desiredAccuracy = kCLLocationAccuracyBest
        locationManager.distanceFilter = kCLDistanceFilterNone
@@ -71,13 +73,29 @@ class Map4ViewController: UIViewController {
             mapView.addAnnotation(annotation4)
             
         
+      let geoFenceRegion:CLCircularRegion = CLCircularRegion(center: location4, radius: 20, identifier: "Victim 4")
+            locationManager.startMonitoring(for: geoFenceRegion)
+                     
+            }
+                 
+     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+            crimescene4entered()
+            }
+                     
+    func crimescene4entered() {
+                     
+        let alert = UIAlertController(title: "You arrive at the crimescene", message: "On the floor lays the bloody corpse of a young woman", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Investigate the area for clues", style: .default) { (action) -> Void in
+        let viewControllerYouWantToPresent = self.storyboard?.instantiateViewController(withIdentifier: "Info4")
+        self.present(viewControllerYouWantToPresent!, animated: true, completion: nil)
+            }
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+                     
         }
 
 
-    
     @IBOutlet weak var mapView: MKMapView!
-    
-    
-    
-    
-    }
+            
+            
+}

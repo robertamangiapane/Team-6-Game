@@ -10,8 +10,10 @@
         <!--Map4 View Controller-->
         <scene sceneID="BP5-Bt-bVS">
             <objects>
-                <viewController id="InM-0p-8cf" customClass="Map4ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Mqt-WN-AmQ">
+
+                <viewController restorationIdentifier="Map4Controller" storyboardIdentifier="Map4Controller" id="InM-0p-8cf" customClass="Map4ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mqt-WN-AmQ">
+
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -50,7 +52,7 @@
         <!--Info4-->
         <scene sceneID="to8-iB-TAd">
             <objects>
-                <viewController title="Info4" id="dJ3-RP-cOZ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Info4" title="Info4" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dJ3-RP-cOZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nby-vu-7U1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -10,7 +10,7 @@
         <!--Info3-->
         <scene sceneID="Pd8-PU-6WX">
             <objects>
-                <viewController title="Info3" id="cZb-8f-5qe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Info3" title="Info3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cZb-8f-5qe" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VQa-b1-RDG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,12 +46,12 @@
         <!--Map3 View Controller-->
         <scene sceneID="p0Q-zz-8zC">
             <objects>
-                <viewController id="6FU-Do-UHQ" customClass="Map3ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="Map3Controller" storyboardIdentifier="Map3Controller" id="6FU-Do-UHQ" customClass="Map3ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uXV-uI-FkQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NxA-DG-Rd1">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NxA-DG-Rd1">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="AEg-Ml-ToL"/>

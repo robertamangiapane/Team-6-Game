@@ -17,7 +17,7 @@ import XCTest
             super.setUp()
 
             let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            viewController = (storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController)
+            viewController = (storyboard.instantiateViewController(withIdentifier: "TitleController") as! ViewController)
             UIApplication.shared.keyWindow!.rootViewController = viewController
 
             let _ = viewController.view
