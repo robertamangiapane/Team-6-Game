@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class ScrambleViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
+        
     let questionImageArray = [#imageLiteral(resourceName: "12"), #imageLiteral(resourceName: "11"), #imageLiteral(resourceName: "10"), #imageLiteral(resourceName: "9"), #imageLiteral(resourceName: "8"), #imageLiteral(resourceName: "7"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "5"), #imageLiteral(resourceName: "4"), #imageLiteral(resourceName: "3"), #imageLiteral(resourceName: "2"), #imageLiteral(resourceName: "1")]
     let correctAns = [0,1,2,3,4,5,6,7,8,9,10,11,12]
     var wrongAns = Array(0..<13)
@@ -23,7 +23,7 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Puzzle"
+        self.title = "Scramble"
         self.navigationController?.navigationBar.isTranslucent = false
         
         wrongImageArray = questionImageArray
@@ -92,7 +92,7 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     //MARK: CollectionView
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 13
+        return 12
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
