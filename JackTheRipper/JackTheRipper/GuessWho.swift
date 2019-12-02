@@ -11,7 +11,7 @@ import Foundation
 class GuessWho {
     
     func question(input: String) -> String {
-        var words = input.split(separator: " ")
+        var words = input.lowercased().split{ !$0.isLetter }
         var hasABeard = words.contains("beard")
         if hasABeard {
             return "The suspect did not have a beard."
