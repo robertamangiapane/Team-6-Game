@@ -10,9 +10,7 @@ import MapKit
 import UIKit
 import UserNotifications
 
-class Map3ViewController: UIViewController, CLLocationManagerDelegate, UNUserNotificationCenterDelegate {
-    
-    fileprivate let locationManager:CLLocationManager = CLLocationManager()
+class Map3ViewController: MapViewController{
 
     override func viewDidLoad() {
            super.viewDidLoad()
@@ -61,9 +59,6 @@ class Map3ViewController: UIViewController, CLLocationManagerDelegate, UNUserNot
             annotation3.title = "Victim 3"
             annotation3.subtitle = "Whitechapel"
             mapView.addAnnotation(annotation3)
-            
-      let geoFenceRegion:CLCircularRegion = CLCircularRegion(center: location3, radius: 20, identifier: "Victim 3")
-            locationManager.startMonitoring(for: geoFenceRegion)
                  
         }
              
