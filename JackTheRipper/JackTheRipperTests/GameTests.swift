@@ -33,6 +33,13 @@ class GameTests: XCTestCase {
         XCTAssertTrue(game.title == "Junior Detective")
     }
     
+    
+    func testGameTitleLevelsUpToFull() {
+        game.score = 5
+        game.rightAnswer()
+        XCTAssertTrue(game.title == "Full Detective")
+      }
+    
     func testRightAnswerIncerementsScore() {
         game.score = 5
         game.rightAnswer()
@@ -55,15 +62,6 @@ class GameTests: XCTestCase {
         game.wrongAnswer()
         game.rightAnswer()
         XCTAssertTrue(game.score == 6 )
-    }
-
-
-    
-    func testGameTitleLevelsUpToFull() {
-        game.score = 5
-        game.rightAnswer()
-        game.changeTitle()
-        XCTAssertTrue(game.title == "Full Detective")
     }
     
     func testGameScoreDoesNotExceed25() {

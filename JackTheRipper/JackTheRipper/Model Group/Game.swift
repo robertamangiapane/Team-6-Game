@@ -21,18 +21,20 @@ class Game{
         turnMin = 1
         scoreMax = 25
         progress = 0
-        title = "Junior Detective"
+        title = "Novice Detective"
     }
     
     func changeTitle() {
-           if score < 6{
-               title = "Junior Detective"
-           } else if score > 5 && score < 11 {
-               title = "Full Detective"
-           } else if score > 10 && score < 18 {
+        if score < 4 {
+            title = "Novice Detective"
+        } else if score > 3  && score < 9 {
+                title = "Junior Detective"
+        } else if score > 8 && score < 13 {
+            title = "Full Detective"
+           } else if score > 12 && score < 18 {
             title = "Senior Detective"
-           } else if score > 22 {
-               title = "Full Detective"
+        } else if score > 22 {
+            title = "Master Detective"
            }
        }
     
@@ -46,16 +48,16 @@ class Game{
      }
         
     func addToGameScore(){
-         if score <= (25 - turnScore) {
+        if score <= (25 - turnScore) {
             score += turnScore
-         } else {
+        } else {
             score = scoreMax
         }
     }
      
      func rightAnswer() {
         addToGameScore()
-        turnScore = 0
+        turnScore = 5
         changeTitle()
     }
 }

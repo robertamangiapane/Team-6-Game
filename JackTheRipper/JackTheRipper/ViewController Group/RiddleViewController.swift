@@ -15,6 +15,9 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var userAnswer: UITextField!
     @IBOutlet weak var tryAgainLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
+    
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -34,8 +37,9 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
             tryAgainLabel.isHidden = false
                } else {
             riddle.game.rightAnswer()
-            riddle.game.changeTitle()
             tryAgainLabel.text = "right answer"
+            scoreLabel.text = "Score: \(riddle.game.score)"
+            titleLabel.text = "\(riddle.game.title)"
             tryAgainLabel.isHidden = false
 //            insert the link to next page here
                }
