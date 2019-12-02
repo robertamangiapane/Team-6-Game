@@ -31,5 +31,14 @@ class Challenge5ViewControllerTests: XCTestCase {
     func test() {
         XCTAssertTrue(true)
     }
+    
+    func testHasAGuessWhoo() {
+        XCTAssertNotNil(viewController.guessWho)
+    }
+    
+    func testMove1IncrementsScore() {
+        let response = viewController.question(input: "Does he have a beard?")
+        XCTAssertEqual(response, "The suspect did not have a beard.")
+    }
 
 }
