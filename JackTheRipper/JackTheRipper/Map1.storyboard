@@ -10,16 +10,13 @@
         <!--Map1 View Controller-->
         <scene sceneID="PN2-N0-aiE">
             <objects>
-
-                <viewController restorationIdentifier="Map1Controller" storyboardIdentifier="Map1Controller" id="k9k-zb-kT3" customClass="Map1ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
-
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="4cO-nY-Bhw">
+                <viewController id="k9k-zb-kT3" customClass="Map1ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4cO-nY-Bhw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="50F-cD-zPv">
-
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="50F-cD-zPv">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
 
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="2sH-qM-hZy"/>
@@ -62,14 +59,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ex-eX-Plg">
-                                <rect key="frame" x="74" y="264" width="267" height="409"/>
+                                <rect key="frame" x="74" y="737" width="267" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <state key="normal" title="Link to Challenge 1"/>
+                                <state key="normal" title="Continue"/>
                                 <connections>
                                     <segue destination="MPf-ZX-Zam" kind="show" id="NMN-Dx-X5d"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Police Report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNX-SC-m1P">
+                                <rect key="frame" x="95" y="149" width="224" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moZ-iJ-QYP">
+                                <rect key="frame" x="31" y="164" width="363" height="502"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">At approximately 3:45 a.m., Officer Neill made a gruesome discovery of a woman's body. She was examined by local surgeon, Dr. Llewellyn and pronounced dead. His examiniation of the deceased found that her throat was cut down to the vertebrae, as well as several dep cuts to her abdomen. All cuts ran left to right . The wounds suggest the murder was commited with a long-bladed knife and great violence.</string>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="stN-qn-D0H"/>
@@ -78,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DDk-kj-kuO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2076.8115942028985" y="184.82142857142856"/>
+            <point key="canvasLocation" x="2075.36231884058" y="184.82142857142856"/>
         </scene>
         <!--MultipleChoice-->
         <scene sceneID="gzS-2Q-al1">
