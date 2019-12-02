@@ -33,4 +33,8 @@ class GuessWhoTests: XCTestCase {
          XCTAssertTrue(result == "The suspect had a mustache.")
      }
 
+    func testQuestionResponseToGlasses() {
+        let result = guesswho.question(input: "Did he have a glasses?")
+        XCTAssertTrue(result == "The suspect did not wear glasses.")
+        }
 }
