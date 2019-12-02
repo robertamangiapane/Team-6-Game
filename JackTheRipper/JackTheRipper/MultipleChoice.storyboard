@@ -10,7 +10,9 @@
         <!--View Controller-->
         <scene sceneID="vaj-9P-mNt">
             <objects>
-                <viewController storyboardIdentifier="MultipleChoice" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NCk-Yy-ckD" sceneMemberID="viewController">
+
+                <viewController restorationIdentifier="Challenge1Controller" storyboardIdentifier="Challenge1Controller" id="NCk-Yy-ckD" customClass="ChallengeViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
+
                     <view key="view" contentMode="scaleToFill" id="Mu3-aL-aYZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,7 +133,7 @@
         <!--Challenge Wrong Answer View Controller-->
         <scene sceneID="vgL-yJ-riM">
             <objects>
-                <viewController storyboardIdentifier="ChallengeWrongAnswerViewController" id="yFv-pO-5wl" customClass="ChallengeWrongAnswerViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="ChallengeWrongAnswerViewController" storyboardIdentifier="ChallengeWrongAnswerViewController" id="yFv-pO-5wl" customClass="ChallengeWrongAnswerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iBX-Cu-qeR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
