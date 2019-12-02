@@ -11,10 +11,14 @@ import Foundation
 class GuessWho {
     
     func question(input: String) -> String {
-        var words = input.lowercased().split{ !$0.isLetter }
-        var hasABeard = words.contains("beard")
+        let words = input.lowercased().split{ !$0.isLetter }
+        let hasABeard = words.contains("beard")
+        let hasAMustache = words.contains("mustache")
+
         if hasABeard {
             return "The suspect did not have a beard."
+        } else if hasAMustache {
+            return "The suspect had a mustache."
         } else {
             return "The witness isn't sure, try asking them a different question."
         }
