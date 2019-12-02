@@ -50,7 +50,7 @@
                                 <rect key="frame" x="74" y="205" width="266" height="240"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.23376208540000001" green="0.1051767245" blue="0.22756356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="quaternarySystemFillColor" red="0.4549019608" green="0.4549019608" blue="0.50196078430000002" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oYp-xX-jSx" secondAttribute="trailing" constant="74" id="31O-J5-w7b"/>
                             <constraint firstItem="oYp-xX-jSx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="117" id="ayq-LS-xMI"/>
@@ -72,25 +72,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A new message from Scotland Yard: There's been a murder, you need to go to Buck's Street immediately and look for clues" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpV-tO-gNf">
-                                <rect key="frame" x="0.0" y="123" width="401" height="265"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="A ghastly murder has taken place in Whitechapel. You must go to the following location immediately to look for clues!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpV-tO-gNf">
+                                <rect key="frame" x="7" y="262" width="401" height="265"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="265" id="DZV-qU-f6G"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="29"/>
+                                <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvM-hg-ark">
-                                <rect key="frame" x="161" y="685" width="95" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A message from Scotland Yard:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxX-PQ-qtf">
+                                <rect key="frame" x="37" y="213" width="343" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="36"/>
+                                <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvM-hg-ark">
+                                <rect key="frame" x="161" y="723" width="95" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Continue"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="dtW-1i-I70" kind="show" id="uN1-jD-alj"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.1764705882352941" green="0.074509803921568626" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="jpV-tO-gNf" firstAttribute="leading" secondItem="UAV-8T-Iif" secondAttribute="leading" id="1E9-aS-LpG"/>
                             <constraint firstItem="jpV-tO-gNf" firstAttribute="top" secondItem="UAV-8T-Iif" secondAttribute="top" constant="35" id="9uf-d3-DAG"/>
