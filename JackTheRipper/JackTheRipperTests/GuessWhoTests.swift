@@ -17,5 +17,10 @@ class GuessWhoTests: XCTestCase {
         let result = guesswho.question(input: "Did he have a beard")
         XCTAssertTrue(result == "The suspect did not have a beard.")
     }
+    
+    func testResponseToUnknownQuestion() {
+        let result = guesswho.question(input: "Did he have a big nose")
+        XCTAssertTrue(result == "The witness isn't sure, try asking them a different question.")
+    }
 
 }
