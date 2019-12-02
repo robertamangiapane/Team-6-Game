@@ -103,8 +103,12 @@
                     <connections>
                         <outlet property="answerLabel" destination="Uk0-gV-qvi" id="Opy-s8-097"/>
                         <outlet property="nextButton" destination="IEy-bR-XPr" id="Kvq-fl-pi7"/>
+                        <outlet property="rightAnswer" destination="utH-Wq-731" id="oaB-bW-fHN"/>
                         <outlet property="scoreLable" destination="dip-Ut-5HM" id="mBj-si-0fJ"/>
                         <outlet property="titleLabel" destination="pOg-Ia-fQE" id="Nnt-0t-aYh"/>
+                        <outlet property="wrongAnswer1" destination="NNl-tl-TBK" id="LnM-Nt-mYV"/>
+                        <outlet property="wrongAnswer2" destination="f2Q-Mc-3M1" id="fb9-M6-dXF"/>
+                        <outlet property="wrongAnswer3" destination="ngN-pI-udn" id="ZjF-Fd-kMg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XaM-mj-aGn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

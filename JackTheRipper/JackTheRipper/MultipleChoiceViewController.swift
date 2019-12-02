@@ -17,6 +17,12 @@ class MultipleChoiceViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var answerLabel: UILabel!
+    @IBOutlet weak var rightAnswer: UIButton!
+    @IBOutlet weak var wrongAnswer1: UIButton!
+    @IBOutlet weak var wrongAnswer2: UIButton!
+    @IBOutlet weak var wrongAnswer3: UIButton!
+    
+    
     
     
     override func viewDidLoad(){
@@ -39,12 +45,20 @@ class MultipleChoiceViewController: UIViewController {
             answerLabel.text = "Correct!"
             answerLabel.isHidden = false
             nextButton.isHidden = false
+            disableButtons()
         } else {
             title = "Incorrect"
             answerLabel.text = "Incorrect."
             answerLabel.isHidden = false
             game.wrongAnswer()
         }
+    }
+    
+    func disableButtons(){
+        rightAnswer.isUserInteractionEnabled = false
+        wrongAnswer1.isUserInteractionEnabled = false
+        wrongAnswer2.isUserInteractionEnabled = false
+        wrongAnswer3.isUserInteractionEnabled = false
     }
     
     
