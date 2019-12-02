@@ -18,6 +18,8 @@
 		3F801CB4239536BF006AB7D7 /* OverLay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F801CB3239536BF006AB7D7 /* OverLay.swift */; };
 		3F801CB6239536DE006AB7D7 /* WordGridGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F801CB5239536DE006AB7D7 /* WordGridGenerator.swift */; };
 		3F9EDB8D238E81980088E1B9 /* MultipleChoice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9EDB8C238E81980088E1B9 /* MultipleChoice.storyboard */; };
+		3FEAC0C823955D7B00A9E8FC /* GuessWhoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEAC0C723955D7B00A9E8FC /* GuessWhoTests.swift */; };
+		3FEAC0CA23955EC200A9E8FC /* GuessWho.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEAC0C923955EC200A9E8FC /* GuessWho.swift */; };
 		612B5560238E7D22002B168C /* Map2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612B555F238E7D22002B168C /* Map2.storyboard */; };
 		612B5562238E7D48002B168C /* Map2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B5561238E7D48002B168C /* Map2ViewController.swift */; };
 		612B5564238E855C002B168C /* Map3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612B5563238E855C002B168C /* Map3.storyboard */; };
@@ -75,6 +77,8 @@
 		3F801CB3239536BF006AB7D7 /* OverLay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverLay.swift; sourceTree = "<group>"; };
 		3F801CB5239536DE006AB7D7 /* WordGridGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGridGenerator.swift; sourceTree = "<group>"; };
 		3F9EDB8C238E81980088E1B9 /* MultipleChoice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultipleChoice.storyboard; sourceTree = "<group>"; };
+		3FEAC0C723955D7B00A9E8FC /* GuessWhoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessWhoTests.swift; sourceTree = "<group>"; };
+		3FEAC0C923955EC200A9E8FC /* GuessWho.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessWho.swift; sourceTree = "<group>"; };
 		612B555F238E7D22002B168C /* Map2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map2.storyboard; sourceTree = "<group>"; };
 		612B5561238E7D48002B168C /* Map2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map2ViewController.swift; sourceTree = "<group>"; };
 		612B5563238E855C002B168C /* Map3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map3.storyboard; sourceTree = "<group>"; };
@@ -162,12 +166,6 @@
 				3F801CB12395369E006AB7D7 /* Line.swift */,
 				3F801CB3239536BF006AB7D7 /* OverLay.swift */,
 				3F801CB5239536DE006AB7D7 /* WordGridGenerator.swift */,
-				7250F0C0238D82E000DF02FF /* AppDelegate.swift */,
-				7250F0C2238D82E000DF02FF /* SceneDelegate.swift */,
-				721FC1FD238EF2C60026E35E /* IntroViewController.swift */,
-				7250F0C4238D82E000DF02FF /* ViewController.swift */,
-				7250F0C6238D82E000DF02FF /* Main.storyboard */,
-				7250F0C9238D82E000DF02FF /* Assets.xcassets */,
 				7250F0CB238D82E000DF02FF /* LaunchScreen.storyboard */,
 				7250F0C6238D82E000DF02FF /* Main.storyboard */,
 				AFB9FF88238D8F2C001381C5 /* Map1.storyboard */,
@@ -176,7 +174,6 @@
 				AFB9FF922390336F001381C5 /* Riddle.storyboard */,
 				612B5563238E855C002B168C /* Map3.storyboard */,
 				3F801CAD23953334006AB7D7 /* Challenge3.storyboard */,
-				612B5569238E8905002B168C /* Map4ViewController.swift */,
 				612B5567238E88E3002B168C /* Map4.storyboard */,
 				613406D123916862002BE64A /* Challenge4.storyboard */,
 				612B556B238E8AF2002B168C /* Map5.storyboard */,
@@ -195,6 +192,7 @@
 				7250F0C2238D82E000DF02FF /* SceneDelegate.swift */,
 				7250F0C9238D82E000DF02FF /* Assets.xcassets */,
 				7250F0CE238D82E000DF02FF /* Info.plist */,
+				3FEAC0C923955EC200A9E8FC /* GuessWho.swift */,
 			);
 			path = JackTheRipper;
 			sourceTree = "<group>";
@@ -209,6 +207,7 @@
 				3F5E52F223903A15003A2D2B /* RiddleTests.swift */,
 				721FC1F3238EF0070026E35E /* ViewControllerTests.swift */,
 				721FC1FB238EF2B20026E35E /* IntroViewControllerTests.swift */,
+				3FEAC0C723955D7B00A9E8FC /* GuessWhoTests.swift */,
 			);
 			path = JackTheRipperTests;
 			sourceTree = "<group>";
@@ -373,6 +372,7 @@
 				AFB9FF8F239032A0001381C5 /* Riddle.swift in Sources */,
 				3F801CB023953564006AB7D7 /* MyCollectionViewCell.swift in Sources */,
 				3F801CB22395369E006AB7D7 /* Line.swift in Sources */,
+				3FEAC0CA23955EC200A9E8FC /* GuessWho.swift in Sources */,
 				3F801CB4239536BF006AB7D7 /* OverLay.swift in Sources */,
 				612B556A238E8905002B168C /* Map4ViewController.swift in Sources */,
 				7250F0C3238D82E000DF02FF /* SceneDelegate.swift in Sources */,
@@ -391,6 +391,7 @@
 				3F5E52F323903A15003A2D2B /* RiddleTests.swift in Sources */,
 				721FC1F4238EF0070026E35E /* ViewControllerTests.swift in Sources */,
 				7250F0D8238D82E000DF02FF /* JackTheRipperTests.swift in Sources */,
+				3FEAC0C823955D7B00A9E8FC /* GuessWhoTests.swift in Sources */,
 				3F41C2F8238D8F2B00A58B2E /* GameTests.swift in Sources */,
 				721FC1FC238EF2B20026E35E /* IntroViewControllerTests.swift in Sources */,
 			);
