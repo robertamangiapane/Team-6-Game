@@ -30,7 +30,7 @@ class GameTests: XCTestCase {
     }
     
     func testGameTitleStartsAtJunior() {
-        XCTAssertTrue(game.title == "Junior Detective")
+        XCTAssertTrue(game.title == "Novice Detective")
     }
     
     
