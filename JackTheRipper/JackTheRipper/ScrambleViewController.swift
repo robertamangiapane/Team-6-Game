@@ -126,7 +126,7 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.width
-        return CGSize(width: width/3, height: width/3)
+        return CGSize(width: width/3, height: width/6)
     }
     
     func setupViews() {

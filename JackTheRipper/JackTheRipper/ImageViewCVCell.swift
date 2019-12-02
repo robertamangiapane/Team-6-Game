@@ -43,7 +43,7 @@ class ImageViewCVCell: UICollectionViewCell {
         let imgView: UIImageView = {
             let v=UIImageView()
             v.image = #imageLiteral(resourceName: "220px-FromHellLetter")
-            v.contentMode = .scaleAspectFit
+            v.contentMode = .scaleToFill
             v.translatesAutoresizingMaskIntoConstraints=false
             return v
         }()
@@ -61,3 +61,4 @@ class ImageViewCVCell: UICollectionViewCell {
             fatalError("init(coder:) has not been implemented")
         }
     }
+
