@@ -10,11 +10,14 @@ import MapKit
 import UIKit
 import UserNotifications
 
-class Map3ViewController: UIViewController, CLLocationManagerDelegate, UNUserNotificationCenterDelegate {
-    
-    fileprivate let locationManager:CLLocationManager = CLLocationManager()
+class Map3ViewController: MapViewController{
 
     override func viewDidLoad() {
+        
+        locationManager.stopMonitoring(for: geoFenceRegion1)
+        locationManager.stopMonitoring(for: geoFenceRegion2)
+        locationManager.startMonitoring(for: geoFenceRegion3)
+        
            super.viewDidLoad()
            // Do any additional setup after loading the view.
         
@@ -38,8 +41,8 @@ class Map3ViewController: UIViewController, CLLocationManagerDelegate, UNUserNot
                          
             let annotation1 = MKPointAnnotation()
             annotation1.coordinate = location1
-            annotation1.title = "Victim 1"
-            annotation1.subtitle = "Whitechapel"
+            annotation1.title = "Mary Ann Nichols"
+            annotation1.subtitle = "31/08/1888"
             mapView.addAnnotation(annotation1)
         
             
@@ -48,8 +51,8 @@ class Map3ViewController: UIViewController, CLLocationManagerDelegate, UNUserNot
             
             let annotation2 = MKPointAnnotation()
             annotation2.coordinate = location2
-            annotation2.title = "Victim 2"
-            annotation2.subtitle = "Spitalfields"
+            annotation2.title = "Annie Chapman"
+            annotation2.subtitle = "08/09/1888"
             mapView.addAnnotation(annotation2)
         
             
@@ -61,9 +64,6 @@ class Map3ViewController: UIViewController, CLLocationManagerDelegate, UNUserNot
             annotation3.title = "Victim 3"
             annotation3.subtitle = "Whitechapel"
             mapView.addAnnotation(annotation3)
-            
-      let geoFenceRegion:CLCircularRegion = CLCircularRegion(center: location3, radius: 20, identifier: "Victim 3")
-            locationManager.startMonitoring(for: geoFenceRegion)
                  
         }
              

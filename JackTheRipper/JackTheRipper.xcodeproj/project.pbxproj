@@ -35,6 +35,7 @@
 		612B556E238E8B01002B168C /* Map5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B556D238E8B01002B168C /* Map5ViewController.swift */; };
 		613406D223916862002BE64A /* Challenge4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613406D123916862002BE64A /* Challenge4.storyboard */; };
 		613406D423916A08002BE64A /* Challenge5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613406D323916A08002BE64A /* Challenge5.storyboard */; };
+		61FC7AB123958D2C00790744 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC7AB023958D2C00790744 /* MapViewController.swift */; };
 		721FC1F4238EF0070026E35E /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FC1F3238EF0070026E35E /* ViewControllerTests.swift */; };
 		721FC1FC238EF2B20026E35E /* IntroViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FC1FB238EF2B20026E35E /* IntroViewControllerTests.swift */; };
 		721FC1FE238EF2C60026E35E /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FC1FD238EF2C60026E35E /* IntroViewController.swift */; };
@@ -100,6 +101,7 @@
 		612B556D238E8B01002B168C /* Map5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map5ViewController.swift; sourceTree = "<group>"; };
 		613406D123916862002BE64A /* Challenge4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Challenge4.storyboard; sourceTree = "<group>"; };
 		613406D323916A08002BE64A /* Challenge5.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Challenge5.storyboard; sourceTree = "<group>"; };
+		61FC7AB023958D2C00790744 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		721FC1F3238EF0070026E35E /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		721FC1FB238EF2B20026E35E /* IntroViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewControllerTests.swift; sourceTree = "<group>"; };
 		721FC1FD238EF2C60026E35E /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				613406D323916A08002BE64A /* Challenge5.storyboard */,
 				7250F0C4238D82E000DF02FF /* ViewController.swift */,
 				721FC1FD238EF2C60026E35E /* IntroViewController.swift */,
+				61FC7AB023958D2C00790744 /* MapViewController.swift */,
 				AFB9FF86238D8976001381C5 /* Map1ViewController.swift */,
 				612B5561238E7D48002B168C /* Map2ViewController.swift */,
 				AFB9FF9023903328001381C5 /* RiddleViewController.swift */,
@@ -398,6 +401,7 @@
 				72265F55239560E900C0912C /* MultipleChoiceViewController.swift in Sources */,
 				612B556A238E8905002B168C /* Map4ViewController.swift in Sources */,
 				7250F0C3238D82E000DF02FF /* SceneDelegate.swift in Sources */,
+				61FC7AB123958D2C00790744 /* MapViewController.swift in Sources */,
 				612B5566238E8573002B168C /* Map3ViewController.swift in Sources */,
 				3F41C2F6238D8F0D00A58B2E /* Game.swift in Sources */,
 				3F41C320239565DE00A58B2E /* ImageViewCVCell.swift in Sources */,

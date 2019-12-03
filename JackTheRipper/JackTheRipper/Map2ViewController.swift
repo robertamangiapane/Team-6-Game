@@ -10,11 +10,13 @@ import MapKit
 import UIKit
 import UserNotifications
 
-class Map2ViewController:  UIViewController, CLLocationManagerDelegate, UNUserNotificationCenterDelegate {
-    
-    fileprivate let locationManager:CLLocationManager = CLLocationManager()
+class Map2ViewController: MapViewController {
 
     override func viewDidLoad() {
+        
+        locationManager.stopMonitoring(for: geoFenceRegion1)
+        locationManager.startMonitoring(for: geoFenceRegion2)
+        
            super.viewDidLoad()
            // Do any additional setup after loading the view.
        
@@ -23,6 +25,7 @@ class Map2ViewController:  UIViewController, CLLocationManagerDelegate, UNUserNo
        locationManager.desiredAccuracy = kCLLocationAccuracyBest
        locationManager.distanceFilter = kCLDistanceFilterNone
        locationManager.startUpdatingLocation()
+        
        mapView.showsUserLocation = true
         
             let centerlocation = CLLocationCoordinate2D(latitude: 51.517762,
@@ -37,8 +40,8 @@ class Map2ViewController:  UIViewController, CLLocationManagerDelegate, UNUserNo
                          
             let annotation1 = MKPointAnnotation()
             annotation1.coordinate = location1
-            annotation1.title = "Victim 1"
-            annotation1.subtitle = "Whitechapel"
+            annotation1.title = "Mary Ann Nichols"
+            annotation1.subtitle = "31/08/1888"
             mapView.addAnnotation(annotation1)
         
             
@@ -50,9 +53,6 @@ class Map2ViewController:  UIViewController, CLLocationManagerDelegate, UNUserNo
             annotation2.title = "Victim 2"
             annotation2.subtitle = "Spitalfields"
             mapView.addAnnotation(annotation2)
-            
-           let geoFenceRegion:CLCircularRegion = CLCircularRegion(center: location2, radius: 20, identifier: "Victim 2")
-                 locationManager.startMonitoring(for: geoFenceRegion)
              
              }
          

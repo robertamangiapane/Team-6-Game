@@ -10,11 +10,16 @@ import MapKit
 import UIKit
 import UserNotifications
 
-class Map5ViewController: UIViewController, CLLocationManagerDelegate, UNUserNotificationCenterDelegate {
-    
-    fileprivate let locationManager:CLLocationManager = CLLocationManager()
+class Map5ViewController: MapViewController {
 
     override func viewDidLoad() {
+        
+        locationManager.stopMonitoring(for: geoFenceRegion1)
+        locationManager.stopMonitoring(for: geoFenceRegion2)
+        locationManager.stopMonitoring(for: geoFenceRegion3)
+        locationManager.stopMonitoring(for: geoFenceRegion4)
+        locationManager.startMonitoring(for: geoFenceRegion5)
+        
            super.viewDidLoad()
            // Do any additional setup after loading the view.
         
@@ -38,8 +43,8 @@ class Map5ViewController: UIViewController, CLLocationManagerDelegate, UNUserNot
                          
             let annotation1 = MKPointAnnotation()
             annotation1.coordinate = location1
-            annotation1.title = "Victim 1"
-            annotation1.subtitle = "Whitechapel"
+            annotation1.title = "Mary Ann Nichols"
+            annotation1.subtitle = "31/08/1888"
             mapView.addAnnotation(annotation1)
         
             
@@ -48,8 +53,8 @@ class Map5ViewController: UIViewController, CLLocationManagerDelegate, UNUserNot
             
             let annotation2 = MKPointAnnotation()
             annotation2.coordinate = location2
-            annotation2.title = "Victim 2"
-            annotation2.subtitle = "Spitalfields"
+            annotation2.title = "Annie Chapman"
+            annotation2.subtitle = "08/09/1888"
             mapView.addAnnotation(annotation2)
         
             
@@ -58,8 +63,8 @@ class Map5ViewController: UIViewController, CLLocationManagerDelegate, UNUserNot
             
             let annotation3 = MKPointAnnotation()
             annotation3.coordinate = location3
-            annotation3.title = "Victim 3"
-            annotation3.subtitle = "Whitechapel"
+            annotation3.title = "Elizabeth Stride"
+            annotation3.subtitle = "30/09/1888"
             mapView.addAnnotation(annotation3)
         
         
@@ -68,8 +73,8 @@ class Map5ViewController: UIViewController, CLLocationManagerDelegate, UNUserNot
             
             let annotation4 = MKPointAnnotation()
             annotation4.coordinate = location4
-            annotation4.title = "Victim 4"
-            annotation4.subtitle = "Aldgate"
+            annotation4.title = "Catherine Eddowes"
+            annotation4.subtitle = "30/09/1888"
             mapView.addAnnotation(annotation4)
             
         
@@ -81,9 +86,6 @@ class Map5ViewController: UIViewController, CLLocationManagerDelegate, UNUserNot
             annotation5.title = "Victim 5"
             annotation5.subtitle = "Spitalfields"
             mapView.addAnnotation(annotation5)
-        
-            let geoFenceRegion:CLCircularRegion = CLCircularRegion(center: location5, radius: 20, identifier: "Victim 5")
-            locationManager.startMonitoring(for: geoFenceRegion)
                      
             }
                  

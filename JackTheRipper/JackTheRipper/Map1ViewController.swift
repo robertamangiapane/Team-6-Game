@@ -5,15 +5,17 @@
 //  Created by Heli Sivunen on 26/11/2019.
 //  Copyright © 2019 Team6. All rights reserved.
 //
+
 import MapKit
 import UIKit
 import UserNotifications
 
-class Map1ViewController: UIViewController, CLLocationManagerDelegate, UNUserNotificationCenterDelegate {
-    
-    fileprivate let locationManager:CLLocationManager = CLLocationManager()
+class Map1ViewController: MapViewController {
 
      override func viewDidLoad() {
+        
+        locationManager.startMonitoring(for: geoFenceRegion1)
+        
             super.viewDidLoad()
             // Do any additional setup after loading the view.
         
@@ -40,9 +42,6 @@ class Map1ViewController: UIViewController, CLLocationManagerDelegate, UNUserNot
             annotation1.title = "Victim 1"
             annotation1.subtitle = "Whitechapel"
             mapView.addAnnotation(annotation1)
-
-            let geoFenceRegion:CLCircularRegion = CLCircularRegion(center: location1, radius: 20, identifier: "Victim 1")
-            locationManager.startMonitoring(for: geoFenceRegion)
         
         }
     
