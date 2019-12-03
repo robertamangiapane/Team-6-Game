@@ -12,12 +12,18 @@ import UserNotifications
 
 class Map2ViewController:  UIViewController, CLLocationManagerDelegate, UNUserNotificationCenterDelegate {
     
+    @IBOutlet weak var scoreLabel: UILabel!
+    var score: Int? = nil
+    let game = Game()
+    
     fileprivate let locationManager:CLLocationManager = CLLocationManager()
 
     override func viewDidLoad() {
            super.viewDidLoad()
            // Do any additional setup after loading the view.
        
+        game.score = score ?? 0
+        scoreLabel.text = "\(game.score)"
        locationManager.delegate = self
        locationManager.requestWhenInUseAuthorization()
        locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -75,6 +81,9 @@ class Map2ViewController:  UIViewController, CLLocationManagerDelegate, UNUserNo
 
     @IBOutlet weak var mapView: MKMapView!
     
-    
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let Info2ViewController = segue.destination as? Info2ViewController {
+                Info2ViewController.score = game.score
+        }
+      }
     }

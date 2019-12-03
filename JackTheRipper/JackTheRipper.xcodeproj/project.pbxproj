@@ -41,6 +41,7 @@
 		7250F0D8238D82E000DF02FF /* JackTheRipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0D7238D82E000DF02FF /* JackTheRipperTests.swift */; };
 		7250F0E3238D82E000DF02FF /* JackTheRipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0E2238D82E000DF02FF /* JackTheRipperUITests.swift */; };
 		AF45A2E523968A6400C1D466 /* Congratulations1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF45A2E423968A6400C1D466 /* Congratulations1ViewController.swift */; };
+		AF45A2E723969BEF00C1D466 /* Info2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF45A2E623969BEF00C1D466 /* Info2ViewController.swift */; };
 		AFB9FF87238D8976001381C5 /* Map1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB9FF86238D8976001381C5 /* Map1ViewController.swift */; };
 		AFB9FF89238D8F2C001381C5 /* Map1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB9FF88238D8F2C001381C5 /* Map1.storyboard */; };
 		AFB9FF8F239032A0001381C5 /* Riddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB9FF8E239032A0001381C5 /* Riddle.swift */; };
@@ -106,6 +107,7 @@
 		7250F0E2238D82E000DF02FF /* JackTheRipperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JackTheRipperUITests.swift; sourceTree = "<group>"; };
 		7250F0E4238D82E000DF02FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF45A2E423968A6400C1D466 /* Congratulations1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Congratulations1ViewController.swift; sourceTree = "<group>"; };
+		AF45A2E623969BEF00C1D466 /* Info2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info2ViewController.swift; sourceTree = "<group>"; };
 		AFB9FF86238D8976001381C5 /* Map1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map1ViewController.swift; sourceTree = "<group>"; };
 		AFB9FF88238D8F2C001381C5 /* Map1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map1.storyboard; sourceTree = "<group>"; };
 		AFB9FF8E239032A0001381C5 /* Riddle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Riddle.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				3F9EDB8C238E81980088E1B9 /* MultipleChoice.storyboard */,
 				AF45A2E423968A6400C1D466 /* Congratulations1ViewController.swift */,
 				612B555F238E7D22002B168C /* Map2.storyboard */,
+				AF45A2E623969BEF00C1D466 /* Info2ViewController.swift */,
 				AFB9FF922390336F001381C5 /* Riddle.storyboard */,
 				612B5563238E855C002B168C /* Map3.storyboard */,
 				3F801CAD23953334006AB7D7 /* Challenge3.storyboard */,
@@ -375,6 +378,7 @@
 				3F801CB4239536BF006AB7D7 /* OverLay.swift in Sources */,
 				72265F55239560E900C0912C /* MultipleChoiceViewController.swift in Sources */,
 				AF45A2E523968A6400C1D466 /* Congratulations1ViewController.swift in Sources */,
+				AF45A2E723969BEF00C1D466 /* Info2ViewController.swift in Sources */,
 				612B556A238E8905002B168C /* Map4ViewController.swift in Sources */,
 				7250F0C3238D82E000DF02FF /* SceneDelegate.swift in Sources */,
 				612B5566238E8573002B168C /* Map3ViewController.swift in Sources */,
