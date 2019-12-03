@@ -9,11 +9,30 @@
 import Foundation
 import UIKit
 
+public extension UIAlertController {
+
+    func setMessageAlignment(_ alignment : NSTextAlignment) {
+        let paragraphStyle = NSParagraphStyle.default.mutableCopy() as! NSMutableParagraphStyle
+        paragraphStyle.alignment = alignment
+
+        let messageText = NSMutableAttributedString(
+            string: self.message ?? "",
+            attributes: [
+                NSAttributedString.Key.paragraphStyle: paragraphStyle,
+                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12),
+                NSAttributedString.Key.foregroundColor: UIColor.gray
+            ]
+        )
+
+        self.setValue(messageText, forKey: "attributedMessage")
+    }
+}
+
 class ScrambleViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
         
-    let questionImageArray = [#imageLiteral(resourceName: "12"), #imageLiteral(resourceName: "11"), #imageLiteral(resourceName: "10"), #imageLiteral(resourceName: "9"), #imageLiteral(resourceName: "8"), #imageLiteral(resourceName: "7"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "5"), #imageLiteral(resourceName: "4"), #imageLiteral(resourceName: "3"), #imageLiteral(resourceName: "2"), #imageLiteral(resourceName: "1")]
-    let correctAns = [0,1,2,3,4,5,6,7,8,9,10,11,12]
-    var wrongAns = Array(0..<13)
+    let questionImageArray = [#imageLiteral(resourceName: "7"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "10"), #imageLiteral(resourceName: "11"), #imageLiteral(resourceName: "12"), #imageLiteral(resourceName: "1"), #imageLiteral(resourceName: "3"), #imageLiteral(resourceName: "5"), #imageLiteral(resourceName: "4"), #imageLiteral(resourceName: "8"), #imageLiteral(resourceName: "9"), #imageLiteral(resourceName: "2")]
+    let correctAns = [4,3,2,10,9,0,1,7,8,6,11,5]
+    var wrongAns = Array(0..<12)
     var wrongImageArray=[UIImage]()
     var undoMovesArray = [(first: IndexPath, second: IndexPath)]()
     var numberOfMoves = 0
@@ -29,6 +48,8 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
         wrongImageArray = questionImageArray
         setupViews()
     }
+    
+    
     
     @objc func btnSwapAction() {
         guard let start = firstIndexPath, let end = secondIndexPath else { return }
@@ -48,28 +69,15 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
             self.numberOfMoves += 1
             self.lblMoves.text = "Moves: \(self.numberOfMoves)"
             if self.wrongAns == self.correctAns {
-                let alert=UIAlertController(title: "You Won!", message: "Congratulations 👍", preferredStyle: .alert)
+                let alert=UIAlertController(title: "Success! The message becomes clear:", message: "From hell.\nMr Lusk,\nSir\nI send you half the Kidne I took from one women preserved it for you tother piece I fried and ate it was very nice. I may send you the bloody knife that took it out if you only wate a while longer.\nSigned\nCatch me when you can Mishter Lusk", preferredStyle: .alert)
+                alert.setMessageAlignment(.left)
                 let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-                let restartAction = UIAlertAction(title: "Restart", style: .default, handler: { (action) in
-                    self.restartGame()
-                })
                 alert.addAction(okAction)
-                alert.addAction(restartAction)
                 self.present(alert, animated: true, completion: nil)
             }
         }
     }
     
-    func restartGame() {
-        self.undoMovesArray.removeAll()
-        wrongAns = Array(0..<9)
-        wrongImageArray = questionImageArray
-        firstIndexPath = nil
-        secondIndexPath = nil
-        self.numberOfMoves = 0
-        self.lblMoves.text = "Moves: \(numberOfMoves)"
-        self.myCollectionView.reloadData()
-    }
     
     @objc func btnUndoAction() {
         if undoMovesArray.count == 0 {
