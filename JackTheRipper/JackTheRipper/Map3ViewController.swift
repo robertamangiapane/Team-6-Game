@@ -13,6 +13,11 @@ import UserNotifications
 class Map3ViewController: MapViewController{
 
     override func viewDidLoad() {
+        
+        locationManager.stopMonitoring(for: geoFenceRegion1)
+        locationManager.stopMonitoring(for: geoFenceRegion2)
+        locationManager.startMonitoring(for: geoFenceRegion3)
+        
            super.viewDidLoad()
            // Do any additional setup after loading the view.
         

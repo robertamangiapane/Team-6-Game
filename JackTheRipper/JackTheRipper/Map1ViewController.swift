@@ -5,6 +5,7 @@
 //  Created by Heli Sivunen on 26/11/2019.
 //  Copyright © 2019 Team6. All rights reserved.
 //
+
 import MapKit
 import UIKit
 import UserNotifications
@@ -12,6 +13,9 @@ import UserNotifications
 class Map1ViewController: MapViewController {
 
      override func viewDidLoad() {
+        
+        locationManager.startMonitoring(for: geoFenceRegion1)
+        
             super.viewDidLoad()
             // Do any additional setup after loading the view.
         

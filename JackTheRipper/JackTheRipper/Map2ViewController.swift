@@ -10,9 +10,13 @@ import MapKit
 import UIKit
 import UserNotifications
 
-class Map2ViewController:  MapViewController {
+class Map2ViewController: MapViewController {
 
     override func viewDidLoad() {
+        
+        locationManager.stopMonitoring(for: geoFenceRegion1)
+        locationManager.startMonitoring(for: geoFenceRegion2)
+        
            super.viewDidLoad()
            // Do any additional setup after loading the view.
        
@@ -21,6 +25,7 @@ class Map2ViewController:  MapViewController {
        locationManager.desiredAccuracy = kCLLocationAccuracyBest
        locationManager.distanceFilter = kCLDistanceFilterNone
        locationManager.startUpdatingLocation()
+        
        mapView.showsUserLocation = true
         
             let centerlocation = CLLocationCoordinate2D(latitude: 51.517762,
