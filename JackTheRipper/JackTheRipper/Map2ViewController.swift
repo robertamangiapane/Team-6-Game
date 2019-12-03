@@ -14,7 +14,7 @@ class Map2ViewController:  UIViewController, CLLocationManagerDelegate, UNUserNo
     
     @IBOutlet weak var scoreLabel: UILabel!
     var score: Int? = nil
-    let game = Game()
+    var game : Game?
     
     fileprivate let locationManager:CLLocationManager = CLLocationManager()
 
@@ -22,8 +22,8 @@ class Map2ViewController:  UIViewController, CLLocationManagerDelegate, UNUserNo
            super.viewDidLoad()
            // Do any additional setup after loading the view.
        
-        game.score = score ?? 0
-        scoreLabel.text = "\(game.score)"
+        game?.score = score ?? 0
+        scoreLabel.text = "\(game?.score)"
        locationManager.delegate = self
        locationManager.requestWhenInUseAuthorization()
        locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -83,7 +83,7 @@ class Map2ViewController:  UIViewController, CLLocationManagerDelegate, UNUserNo
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if let Info2ViewController = segue.destination as? Info2ViewController {
-                Info2ViewController.score = game.score
+                Info2ViewController.score = game?.score
         }
       }
     }

@@ -91,7 +91,7 @@
         <!--Congrats2-->
         <scene sceneID="NLh-Ae-gX4">
             <objects>
-                <viewController title="Congrats2" id="68D-9H-NKI" sceneMemberID="viewController">
+                <viewController title="Congrats2" id="68D-9H-NKI" customClass="Congrats2ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zc2-3d-NAs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -37,12 +37,6 @@ class MultipleChoiceViewControllerTests: XCTestCase {
     func testThereIsWrongAnswerButtons() {
     XCTAssertNotNil(MCViewController.wrongAnswer1)
        }
-    
-
-  
-    
-
-
 }
 
 

@@ -62,5 +62,11 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
         checkAnswer(answer: answer.lowercased())
         return true
     }
-}
+//    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//            if let Map3ViewController = segue.destination as? Map3ViewController {
+//                Map3ViewController.score = riddle.game.score
+//           }
+//         }
+//}
 

@@ -180,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tFZ-Cs-PxC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5457.971014492754" y="-668.30357142857144"/>
+            <point key="canvasLocation" x="546" y="-893"/>
         </scene>
         <!--Map2-->
         <scene sceneID="CwV-SC-VmZ">
@@ -191,31 +191,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e6V-mu-7x7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="445" y="-488"/>
-        </scene>
-        <!--Challenge Wrong Answer View Controller-->
-        <scene sceneID="vgL-yJ-riM">
-            <objects>
-                <viewController restorationIdentifier="ChallengeWrongAnswerViewController" storyboardIdentifier="ChallengeWrongAnswerViewController" id="yFv-pO-5wl" customClass="ChallengeWrongAnswerViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iBX-Cu-qeR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wrong Answer" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEP-eB-uC1">
-                                <rect key="frame" x="51" y="412" width="313" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.27959836515680431" green="0.12538310295975502" blue="0.28896318534766841" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="eTk-oV-6ha"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="zQv-Xo-ONm"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GKt-xB-Ov9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1202.8985507246377" y="-107.14285714285714"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
