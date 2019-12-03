@@ -58,6 +58,7 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
         if sender == Suspect1 {
             wrongAnswer.isHidden = true
             CorrectButton.isHidden = false
+            userQuestion.isEnabled = false
         } else {
             wrongAnswer.isHidden = false
         }
