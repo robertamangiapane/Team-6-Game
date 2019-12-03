@@ -118,7 +118,7 @@
         <!--Congratulations1-->
         <scene sceneID="KaH-EI-qPW">
             <objects>
-                <viewController title="Congratulations1" id="pas-u7-d02" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Congratulations1ViewController" title="Congratulations1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pas-u7-d02" customClass="Congratulations1ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5OL-iM-nFW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,15 +155,32 @@
                                 <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="291-vC-CDD">
+                                <rect key="frame" x="94" y="67" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FC3-ar-47J" colorLabel="IBBuiltInLabel-Red">
+                                <rect key="frame" x="105" y="67" width="246" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="AOt-fi-Dk1"/>
                     </view>
                     <navigationItem key="navigationItem" id="gKE-Hp-xoY"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="FC3-ar-47J" id="hEk-TP-5En"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tFZ-Cs-PxC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-242.0289855072464" y="-714.50892857142856"/>
+            <point key="canvasLocation" x="5457.971014492754" y="-668.30357142857144"/>
         </scene>
         <!--Map2-->
         <scene sceneID="CwV-SC-VmZ">

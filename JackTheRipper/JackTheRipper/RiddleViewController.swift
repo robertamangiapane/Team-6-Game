@@ -19,10 +19,12 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     
+    var score: Int? = nil
     
     override func viewDidLoad(){
         super.viewDidLoad()
         
+        riddle.game.score = score ?? 4
         userAnswer.placeholder = "Enter your answer here"
         tryAgainLabel.isHidden = true
         toCongrats2.isHidden = true

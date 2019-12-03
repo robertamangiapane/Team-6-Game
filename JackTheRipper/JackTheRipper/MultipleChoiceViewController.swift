@@ -61,5 +61,9 @@ class MultipleChoiceViewController: UIViewController {
         wrongAnswer3.isUserInteractionEnabled = false
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let Congratulations1ViewController = segue.destination as? Congratulations1ViewController {
+            Congratulations1ViewController.score = game.score
+        }
+    }
 }
