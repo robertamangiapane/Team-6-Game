@@ -41,8 +41,8 @@ class Map3ViewController: MapViewController{
                          
             let annotation1 = MKPointAnnotation()
             annotation1.coordinate = location1
-            annotation1.title = "Victim 1"
-            annotation1.subtitle = "Whitechapel"
+            annotation1.title = "Mary Ann Nichols"
+            annotation1.subtitle = "31/08/1888"
             mapView.addAnnotation(annotation1)
         
             
@@ -51,8 +51,8 @@ class Map3ViewController: MapViewController{
             
             let annotation2 = MKPointAnnotation()
             annotation2.coordinate = location2
-            annotation2.title = "Victim 2"
-            annotation2.subtitle = "Spitalfields"
+            annotation2.title = "Annie Chapman"
+            annotation2.subtitle = "08/09/1888"
             mapView.addAnnotation(annotation2)
         
             

@@ -40,8 +40,8 @@ class Map2ViewController: MapViewController {
                          
             let annotation1 = MKPointAnnotation()
             annotation1.coordinate = location1
-            annotation1.title = "Victim 1"
-            annotation1.subtitle = "Whitechapel"
+            annotation1.title = "Mary Ann Nichols"
+            annotation1.subtitle = "31/08/1888"
             mapView.addAnnotation(annotation1)
         
             

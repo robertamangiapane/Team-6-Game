@@ -43,8 +43,8 @@ class Map5ViewController: MapViewController {
                          
             let annotation1 = MKPointAnnotation()
             annotation1.coordinate = location1
-            annotation1.title = "Victim 1"
-            annotation1.subtitle = "Whitechapel"
+            annotation1.title = "Mary Ann Nichols"
+            annotation1.subtitle = "31/08/1888"
             mapView.addAnnotation(annotation1)
         
             
@@ -53,8 +53,8 @@ class Map5ViewController: MapViewController {
             
             let annotation2 = MKPointAnnotation()
             annotation2.coordinate = location2
-            annotation2.title = "Victim 2"
-            annotation2.subtitle = "Spitalfields"
+            annotation2.title = "Annie Chapman"
+            annotation2.subtitle = "08/09/1888"
             mapView.addAnnotation(annotation2)
         
             
@@ -63,8 +63,8 @@ class Map5ViewController: MapViewController {
             
             let annotation3 = MKPointAnnotation()
             annotation3.coordinate = location3
-            annotation3.title = "Victim 3"
-            annotation3.subtitle = "Whitechapel"
+            annotation3.title = "Elizabeth Stride"
+            annotation3.subtitle = "30/09/1888"
             mapView.addAnnotation(annotation3)
         
         
@@ -73,8 +73,8 @@ class Map5ViewController: MapViewController {
             
             let annotation4 = MKPointAnnotation()
             annotation4.coordinate = location4
-            annotation4.title = "Victim 4"
-            annotation4.subtitle = "Aldgate"
+            annotation4.title = "Catherine Eddowes"
+            annotation4.subtitle = "30/09/1888"
             mapView.addAnnotation(annotation4)
             
         
