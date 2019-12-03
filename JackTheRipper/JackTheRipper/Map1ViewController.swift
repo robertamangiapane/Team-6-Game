@@ -52,7 +52,7 @@ class Map1ViewController: UIViewController, CLLocationManagerDelegate, UNUserNot
         
     func crimescene1entered() {
         
-        let alert = UIAlertController(title: "You arrive at the crimescene", message: "On the floor lays the bloody corpse of a young woman", preferredStyle: .alert)
+        let alert = UIAlertController(title: "You arrive at the crimescene", message: "PC Neill discovered the body of Mary Ann Nicholls in the early hours of August 31, 1888.", preferredStyle: .alert)
         let action = UIAlertAction(title: "Investigate the area for clues", style: .default) { (action) -> Void in
             let viewControllerYouWantToPresent = self.storyboard?.instantiateViewController(withIdentifier: "ChallengeLink")
             self.present(viewControllerYouWantToPresent!, animated: true, completion: nil)

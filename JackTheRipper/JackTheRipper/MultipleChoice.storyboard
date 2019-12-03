@@ -7,88 +7,109 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Multiple Choice View Controller-->
         <scene sceneID="vaj-9P-mNt">
             <objects>
-
-                <viewController restorationIdentifier="Challenge1Controller" storyboardIdentifier="Challenge1Controller" id="NCk-Yy-ckD" customClass="ChallengeViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
-
-                    <view key="view" contentMode="scaleToFill" id="Mu3-aL-aYZ">
+                <viewController storyboardIdentifier="MultipleChoiceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NCk-Yy-ckD" customClass="MultipleChoiceViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mu3-aL-aYZ" customClass="MultipleChoice">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MultipleChoice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ije-0y-FZz">
-                                <rect key="frame" x="81" y="143" width="258" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" red="0.52204710249999997" green="0.1457915306" blue="0.30193710330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Does the evidence suggest that the murder was committed by..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="va7-4N-pUq">
-                                <rect key="frame" x="15" y="248" width="391" height="88"/>
+                                <rect key="frame" x="15" y="182" width="391" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dQm-9a-mMT">
                                 <rect key="frame" x="32" y="367" width="357" height="495"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNm-yX-n7i">
-                                        <rect key="frame" x="32" y="30" width="293" height="76"/>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNl-tl-TBK">
+                                        <rect key="frame" x="95" y="105" width="167" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.48767006397247314" green="0.14638921618461609" blue="0.32460141181945801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="A left-handed person">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
+                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="A right-handed person"/>
                                         <connections>
-                                            <segue destination="pas-u7-d02" kind="show" id="B5M-cn-1uL"/>
+                                            <action selector="buttonTapped:" destination="NCk-Yy-ckD" eventType="touchUpInside" id="A3x-wZ-YxB"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nw-Mk-WBf">
-                                        <rect key="frame" x="30" y="247" width="295" height="76"/>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2Q-Mc-3M1">
+                                        <rect key="frame" x="95" y="186" width="167" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.48767006400000001" green="0.14638921620000001" blue="0.32460141180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="A tall person">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
+                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="A tall person"/>
                                         <connections>
-                                            <segue destination="yFv-pO-5wl" kind="show" id="rv3-el-xH2"/>
+                                            <action selector="buttonTapped:" destination="NCk-Yy-ckD" eventType="touchUpInside" id="H5i-Nd-K5p"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjB-IP-Ui2">
-                                        <rect key="frame" x="30" y="351" width="295" height="76"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utH-Wq-731">
+                                        <rect key="frame" x="95" y="27" width="167" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.48767006400000001" green="0.14638921620000001" blue="0.32460141180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="A short person">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
+                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="A left-handed person"/>
                                         <connections>
-                                            <segue destination="yFv-pO-5wl" kind="show" id="KOr-h6-qdQ"/>
+                                            <action selector="buttonTapped:" destination="NCk-Yy-ckD" eventType="touchUpInside" id="D3m-wi-3pC"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDL-vU-rlU">
-                                        <rect key="frame" x="30" y="139" width="295" height="76"/>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngN-pI-udn">
+                                        <rect key="frame" x="95" y="259" width="167" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.48767006400000001" green="0.14638921620000001" blue="0.32460141180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="A right-handed person">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
+                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="A short person"/>
                                         <connections>
-                                            <segue destination="yFv-pO-5wl" kind="show" id="Hnb-0H-Pt9"/>
+                                            <action selector="buttonTapped:" destination="NCk-Yy-ckD" eventType="touchUpInside" id="AsN-Na-OX4"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEy-bR-XPr">
+                                        <rect key="frame" x="156" y="384" width="49" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="25"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="pas-u7-d02" kind="show" id="76n-Vr-PKK"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Answer?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uk0-gV-qvi">
+                                        <rect key="frame" x="95" y="326" width="165" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
+                                        <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dip-Ut-5HM">
+                                <rect key="frame" x="335" y="111" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Novice Detective" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOg-Ia-fQE">
+                                <rect key="frame" x="257" y="140" width="137" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.26445755360000001" green="0.1160041168" blue="0.26423871519999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Hya-EU-SXT"/>
                     </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="Uk0-gV-qvi" id="Opy-s8-097"/>
+                        <outlet property="nextButton" destination="IEy-bR-XPr" id="Kvq-fl-pi7"/>
+                        <outlet property="rightAnswer" destination="utH-Wq-731" id="oaB-bW-fHN"/>
+                        <outlet property="scoreLable" destination="dip-Ut-5HM" id="mBj-si-0fJ"/>
+                        <outlet property="titleLabel" destination="pOg-Ia-fQE" id="Nnt-0t-aYh"/>
+                        <outlet property="wrongAnswer1" destination="NNl-tl-TBK" id="LnM-Nt-mYV"/>
+                        <outlet property="wrongAnswer2" destination="f2Q-Mc-3M1" id="fb9-M6-dXF"/>
+                        <outlet property="wrongAnswer3" destination="ngN-pI-udn" id="ZjF-Fd-kMg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XaM-mj-aGn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -120,17 +141,17 @@
                                 <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The directionality of the wounds from left to right suggest that the culprit was left-handed." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWY-hf-L1p">
-                                <rect key="frame" x="68" y="164" width="271" height="290"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="28"/>
-                                <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No time to celebrate through, another murder has just been reported!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w31-Bh-Pyz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No time to dally though,  another murder has just been reported!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w31-Bh-Pyz">
                                 <rect key="frame" x="56" y="388" width="302" height="220"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="23"/>
+                                <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The direction of the wounds from left to right suggest that the culprit was left-handed." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWY-hf-L1p">
+                                <rect key="frame" x="29" y="164" width="372" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="28"/>
                                 <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -159,7 +180,7 @@
             <objects>
                 <viewController restorationIdentifier="ChallengeWrongAnswerViewController" storyboardIdentifier="ChallengeWrongAnswerViewController" id="yFv-pO-5wl" customClass="ChallengeWrongAnswerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iBX-Cu-qeR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wrong Answer" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEP-eB-uC1">
@@ -180,8 +201,5 @@
             <point key="canvasLocation" x="1202.8985507246377" y="-107.14285714285714"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="KOr-h6-qdQ"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

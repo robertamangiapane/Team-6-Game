@@ -16,7 +16,9 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var userAnswer: UITextField!
     @IBOutlet weak var tryAgainLabel: UILabel!
     @IBOutlet weak var toCongrats2: UIButton!
-
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -24,7 +26,8 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
         userAnswer.placeholder = "Enter your answer here"
         tryAgainLabel.isHidden = true
         toCongrats2.isHidden = true
-
+        scoreLabel.text = "Score: \(riddle.game.score)"
+        titleLabel.text = "\(riddle.game.title)"
         self.userAnswer.delegate = self
     }
 
@@ -34,11 +37,13 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
         
         if riddleOutcome == "try again" {
             riddle.game.wrongAnswer()
-            tryAgainLabel.text = "Wrong answer, try again!"
+            tryAgainLabel.text = "Incorrect"
             tryAgainLabel.isHidden = false
                } else {
             riddle.game.rightAnswer()
-            tryAgainLabel.text = "right answer"
+            scoreLabel.text = "Score:\(riddle.game.score)"
+            titleLabel.text = "\(riddle.game.title)"
+            tryAgainLabel.text = "Correct!"
             tryAgainLabel.isHidden = false
             toCongrats2.isHidden = false
                }

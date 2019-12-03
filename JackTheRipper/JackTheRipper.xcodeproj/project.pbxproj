@@ -31,6 +31,7 @@
 		721FC1F4238EF0070026E35E /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FC1F3238EF0070026E35E /* ViewControllerTests.swift */; };
 		721FC1FC238EF2B20026E35E /* IntroViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FC1FB238EF2B20026E35E /* IntroViewControllerTests.swift */; };
 		721FC1FE238EF2C60026E35E /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FC1FD238EF2C60026E35E /* IntroViewController.swift */; };
+		72265F55239560E900C0912C /* MultipleChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72265F54239560E900C0912C /* MultipleChoiceViewController.swift */; };
 		7250F0C1238D82E000DF02FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0C0238D82E000DF02FF /* AppDelegate.swift */; };
 		7250F0C3238D82E000DF02FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0C2238D82E000DF02FF /* SceneDelegate.swift */; };
 		7250F0C5238D82E000DF02FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0C4238D82E000DF02FF /* ViewController.swift */; };
@@ -88,6 +89,7 @@
 		721FC1F3238EF0070026E35E /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		721FC1FB238EF2B20026E35E /* IntroViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewControllerTests.swift; sourceTree = "<group>"; };
 		721FC1FD238EF2C60026E35E /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		72265F54239560E900C0912C /* MultipleChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceViewController.swift; sourceTree = "<group>"; };
 		7250F0BD238D82E000DF02FF /* JackTheRipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JackTheRipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7250F0C0238D82E000DF02FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7250F0C2238D82E000DF02FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,12 +164,6 @@
 				3F801CB12395369E006AB7D7 /* Line.swift */,
 				3F801CB3239536BF006AB7D7 /* OverLay.swift */,
 				3F801CB5239536DE006AB7D7 /* WordGridGenerator.swift */,
-				7250F0C0238D82E000DF02FF /* AppDelegate.swift */,
-				7250F0C2238D82E000DF02FF /* SceneDelegate.swift */,
-				721FC1FD238EF2C60026E35E /* IntroViewController.swift */,
-				7250F0C4238D82E000DF02FF /* ViewController.swift */,
-				7250F0C6238D82E000DF02FF /* Main.storyboard */,
-				7250F0C9238D82E000DF02FF /* Assets.xcassets */,
 				7250F0CB238D82E000DF02FF /* LaunchScreen.storyboard */,
 				7250F0C6238D82E000DF02FF /* Main.storyboard */,
 				AFB9FF88238D8F2C001381C5 /* Map1.storyboard */,
@@ -176,7 +172,6 @@
 				AFB9FF922390336F001381C5 /* Riddle.storyboard */,
 				612B5563238E855C002B168C /* Map3.storyboard */,
 				3F801CAD23953334006AB7D7 /* Challenge3.storyboard */,
-				612B5569238E8905002B168C /* Map4ViewController.swift */,
 				612B5567238E88E3002B168C /* Map4.storyboard */,
 				613406D123916862002BE64A /* Challenge4.storyboard */,
 				612B556B238E8AF2002B168C /* Map5.storyboard */,
@@ -195,6 +190,7 @@
 				7250F0C2238D82E000DF02FF /* SceneDelegate.swift */,
 				7250F0C9238D82E000DF02FF /* Assets.xcassets */,
 				7250F0CE238D82E000DF02FF /* Info.plist */,
+				72265F54239560E900C0912C /* MultipleChoiceViewController.swift */,
 			);
 			path = JackTheRipper;
 			sourceTree = "<group>";
@@ -374,6 +370,7 @@
 				3F801CB023953564006AB7D7 /* MyCollectionViewCell.swift in Sources */,
 				3F801CB22395369E006AB7D7 /* Line.swift in Sources */,
 				3F801CB4239536BF006AB7D7 /* OverLay.swift in Sources */,
+				72265F55239560E900C0912C /* MultipleChoiceViewController.swift in Sources */,
 				612B556A238E8905002B168C /* Map4ViewController.swift in Sources */,
 				7250F0C3238D82E000DF02FF /* SceneDelegate.swift in Sources */,
 				612B5566238E8573002B168C /* Map3ViewController.swift in Sources */,
