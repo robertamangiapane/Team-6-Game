@@ -17,7 +17,7 @@ class Challenge5ViewControllerTests: XCTestCase {
         override func setUp() {
             super.setUp()
 
-            let storyboard = UIStoryboard(name: "Challenge5", bundle: Bundle.main)
+            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
             viewController = (storyboard.instantiateViewController(withIdentifier: "ViewController5") as! Challenge5ViewController)
             UIApplication.shared.keyWindow!.rootViewController = viewController
 

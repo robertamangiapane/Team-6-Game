@@ -14,27 +14,19 @@
 		3F5E52F1239039BC003A2D2B /* RiddleViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E52F0239039BC003A2D2B /* RiddleViewTests.swift */; };
 		3F5E52F323903A15003A2D2B /* RiddleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E52F223903A15003A2D2B /* RiddleTests.swift */; };
 		3F5E52F723930061003A2D2B /* Challenge3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E52F623930061003A2D2B /* Challenge3ViewController.swift */; };
-		3F801CAB23953334006AB7D7 /* Challenge3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F801CAD23953334006AB7D7 /* Challenge3.storyboard */; };
 		3F801CB023953564006AB7D7 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F801CAF23953564006AB7D7 /* MyCollectionViewCell.swift */; };
 		3F801CB22395369E006AB7D7 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F801CB12395369E006AB7D7 /* Line.swift */; };
 		3F801CB4239536BF006AB7D7 /* OverLay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F801CB3239536BF006AB7D7 /* OverLay.swift */; };
 		3F801CB6239536DE006AB7D7 /* WordGridGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F801CB5239536DE006AB7D7 /* WordGridGenerator.swift */; };
-		3F9EDB8D238E81980088E1B9 /* MultipleChoice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9EDB8C238E81980088E1B9 /* MultipleChoice.storyboard */; };
 		3FA67BAD2396927D00D74308 /* Challenge5ViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA67BAC2396927D00D74308 /* Challenge5ViewControllerUITests.swift */; };
 		3FEAC0C823955D7B00A9E8FC /* GuessWhoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEAC0C723955D7B00A9E8FC /* GuessWhoTests.swift */; };
 		3FEAC0CA23955EC200A9E8FC /* GuessWho.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEAC0C923955EC200A9E8FC /* GuessWho.swift */; };
 		3FEAC0CC239579BD00A9E8FC /* Challenge5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEAC0CB239579BD00A9E8FC /* Challenge5ViewController.swift */; };
 		3FEAC0CE23957AA100A9E8FC /* Challenge5ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEAC0CD23957AA100A9E8FC /* Challenge5ViewControllerTests.swift */; };
-		612B5560238E7D22002B168C /* Map2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612B555F238E7D22002B168C /* Map2.storyboard */; };
 		612B5562238E7D48002B168C /* Map2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B5561238E7D48002B168C /* Map2ViewController.swift */; };
-		612B5564238E855C002B168C /* Map3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612B5563238E855C002B168C /* Map3.storyboard */; };
 		612B5566238E8573002B168C /* Map3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B5565238E8573002B168C /* Map3ViewController.swift */; };
-		612B5568238E88E3002B168C /* Map4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612B5567238E88E3002B168C /* Map4.storyboard */; };
 		612B556A238E8905002B168C /* Map4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B5569238E8905002B168C /* Map4ViewController.swift */; };
-		612B556C238E8AF2002B168C /* Map5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612B556B238E8AF2002B168C /* Map5.storyboard */; };
 		612B556E238E8B01002B168C /* Map5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B556D238E8B01002B168C /* Map5ViewController.swift */; };
-		613406D223916862002BE64A /* Challenge4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613406D123916862002BE64A /* Challenge4.storyboard */; };
-		613406D423916A08002BE64A /* Challenge5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613406D323916A08002BE64A /* Challenge5.storyboard */; };
 		61FC7AB123958D2C00790744 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC7AB023958D2C00790744 /* MapViewController.swift */; };
 		721FC1F4238EF0070026E35E /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FC1F3238EF0070026E35E /* ViewControllerTests.swift */; };
 		721FC1FC238EF2B20026E35E /* IntroViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FC1FB238EF2B20026E35E /* IntroViewControllerTests.swift */; };
@@ -49,10 +41,8 @@
 		7250F0D8238D82E000DF02FF /* JackTheRipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0D7238D82E000DF02FF /* JackTheRipperTests.swift */; };
 		7250F0E3238D82E000DF02FF /* JackTheRipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0E2238D82E000DF02FF /* JackTheRipperUITests.swift */; };
 		AFB9FF87238D8976001381C5 /* Map1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB9FF86238D8976001381C5 /* Map1ViewController.swift */; };
-		AFB9FF89238D8F2C001381C5 /* Map1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB9FF88238D8F2C001381C5 /* Map1.storyboard */; };
 		AFB9FF8F239032A0001381C5 /* Riddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB9FF8E239032A0001381C5 /* Riddle.swift */; };
 		AFB9FF9123903328001381C5 /* RiddleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB9FF9023903328001381C5 /* RiddleViewController.swift */; };
-		AFB9FF932390336F001381C5 /* Riddle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB9FF922390336F001381C5 /* Riddle.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,27 +70,19 @@
 		3F5E52F0239039BC003A2D2B /* RiddleViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleViewTests.swift; sourceTree = "<group>"; };
 		3F5E52F223903A15003A2D2B /* RiddleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleTests.swift; sourceTree = "<group>"; };
 		3F5E52F623930061003A2D2B /* Challenge3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge3ViewController.swift; sourceTree = "<group>"; };
-		3F801CAC23953334006AB7D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Challenge3.storyboard; sourceTree = "<group>"; };
 		3F801CAF23953564006AB7D7 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		3F801CB12395369E006AB7D7 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		3F801CB3239536BF006AB7D7 /* OverLay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverLay.swift; sourceTree = "<group>"; };
 		3F801CB5239536DE006AB7D7 /* WordGridGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGridGenerator.swift; sourceTree = "<group>"; };
-		3F9EDB8C238E81980088E1B9 /* MultipleChoice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultipleChoice.storyboard; sourceTree = "<group>"; };
 		3FA67BAC2396927D00D74308 /* Challenge5ViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge5ViewControllerUITests.swift; sourceTree = "<group>"; };
 		3FEAC0C723955D7B00A9E8FC /* GuessWhoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessWhoTests.swift; sourceTree = "<group>"; };
 		3FEAC0C923955EC200A9E8FC /* GuessWho.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessWho.swift; sourceTree = "<group>"; };
 		3FEAC0CB239579BD00A9E8FC /* Challenge5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge5ViewController.swift; sourceTree = "<group>"; };
 		3FEAC0CD23957AA100A9E8FC /* Challenge5ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge5ViewControllerTests.swift; sourceTree = "<group>"; };
-		612B555F238E7D22002B168C /* Map2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map2.storyboard; sourceTree = "<group>"; };
 		612B5561238E7D48002B168C /* Map2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map2ViewController.swift; sourceTree = "<group>"; };
-		612B5563238E855C002B168C /* Map3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map3.storyboard; sourceTree = "<group>"; };
 		612B5565238E8573002B168C /* Map3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map3ViewController.swift; sourceTree = "<group>"; };
-		612B5567238E88E3002B168C /* Map4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map4.storyboard; sourceTree = "<group>"; };
 		612B5569238E8905002B168C /* Map4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map4ViewController.swift; sourceTree = "<group>"; };
-		612B556B238E8AF2002B168C /* Map5.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map5.storyboard; sourceTree = "<group>"; };
 		612B556D238E8B01002B168C /* Map5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map5ViewController.swift; sourceTree = "<group>"; };
-		613406D123916862002BE64A /* Challenge4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Challenge4.storyboard; sourceTree = "<group>"; };
-		613406D323916A08002BE64A /* Challenge5.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Challenge5.storyboard; sourceTree = "<group>"; };
 		61FC7AB023958D2C00790744 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		721FC1F3238EF0070026E35E /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		721FC1FB238EF2B20026E35E /* IntroViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewControllerTests.swift; sourceTree = "<group>"; };
@@ -121,10 +103,8 @@
 		7250F0E2238D82E000DF02FF /* JackTheRipperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JackTheRipperUITests.swift; sourceTree = "<group>"; };
 		7250F0E4238D82E000DF02FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFB9FF86238D8976001381C5 /* Map1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map1ViewController.swift; sourceTree = "<group>"; };
-		AFB9FF88238D8F2C001381C5 /* Map1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map1.storyboard; sourceTree = "<group>"; };
 		AFB9FF8E239032A0001381C5 /* Riddle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Riddle.swift; sourceTree = "<group>"; };
 		AFB9FF9023903328001381C5 /* RiddleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleViewController.swift; sourceTree = "<group>"; };
-		AFB9FF922390336F001381C5 /* Riddle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Riddle.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,16 +162,6 @@
 				3F801CB5239536DE006AB7D7 /* WordGridGenerator.swift */,
 				7250F0CB238D82E000DF02FF /* LaunchScreen.storyboard */,
 				7250F0C6238D82E000DF02FF /* Main.storyboard */,
-				AFB9FF88238D8F2C001381C5 /* Map1.storyboard */,
-				3F9EDB8C238E81980088E1B9 /* MultipleChoice.storyboard */,
-				612B555F238E7D22002B168C /* Map2.storyboard */,
-				AFB9FF922390336F001381C5 /* Riddle.storyboard */,
-				612B5563238E855C002B168C /* Map3.storyboard */,
-				3F801CAD23953334006AB7D7 /* Challenge3.storyboard */,
-				612B5567238E88E3002B168C /* Map4.storyboard */,
-				613406D123916862002BE64A /* Challenge4.storyboard */,
-				612B556B238E8AF2002B168C /* Map5.storyboard */,
-				613406D323916A08002BE64A /* Challenge5.storyboard */,
 				7250F0C4238D82E000DF02FF /* ViewController.swift */,
 				721FC1FD238EF2C60026E35E /* IntroViewController.swift */,
 				61FC7AB023958D2C00790744 /* MapViewController.swift */,
@@ -212,7 +182,6 @@
 				3F41C31923955ED500A58B2E /* ScrambleViewController.swift */,
 				3F41C31F239565DE00A58B2E /* ImageViewCVCell.swift */,
 				72265F54239560E900C0912C /* MultipleChoiceViewController.swift */,
-
 			);
 			path = JackTheRipper;
 			sourceTree = "<group>";
@@ -347,19 +316,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F9EDB8D238E81980088E1B9 /* MultipleChoice.storyboard in Resources */,
 				7250F0CD238D82E000DF02FF /* LaunchScreen.storyboard in Resources */,
-				612B556C238E8AF2002B168C /* Map5.storyboard in Resources */,
-				612B5564238E855C002B168C /* Map3.storyboard in Resources */,
-				613406D423916A08002BE64A /* Challenge5.storyboard in Resources */,
-				612B5560238E7D22002B168C /* Map2.storyboard in Resources */,
-				612B5568238E88E3002B168C /* Map4.storyboard in Resources */,
-				AFB9FF932390336F001381C5 /* Riddle.storyboard in Resources */,
-				AFB9FF89238D8F2C001381C5 /* Map1.storyboard in Resources */,
 				7250F0CA238D82E000DF02FF /* Assets.xcassets in Resources */,
 				7250F0C8238D82E000DF02FF /* Main.storyboard in Resources */,
-				3F801CAB23953334006AB7D7 /* Challenge3.storyboard in Resources */,
-				613406D223916862002BE64A /* Challenge4.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +366,6 @@
 				3F41C320239565DE00A58B2E /* ImageViewCVCell.swift in Sources */,
 				3F801CB6239536DE006AB7D7 /* WordGridGenerator.swift in Sources */,
 				3F5E52F723930061003A2D2B /* Challenge3ViewController.swift in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,14 +409,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3F801CAD23953334006AB7D7 /* Challenge3.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F801CAC23953334006AB7D7 /* Base */,
-			);
-			name = Challenge3.storyboard;
-			sourceTree = "<group>";
-		};
 		7250F0C6238D82E000DF02FF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

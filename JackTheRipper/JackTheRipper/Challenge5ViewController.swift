@@ -15,9 +15,9 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var userQuestion: UITextField!
     @IBOutlet weak var ResponseDisplay: UILabel!
-    @IBOutlet weak var CorrectButton: UIButton!
     @IBOutlet weak var Suspect1: UIButton!
     @IBOutlet weak var wrongAnswer: UILabel!
+    @IBOutlet weak var CorrectButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +58,7 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
         if sender == Suspect1 {
             wrongAnswer.isHidden = true
             CorrectButton.isHidden = false
+            userQuestion.isEnabled = false
         } else {
             wrongAnswer.isHidden = false
         }
