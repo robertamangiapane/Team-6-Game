@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class MultipleChoiceViewController: UIViewController {
-    let game = Game()
+    var game : Game?
     let correctAnswer = 0
     
     @IBOutlet weak var scoreLable: UILabel!
@@ -25,9 +25,10 @@ class MultipleChoiceViewController: UIViewController {
     
     override func viewDidLoad(){
         super.viewDidLoad()
+        game = Game()
         nextButton.isHidden = true
-        titleLabel.text = "\(game.title)"
-        scoreLable.text = "Score: \(game.score)"
+        titleLabel.text = "\(game?.title ?? "Error")"
+        scoreLable.text = "Score: \(game?.score ?? 0)"
         answerLabel.isHidden = true
         
     }
@@ -35,9 +36,9 @@ class MultipleChoiceViewController: UIViewController {
     @IBAction func buttonTapped(_ sender: UIButton) {
         if sender.tag == correctAnswer {
             title = "Correct"
-            game.rightAnswer()
-            scoreLable.text = "Score: \(game.score)"
-            titleLabel.text = "\(game.title)"
+            game?.rightAnswer()
+            scoreLable.text = "Score: \(game?.score ?? 0)"
+            titleLabel.text = "\(game?.title ?? "Error")"
             answerLabel.text = "Correct!"
             answerLabel.isHidden = false
             nextButton.isHidden = false
@@ -46,7 +47,7 @@ class MultipleChoiceViewController: UIViewController {
             title = "Incorrect"
             answerLabel.text = "Incorrect."
             answerLabel.isHidden = false
-            game.wrongAnswer()
+            game?.wrongAnswer()
         }
     }
     
@@ -57,10 +58,12 @@ class MultipleChoiceViewController: UIViewController {
         wrongAnswer3.isUserInteractionEnabled = false
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//           if let Info1ViewController = segue.destination as? Infor1ViewController {
-//               Info1ViewController.score = game?.score
-//           }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           if let Congratulations1ViewController = segue.destination as? Congratulations1ViewController {
+            Congratulations1ViewController.score = game?.score;
+            Congratulations1ViewController.name = game?.title
+           }
+    }
     
 
 }

@@ -11,6 +11,9 @@ import UIKit
 import UserNotifications
 
 class Map2ViewController: MapViewController {
+    var game : Game?
+    var score: Int? = nil
+    var name: String? = nil
 
     override func viewDidLoad() {
         
@@ -19,7 +22,9 @@ class Map2ViewController: MapViewController {
         
            super.viewDidLoad()
            // Do any additional setup after loading the view.
-       
+        game = Game()
+        game?.title = name ?? "Error"
+        game?.score = score ?? 0
        locationManager.delegate = self
        locationManager.requestWhenInUseAuthorization()
        locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -72,7 +77,13 @@ class Map2ViewController: MapViewController {
              
          }
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           if let Info2ViewController = segue.destination as? Info2ViewController {
+               Info2ViewController.score = game?.score;
+               Info2ViewController.name = game?.title
+           }
+       }
+    
     @IBOutlet weak var mapView: MKMapView!
     
     

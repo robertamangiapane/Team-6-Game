@@ -264,14 +264,14 @@
                                     </label>
                                 </subviews>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSB-BG-jMy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSB-BG-jMy">
                                 <rect key="frame" x="335" y="111" width="59" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="18"/>
                                 <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Novice Detective" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljm-L5-F8G">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Novice Detective" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljm-L5-F8G">
                                 <rect key="frame" x="257" y="140" width="137" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
@@ -301,13 +301,13 @@
         <!--Congratulations1-->
         <scene sceneID="16x-KA-plO">
             <objects>
-                <viewController title="Congratulations1" id="RLx-kF-dzr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Congratulations1" title="Congratulations1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RLx-kF-dzr" customClass="Congratulations1ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OhA-zd-xOw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Correct! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBQ-lR-QBK">
-                                <rect key="frame" x="139" y="152" width="152" height="49"/>
+                                <rect key="frame" x="131" y="187" width="152" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="42"/>
                                 <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
@@ -321,7 +321,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The direction of the wounds from left to right suggest that the culprit was left-handed." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXi-GJ-5at">
-                                <rect key="frame" x="29" y="164" width="372" height="290"/>
+                                <rect key="frame" x="20" y="187" width="372" height="290"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="28"/>
                                 <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
@@ -336,11 +336,29 @@
                                     <segue destination="eck-er-z6T" kind="show" id="AJq-Ze-0uP"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydq-fR-lFV">
+                                <rect key="frame" x="283" y="121" width="96" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Novice Detective" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmg-Sw-OQO">
+                                <rect key="frame" x="242" y="142" width="137" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Jkd-7i-Jvo"/>
                     </view>
                     <navigationItem key="navigationItem" id="qqS-Ou-h4F"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="ydq-fR-lFV" id="u8O-l3-G2G"/>
+                        <outlet property="titleLabel" destination="wmg-Sw-OQO" id="cll-sI-dbu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ak3-Vx-aGk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -386,10 +404,10 @@
             </objects>
             <point key="canvasLocation" x="-788" y="806"/>
         </scene>
-        <!--Info2-->
+        <!--Info2ViewController-->
         <scene sceneID="Bzo-Kj-R5L">
             <objects>
-                <viewController storyboardIdentifier="Info2" title="Info2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nh3-9a-iwe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Info2ViewController" title="Info2ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nh3-9a-iwe" customClass="Info2ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sdc-Sf-7ue">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -403,20 +421,38 @@
                                     <segue destination="rhs-Fg-UyV" kind="show" id="PNy-et-RF0"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ScoreLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4my-Ha-u2r">
+                                <rect key="frame" x="296" y="111" width="98" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Novice Detective" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGd-8C-piu">
+                                <rect key="frame" x="246" y="143" width="148" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="PmM-fz-NjZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="WWm-u9-YYa"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="4my-Ha-u2r" id="9bb-pV-1vP"/>
+                        <outlet property="titleLabel" destination="oGd-8C-piu" id="ZIW-bR-s9b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XSf-fA-1Uz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-100" y="806"/>
+            <point key="canvasLocation" x="-100.00000000000001" y="805.58035714285711"/>
         </scene>
         <!--Riddle View Controller-->
         <scene sceneID="0NF-jw-84T">
             <objects>
-                <viewController id="rhs-Fg-UyV" customClass="RiddleViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RiddleViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rhs-Fg-UyV" customClass="RiddleViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ibA-Xu-Xbt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

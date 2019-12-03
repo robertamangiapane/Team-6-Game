@@ -11,6 +11,9 @@ import UIKit
 
 class RiddleViewController: UIViewController, UITextFieldDelegate {
     let riddle = Riddle()
+    var game : Game?
+    var score: Int? = nil
+    var name: String? = nil
     var answer = ""
     
     @IBOutlet weak var userAnswer: UITextField!
@@ -22,12 +25,14 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        
+        game = Game()
+        game?.title = name ?? "Error"
+        game?.score = score ?? 0
         userAnswer.placeholder = "Enter your answer here"
         tryAgainLabel.isHidden = true
         toCongrats2.isHidden = true
-        scoreLabel.text = "Score: \(riddle.game.score)"
-        titleLabel.text = "\(riddle.game.title)"
+        scoreLabel.text = "Score: \(game?.score ?? 0)"
+        titleLabel.text = "\(game?.title ?? "Error")"
         self.userAnswer.delegate = self
     }
 
@@ -36,13 +41,13 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
         let riddleOutcome = riddle.isSolved(answer: answer)
         
         if riddleOutcome == "try again" {
-            riddle.game.wrongAnswer()
+            game?.wrongAnswer()
             tryAgainLabel.text = "Incorrect"
             tryAgainLabel.isHidden = false
                } else {
-            riddle.game.rightAnswer()
-            scoreLabel.text = "Score:\(riddle.game.score)"
-            titleLabel.text = "\(riddle.game.title)"
+            game?.rightAnswer()
+            scoreLabel.text = "Score:\(game?.score ?? 0)"
+            titleLabel.text = "\(game?.title ?? "Error")"
             tryAgainLabel.text = "Correct!"
             userAnswer.isEnabled = false
             userAnswer.placeholder = "Press Next"
