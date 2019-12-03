@@ -23,8 +23,6 @@ class MultipleChoiceViewController: UIViewController {
     @IBOutlet weak var wrongAnswer3: UIButton!
     
     
-    
-    
     override func viewDidLoad(){
         super.viewDidLoad()
         nextButton.isHidden = true
@@ -33,8 +31,6 @@ class MultipleChoiceViewController: UIViewController {
         answerLabel.isHidden = true
         
     }
-
-    
     
     @IBAction func buttonTapped(_ sender: UIButton) {
         if sender.tag == correctAnswer {
@@ -61,5 +57,10 @@ class MultipleChoiceViewController: UIViewController {
         wrongAnswer3.isUserInteractionEnabled = false
     }
     
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//           if let Info1ViewController = segue.destination as? Infor1ViewController {
+//               Info1ViewController.score = game?.score
+//           }
     
+
 }

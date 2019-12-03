@@ -696,11 +696,11 @@
         <scene sceneID="H8R-x4-y5D">
             <objects>
                 <viewController restorationIdentifier="Map4Controller" storyboardIdentifier="Map4Controller" id="frt-1c-fIh" customClass="Map4ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="SgU-y4-dK2">
+                    <view key="view" contentMode="scaleToFill" id="SgU-y4-dK2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QZv-mo-CGE">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QZv-mo-CGE">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="818" id="8Eq-nY-g1i"/>
@@ -1026,11 +1026,11 @@
         <scene sceneID="cfd-9B-xCb">
             <objects>
                 <viewController restorationIdentifier="Map5Controller" storyboardIdentifier="Map5Controller" id="Y61-NX-ckq" customClass="Map5ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="9ab-RW-3tw">
+                    <view key="view" contentMode="scaleToFill" id="9ab-RW-3tw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8zz-ci-FG6">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8zz-ci-FG6">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="818" id="Jyo-DR-Jcd"/>
