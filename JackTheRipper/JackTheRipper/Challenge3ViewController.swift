@@ -78,9 +78,13 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
         // Setup pan gesture
          let panGR = UIPanGestureRecognizer(target: self, action: #selector(panHandling(gestureRecognizer:)))
           gridCollectionView.addGestureRecognizer(panGR)
+        
+        print("panGR")
+        print(panGR)
 
     }
     
+    // calculate index position to create cells for the grid, called creatin grids
     private func position(from index: Int) -> Position {
         return Position(row: index / nRow, col: index % nCol)
     }
@@ -95,31 +99,37 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
     
     @objc func panHandling(gestureRecognizer: UIPanGestureRecognizer) {
         let point = gestureRecognizer.location(in: gridCollectionView)
+        print("inside panhandling")
         
         guard let indexPath = gridCollectionView.indexPathForItem(at: point) else {
+            print("indexPath")
+//            gridCollectionView.deselectItem(at: indexPath, animated: true)
+            overlayView.removeTempLine()
             return
         }
         let pos = position(from: indexPath.row)
+        print("before switch case")
+        print(gestureRecognizer)
         
         switch gestureRecognizer.state {
         case .began:
+            print("inside switch case began")
             overlayView.addTempLine(at: pos)
-
-            // Select item to animate the cell
-            // Since we set the collection view `selection mode` to single
-            // This means only one letter is animated at a time.
-            // So in `.ended` event, we just need to deselect one cell.
             gridCollectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
 
         case .changed:
             if overlayView.moveTempLine(to: pos) {
                 gridCollectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
+                print("switch case changed")
             }
 
         case .ended:
             // Stop animation
             gridCollectionView.deselectItem(at: indexPath, animated: true)
+            print("inside case ended before guard let")
+            print("startPos")
             guard let startPos = overlayView.tempLine?.startPos else {
+                print("inside case ended after guard let")
                 return
             }
 //
@@ -127,6 +137,7 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
             let key = WordGridGenerator.wordKey(for: startPos, and: pos)
 
             if let word = gridGenerator.wordMap[key] {
+                print("inside view controller function panhandling if let word")
                 overlayView.acceptLastLine()
                 
                 //check if the player found all the word. end the game
@@ -139,9 +150,16 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
             }
 
 //            // Remove the temp line
+            print("inside case ended after checkWordFound")
             overlayView.removeTempLine()
-        default: break
+        default:
+            print("inside default")
+            gridCollectionView.deselectItem(at: indexPath, animated: true)
+            overlayView.removeTempLine()
+            break
+
         }
+        print("after switch case")
     }
     
     //this function count number of item, to set number of cells in the view

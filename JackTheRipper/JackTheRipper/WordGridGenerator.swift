@@ -92,10 +92,13 @@ class WordGridGenerator {
         return dupGrid
     }
     
+    // function that is returning the starting point(rows and column) and end point(rows and columns) for each clue-words, called creating the grid
     static func wordKey(for startPos: Position, and endPos: Position) -> String {
+//        print("\(startPos.row):\(startPos.col):\(endPos.row):\(endPos.col)")
         return "\(startPos.row):\(startPos.col):\(endPos.row):\(endPos.col)"
     }
     
+    //funcion to put clue-words inside the grid, executed for each of the words, called creating the grid
     private func addWordMap(word: String, startPos: Position, endPos: Position) {
         wordMap[WordGridGenerator.wordKey(for: startPos, and: endPos)] = word
     }

@@ -87,10 +87,13 @@ class Line: CAShapeLayer {
     /// - Parameter endPos: target end position of the line
     /// - Returns: if the end position is valid or not
     func attempt(endPos: Position) -> Bool {
+        print("inside Line func attempt")
         if isHorizontal(with: endPos) ||
             isVertical(with: endPos) ||
             isDiagonal(with: endPos) {
             self.endPos = endPos
+            print("end position - inside attempt")
+            print(endPos)
             return true
         }
         return false
@@ -100,18 +103,19 @@ class Line: CAShapeLayer {
     /// Draw the line to the containing view
     ///
     /// - Parameter view: containing view
+    // draw the blu hightlight while selecting words
     func draw(on view: UIView) {
+        print("inside Line func draw")
         guard let startPos = startPos,
             let endPos = endPos else {
+                print("out of grid")
                 return
         }
         self.removeFromSuperlayer()
         let tempPath = UIBezierPath()
         tempPath.move(to: point(at: startPos))
         tempPath.addLine(to: point(at: endPos))
-        // This is cell each time drawing
-        // In case we use different styles for each line
-        // at runtime.
+
         opacity = lineStyle.opacity
         lineCap = .round
         lineWidth = lineStyle.lineWidth
@@ -128,6 +132,7 @@ class Line: CAShapeLayer {
     ///
     /// - Parameter pos: Position object
     /// - Returns: center point of the corresponding cell
+    // called twice to calculate the position of the letter, in poinit, to create the path to highlight
     private func point(at pos: Position) -> CGPoint {
         return CGPoint(
             x: CGFloat(pos.col) * cellSize.width + cellSize.width / 2,
