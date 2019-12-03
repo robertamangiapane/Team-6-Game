@@ -767,15 +767,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYh-zV-Zd1">
-                                <rect key="frame" x="97.666666666666686" y="773" width="219" height="30"/>
-                                <state key="normal" title="Button to Congrats 5/Final page">
-                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="q2R-Nj-Szg" kind="show" id="R5p-gb-DDS"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="VE5-rB-uJG">
                                 <rect key="frame" x="40" y="152" width="334" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -957,6 +948,15 @@
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aw-gn-OY4">
+                                <rect key="frame" x="142" y="757" width="128" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="q2R-Nj-Szg" kind="show" id="jqM-T6-yNK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="quaternarySystemFillColor" red="0.4549019608" green="0.4549019608" blue="0.50196078430000002" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -973,20 +973,18 @@
                             <constraint firstItem="E67-LV-Qff" firstAttribute="top" secondItem="bkg-31-hGO" secondAttribute="top" constant="28" id="ROW-Aj-KgN"/>
                             <constraint firstItem="E5u-LV-ljd" firstAttribute="centerX" secondItem="bkg-31-hGO" secondAttribute="centerX" id="RUJ-bh-X34"/>
                             <constraint firstItem="VE5-rB-uJG" firstAttribute="leading" secondItem="bkg-31-hGO" secondAttribute="leading" constant="40" id="Saf-sL-HOk"/>
-                            <constraint firstItem="FYh-zV-Zd1" firstAttribute="centerX" secondItem="bkg-31-hGO" secondAttribute="centerX" id="alW-P6-Kg7"/>
                             <constraint firstItem="bkg-31-hGO" firstAttribute="trailing" secondItem="E5u-LV-ljd" secondAttribute="trailing" constant="40" id="cB9-Jw-cwc"/>
                             <constraint firstItem="0Pc-tC-H62" firstAttribute="width" secondItem="9k8-yC-qd3" secondAttribute="width" multiplier="0.830918" constant="-5.2000000039242877e-05" id="gz0-rx-MMk"/>
                             <constraint firstItem="0Pc-tC-H62" firstAttribute="height" secondItem="9k8-yC-qd3" secondAttribute="height" multiplier="0.0379464" constant="2.5600000000736145e-05" id="hgd-MU-RGD"/>
                             <constraint firstItem="VE5-rB-uJG" firstAttribute="centerX" secondItem="bkg-31-hGO" secondAttribute="centerX" id="jXq-DR-MPM"/>
                             <constraint firstItem="0Pc-tC-H62" firstAttribute="top" secondItem="bkg-31-hGO" secondAttribute="top" constant="175" id="mAP-mB-WYr"/>
                             <constraint firstItem="VE5-rB-uJG" firstAttribute="top" secondItem="bkg-31-hGO" secondAttribute="top" constant="64" id="mpD-IM-a8i"/>
-                            <constraint firstItem="bkg-31-hGO" firstAttribute="bottom" secondItem="FYh-zV-Zd1" secondAttribute="bottom" constant="10" id="vrx-c5-GE6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bkg-31-hGO"/>
                     </view>
                     <navigationItem key="navigationItem" id="CPm-cR-aka"/>
                     <connections>
-                        <outlet property="CorrectButton" destination="FYh-zV-Zd1" id="tib-gO-960"/>
+                        <outlet property="CorrectButton" destination="0aw-gn-OY4" id="jvw-Hh-Syj"/>
                         <outlet property="ResponseDisplay" destination="E5u-LV-ljd" id="RQc-nc-bOY"/>
                         <outlet property="Suspect1" destination="ici-wl-TN6" id="zhA-sr-5pZ"/>
                         <outlet property="userQuestion" destination="VE5-rB-uJG" id="lPj-PD-mIf"/>
@@ -995,7 +993,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rQB-DC-BhU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2023" y="1499"/>
+            <point key="canvasLocation" x="2021.7391304347827" y="1498.6607142857142"/>
         </scene>
         <!--Congrats5-->
         <scene sceneID="FrV-4g-A4A">
