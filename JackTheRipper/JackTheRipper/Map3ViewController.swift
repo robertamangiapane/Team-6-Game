@@ -88,6 +88,13 @@ class Map3ViewController: MapViewController{
             self.present(alert, animated: true, completion: nil)
                  
              }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let Info3ViewController = segue.destination as? Info3ViewController {
+        Info3ViewController.score = game?.score;
+        Info3ViewController.name = game?.title
+        }
+    }
 
 
         @IBOutlet weak var mapView: MKMapView!

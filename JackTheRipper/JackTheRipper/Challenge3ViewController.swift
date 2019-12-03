@@ -10,6 +10,15 @@
 import UIKit
 
 class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    var score: Int? = nil
+    var name: String? = nil
+    var game : Game?
+    
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    
+    
     
     @IBOutlet weak var overlayView: OverLay!
     
@@ -38,7 +47,13 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
     override func viewDidLoad() {
         gameResult.setTitle("You found all the clues", for: .normal)
         gameResult.isHidden = true
-
+        
+        game = Game()
+        game?.title = name ?? "Error"
+        game?.score = score ?? 0
+        scoreLabel.text = "Score: \(game?.score ?? 0)"
+        titleLabel.text = "\(game?.title ?? "Error")"
+        
         super.viewDidLoad()
         setupGridCollectionView()
         setupOverlayView()
@@ -144,7 +159,6 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
                 wordsFound.append(word)
                 
                 if checkWordFound() == true {
-
                     gameResult.isHidden = false
                 }
             }

@@ -576,10 +576,10 @@
             </objects>
             <point key="canvasLocation" x="1385.5072463768117" y="805.58035714285711"/>
         </scene>
-        <!--Info3-->
+        <!--Info3ViewController-->
         <scene sceneID="7Oy-tC-7yc">
             <objects>
-                <viewController storyboardIdentifier="Info3" title="Info3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="33A-Vq-And" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Info3ViewController" title="Info3ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="33A-Vq-And" customClass="Info3ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6e1-rp-cih">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -593,11 +593,29 @@
                                     <segue destination="xQ2-zW-FzL" kind="show" id="bNa-7p-Fzn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVb-yg-ruq">
+                                <rect key="frame" x="291" y="132" width="103" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Novice Detective" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apb-56-HZp">
+                                <rect key="frame" x="246" y="164" width="148" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="f6I-JQ-R1s"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qzz-C4-YeV"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="fVb-yg-ruq" id="Okf-2S-azh"/>
+                        <outlet property="titleLabel" destination="Apb-56-HZp" id="cD5-b0-SRk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rri-xp-U0e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -704,6 +722,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFV-w0-F1p">
+                                <rect key="frame" x="291" y="88" width="103" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Novice Detective" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rm3-2O-AOd">
+                                <rect key="frame" x="246" y="118" width="148" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="JQF-Te-F7T"/>
@@ -713,6 +745,8 @@
                         <outlet property="gameResult" destination="QXh-Zf-t39" id="qVA-u9-MbD"/>
                         <outlet property="gridCollectionView" destination="ds5-gK-h8K" id="fwh-TO-dSl"/>
                         <outlet property="overlayView" destination="HJW-oP-AOx" id="Frg-Q2-djv"/>
+                        <outlet property="scoreLabel" destination="hFV-w0-F1p" id="pzt-0f-Tcf"/>
+                        <outlet property="titleLabel" destination="Rm3-2O-AOd" id="fXj-DB-3li"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WjN-dh-CBs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

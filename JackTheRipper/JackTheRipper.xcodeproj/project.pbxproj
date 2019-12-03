@@ -43,6 +43,7 @@
 		7283F405239702DA003E93F1 /* Congrats1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283F404239702DA003E93F1 /* Congrats1ViewController.swift */; };
 		7283F40723970D0E003E93F1 /* Info2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283F40623970D0E003E93F1 /* Info2ViewController.swift */; };
 		7283F40F2397278C003E93F1 /* Congrats2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283F40E2397278B003E93F1 /* Congrats2ViewController.swift */; };
+		7283F41123972A55003E93F1 /* Info3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283F41023972A55003E93F1 /* Info3ViewController.swift */; };
 		AFB9FF87238D8976001381C5 /* Map1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB9FF86238D8976001381C5 /* Map1ViewController.swift */; };
 		AFB9FF8F239032A0001381C5 /* Riddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB9FF8E239032A0001381C5 /* Riddle.swift */; };
 		AFB9FF9123903328001381C5 /* RiddleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB9FF9023903328001381C5 /* RiddleViewController.swift */; };
@@ -108,6 +109,7 @@
 		7283F404239702DA003E93F1 /* Congrats1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Congrats1ViewController.swift; sourceTree = "<group>"; };
 		7283F40623970D0E003E93F1 /* Info2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info2ViewController.swift; sourceTree = "<group>"; };
 		7283F40E2397278B003E93F1 /* Congrats2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Congrats2ViewController.swift; sourceTree = "<group>"; };
+		7283F41023972A55003E93F1 /* Info3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info3ViewController.swift; sourceTree = "<group>"; };
 		AFB9FF86238D8976001381C5 /* Map1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map1ViewController.swift; sourceTree = "<group>"; };
 		AFB9FF8E239032A0001381C5 /* Riddle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Riddle.swift; sourceTree = "<group>"; };
 		AFB9FF9023903328001381C5 /* RiddleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				AFB9FF9023903328001381C5 /* RiddleViewController.swift */,
 				7283F40E2397278B003E93F1 /* Congrats2ViewController.swift */,
 				612B5565238E8573002B168C /* Map3ViewController.swift */,
+				7283F41023972A55003E93F1 /* Info3ViewController.swift */,
 				3F5E52F623930061003A2D2B /* Challenge3ViewController.swift */,
 				612B5569238E8905002B168C /* Map4ViewController.swift */,
 				612B556D238E8B01002B168C /* Map5ViewController.swift */,
@@ -361,6 +364,7 @@
 				7283F40F2397278C003E93F1 /* Congrats2ViewController.swift in Sources */,
 				7250F0C1238D82E000DF02FF /* AppDelegate.swift in Sources */,
 				612B556E238E8B01002B168C /* Map5ViewController.swift in Sources */,
+				7283F41123972A55003E93F1 /* Info3ViewController.swift in Sources */,
 				AFB9FF8F239032A0001381C5 /* Riddle.swift in Sources */,
 				7283F405239702DA003E93F1 /* Congrats1ViewController.swift in Sources */,
 				3F801CB023953564006AB7D7 /* MyCollectionViewCell.swift in Sources */,
