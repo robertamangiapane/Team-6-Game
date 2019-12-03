@@ -23,7 +23,7 @@ class Map2ViewController:  UIViewController, CLLocationManagerDelegate, UNUserNo
            // Do any additional setup after loading the view.
        
         game?.score = score ?? 0
-        scoreLabel.text = "\(game?.score)"
+        scoreLabel.text = "\(game?.score ?? 0)"
        locationManager.delegate = self
        locationManager.requestWhenInUseAuthorization()
        locationManager.desiredAccuracy = kCLLocationAccuracyBest

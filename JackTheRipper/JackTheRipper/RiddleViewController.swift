@@ -68,5 +68,5 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
 //                Map3ViewController.score = riddle.game.score
 //           }
 //         }
-//}
+}
 
