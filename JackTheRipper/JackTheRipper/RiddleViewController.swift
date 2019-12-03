@@ -52,7 +52,7 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
         
         answer = userAnswer.text!
         userAnswer.text = ""
-        checkAnswer(answer: answer)
+        checkAnswer(answer: answer.lowercased())
         return true
     }
 }
