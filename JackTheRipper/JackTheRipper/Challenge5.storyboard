@@ -146,6 +146,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="userQuestion:" destination="sUI-zR-mdA" eventType="editingDidEnd" id="kMb-dj-tea"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Ask the Witness a question:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNz-i6-mUm">
                                 <rect key="frame" x="52" y="63" width="308" height="32"/>
@@ -174,6 +177,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yz7-0p-Pk1"/>
                     </view>
+                    <connections>
+                        <outlet property="userQuestion" destination="Off-sT-FWy" id="yKb-Vp-z6M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FUH-g6-JhB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

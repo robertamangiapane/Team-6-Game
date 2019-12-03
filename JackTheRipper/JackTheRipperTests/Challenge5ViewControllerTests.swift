@@ -40,5 +40,9 @@ class Challenge5ViewControllerTests: XCTestCase {
         let result = viewController.question(input: "Does he have a beard")
         XCTAssertEqual(result, "The suspect did not have a beard.")
     }
+    func testPlayerCanAskDifferentQuestion() {
+        let result = viewController.question(input: "Does he have Glasses?")
+        XCTAssertEqual(result, "The suspect did not wear glasses.")
+    }
 }
 

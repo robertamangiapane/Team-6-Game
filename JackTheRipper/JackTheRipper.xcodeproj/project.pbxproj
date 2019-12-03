@@ -190,14 +190,14 @@
 				612B5565238E8573002B168C /* Map3ViewController.swift */,
 				612B5569238E8905002B168C /* Map4ViewController.swift */,
 				612B556D238E8B01002B168C /* Map5ViewController.swift */,
+				3FEAC0CB239579BD00A9E8FC /* Challenge5ViewController.swift */,
 				3F41C2F5238D8F0D00A58B2E /* Game.swift */,
 				AFB9FF8E239032A0001381C5 /* Riddle.swift */,
+				3FEAC0C923955EC200A9E8FC /* GuessWho.swift */,
 				7250F0C0238D82E000DF02FF /* AppDelegate.swift */,
 				7250F0C2238D82E000DF02FF /* SceneDelegate.swift */,
 				7250F0C9238D82E000DF02FF /* Assets.xcassets */,
 				7250F0CE238D82E000DF02FF /* Info.plist */,
-				3FEAC0C923955EC200A9E8FC /* GuessWho.swift */,
-				3FEAC0CB239579BD00A9E8FC /* Challenge5ViewController.swift */,
 			);
 			path = JackTheRipper;
 			sourceTree = "<group>";
