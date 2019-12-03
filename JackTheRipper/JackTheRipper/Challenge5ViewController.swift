@@ -15,10 +15,15 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var userQuestion: UITextField!
     @IBOutlet weak var ResponseDisplay: UILabel!
+    @IBOutlet weak var CorrectButton: UIButton!
+    @IBOutlet weak var Suspect1: UIButton!
+    @IBOutlet weak var wrongAnswer: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         ResponseDisplay.isHidden = true
+        CorrectButton.isHidden = true
+        wrongAnswer.isHidden = true
         userQuestion.placeholder = "Write your question here..."
         self.userQuestion.delegate = self
         guessWho = GuessWho()
@@ -39,13 +44,23 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
         return response
     }
     
-        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//            userQuestion.resignFirstResponder()
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    //        userQuestion.resignFirstResponder()
     //        this method resignFirstResponder dismiss the keyboard
     //        self.view.endEditing(true) another way of doing resignFirstResponder
-            input = userQuestion.text!
-            userQuestion.text = ""
-            question(input: input)
-            return true
+        input = userQuestion.text!
+        userQuestion.text = ""
+        question(input: input)
+        return true
+    }
+    
+    @IBAction func SuspectButtons(_ sender: UIButton) {
+        if sender == Suspect1 {
+            wrongAnswer.isHidden = true
+            CorrectButton.isHidden = false
+        } else {
+            wrongAnswer.isHidden = false
         }
+        
+    }
 }

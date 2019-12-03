@@ -40,7 +40,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Responce" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFU-am-Qrq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a suspect to Arrest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOP-qN-S5y">
+                                <rect key="frame" x="35" y="214" width="344" height="34"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Response" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFU-am-Qrq">
                                 <rect key="frame" x="35" y="175" width="326" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
@@ -52,13 +58,16 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EM1-Zq-bWK">
                                         <rect key="frame" x="0.0" y="0.0" width="99.333333333333329" height="138.66666666666666"/>
-                                        <accessibility key="accessibilityConfiguration" identifier="Suspect1"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="Suspect1" label="Suspect1"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="EM1-Zq-bWK" secondAttribute="height" multiplier="608:850" id="JRW-ht-U6w"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="suspect1">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                         </state>
+                                        <connections>
+                                            <action selector="SuspectButtons:" destination="sUI-zR-mdA" eventType="touchUpInside" id="aLe-j3-CLu"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8s-PU-NgE">
                                         <rect key="frame" x="231.99999999999997" y="0.0" width="99.333333333333343" height="138.33333333333334"/>
@@ -67,6 +76,9 @@
                                             <constraint firstAttribute="width" secondItem="W8s-PU-NgE" secondAttribute="height" multiplier="61:85" id="Ybe-Gr-wDR"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="suspect3"/>
+                                        <connections>
+                                            <action selector="SuspectButtons:" destination="sUI-zR-mdA" eventType="touchUpInside" id="Fwf-th-k1i"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cg0-bg-dEL">
                                         <rect key="frame" x="116" y="148.66666666666669" width="99.333333333333314" height="137.66666666666669"/>
@@ -75,6 +87,9 @@
                                             <constraint firstAttribute="width" secondItem="Cg0-bg-dEL" secondAttribute="height" multiplier="57:79" id="rHK-Ie-8cd"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="suspect5"/>
+                                        <connections>
+                                            <action selector="SuspectButtons:" destination="sUI-zR-mdA" eventType="touchUpInside" id="qSF-rb-EfR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZI-Gt-gKW">
                                         <rect key="frame" x="5" y="148.66666666666669" width="99.333333333333329" height="128.66666666666669"/>
@@ -83,6 +98,9 @@
                                             <constraint firstAttribute="width" secondItem="GZI-Gt-gKW" secondAttribute="height" multiplier="61:79" id="9zK-Cn-FqY"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="suspect4"/>
+                                        <connections>
+                                            <action selector="SuspectButtons:" destination="sUI-zR-mdA" eventType="touchUpInside" id="t1c-UC-DtH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtj-gG-rnD">
                                         <rect key="frame" x="231.99999999999997" y="148.33333333333337" width="99.333333333333343" height="138.33333333333337"/>
@@ -91,6 +109,9 @@
                                             <constraint firstAttribute="width" secondItem="xtj-gG-rnD" secondAttribute="height" multiplier="61:85" id="99D-hC-VE2"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="suspect6"/>
+                                        <connections>
+                                            <action selector="SuspectButtons:" destination="sUI-zR-mdA" eventType="touchUpInside" id="T9b-Va-crx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WV7-dN-8pI">
                                         <rect key="frame" x="116" y="0.0" width="99.333333333333314" height="138.66666666666666"/>
@@ -99,6 +120,9 @@
                                             <constraint firstAttribute="width" secondItem="WV7-dN-8pI" secondAttribute="height" multiplier="608:850" id="g4G-72-z1C"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="suspect2"/>
+                                        <connections>
+                                            <action selector="SuspectButtons:" destination="sUI-zR-mdA" eventType="touchUpInside" id="dG8-lC-uNq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFd-Dt-TwR">
                                         <rect key="frame" x="0.0" y="292.33333333333331" width="99.333333333333329" height="138.66666666666669"/>
@@ -107,6 +131,9 @@
                                             <constraint firstAttribute="width" secondItem="yFd-Dt-TwR" secondAttribute="height" multiplier="61:85" id="IBx-fd-zTc"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="suspect7"/>
+                                        <connections>
+                                            <action selector="SuspectButtons:" destination="sUI-zR-mdA" eventType="touchUpInside" id="7v5-yD-sKK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMh-aV-Mvv">
                                         <rect key="frame" x="116" y="296.33333333333331" width="99.333333333333314" height="138.66666666666669"/>
@@ -115,6 +142,9 @@
                                             <constraint firstAttribute="width" secondItem="yMh-aV-Mvv" secondAttribute="height" multiplier="61:85" id="PbI-5D-MWE"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="suspect8"/>
+                                        <connections>
+                                            <action selector="SuspectButtons:" destination="sUI-zR-mdA" eventType="touchUpInside" id="jpa-J8-IdA"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0z-HL-OmS">
                                         <rect key="frame" x="231.99999999999997" y="296.66666666666669" width="99.333333333333343" height="138.66666666666669"/>
@@ -123,6 +153,9 @@
                                             <constraint firstAttribute="width" secondItem="u0z-HL-OmS" secondAttribute="height" multiplier="61:85" id="Geh-0B-4fT"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="suspect9"/>
+                                        <connections>
+                                            <action selector="SuspectButtons:" destination="sUI-zR-mdA" eventType="touchUpInside" id="BaP-bx-gLb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -164,9 +197,9 @@
                                     <constraint firstItem="yFd-Dt-TwR" firstAttribute="height" relation="lessThanOrEqual" secondItem="MMR-19-Gfd" secondAttribute="height" multiplier="0.3" id="vto-8f-0E3"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a suspect to Arrest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOP-qN-S5y">
-                                <rect key="frame" x="35" y="229" width="344" height="34"/>
-                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="That's not him, try again!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfg-zh-rkm">
+                                <rect key="frame" x="84.333333333333329" y="800.33333333333337" width="245.66666666666669" height="21.666666666666629"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -179,15 +212,20 @@
                             <constraint firstItem="5qS-oh-CPY" firstAttribute="centerX" secondItem="yz7-0p-Pk1" secondAttribute="centerX" id="ACa-Md-bAH"/>
                             <constraint firstItem="yz7-0p-Pk1" firstAttribute="bottom" secondItem="MMR-19-Gfd" secondAttribute="bottom" constant="48" id="DPB-hI-PsH"/>
                             <constraint firstItem="yz7-0p-Pk1" firstAttribute="bottom" secondItem="5qS-oh-CPY" secondAttribute="bottom" constant="10" id="Fkl-OX-LPy"/>
-                            <constraint firstItem="EOP-qN-S5y" firstAttribute="top" secondItem="yz7-0p-Pk1" secondAttribute="top" constant="185" id="Vy2-1T-scS"/>
+                            <constraint firstItem="EOP-qN-S5y" firstAttribute="top" secondItem="yz7-0p-Pk1" secondAttribute="top" constant="170" id="Vy2-1T-scS"/>
+                            <constraint firstItem="yz7-0p-Pk1" firstAttribute="bottom" secondItem="Qfg-zh-rkm" secondAttribute="bottom" constant="40" id="dan-Ar-I30"/>
                             <constraint firstItem="EOP-qN-S5y" firstAttribute="width" secondItem="znY-yM-Svl" secondAttribute="width" multiplier="0.830918" constant="-5.2000000039242877e-05" id="oi3-Mw-Zt5"/>
+                            <constraint firstItem="Qfg-zh-rkm" firstAttribute="centerX" secondItem="yz7-0p-Pk1" secondAttribute="centerX" id="pd2-t8-iD8"/>
                             <constraint firstItem="EOP-qN-S5y" firstAttribute="height" secondItem="znY-yM-Svl" secondAttribute="height" multiplier="0.0379464" constant="2.5600000000736145e-05" id="pes-4M-fEz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yz7-0p-Pk1"/>
                     </view>
                     <connections>
+                        <outlet property="CorrectButton" destination="5qS-oh-CPY" id="rEm-S9-hlv"/>
                         <outlet property="ResponseDisplay" destination="xFU-am-Qrq" id="HDZ-ci-dhR"/>
+                        <outlet property="Suspect1" destination="EM1-Zq-bWK" id="fnN-vF-Iq6"/>
                         <outlet property="userQuestion" destination="Off-sT-FWy" id="yKb-Vp-z6M"/>
+                        <outlet property="wrongAnswer" destination="Qfg-zh-rkm" id="qrt-87-wMp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FUH-g6-JhB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

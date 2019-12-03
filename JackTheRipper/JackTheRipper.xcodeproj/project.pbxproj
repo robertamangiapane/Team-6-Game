@@ -18,6 +18,7 @@
 		3F801CB4239536BF006AB7D7 /* OverLay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F801CB3239536BF006AB7D7 /* OverLay.swift */; };
 		3F801CB6239536DE006AB7D7 /* WordGridGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F801CB5239536DE006AB7D7 /* WordGridGenerator.swift */; };
 		3F9EDB8D238E81980088E1B9 /* MultipleChoice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9EDB8C238E81980088E1B9 /* MultipleChoice.storyboard */; };
+		3FA67BAD2396927D00D74308 /* Challenge5ViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA67BAC2396927D00D74308 /* Challenge5ViewControllerUITests.swift */; };
 		3FEAC0C823955D7B00A9E8FC /* GuessWhoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEAC0C723955D7B00A9E8FC /* GuessWhoTests.swift */; };
 		3FEAC0CA23955EC200A9E8FC /* GuessWho.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEAC0C923955EC200A9E8FC /* GuessWho.swift */; };
 		3FEAC0CC239579BD00A9E8FC /* Challenge5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEAC0CB239579BD00A9E8FC /* Challenge5ViewController.swift */; };
@@ -79,6 +80,7 @@
 		3F801CB3239536BF006AB7D7 /* OverLay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverLay.swift; sourceTree = "<group>"; };
 		3F801CB5239536DE006AB7D7 /* WordGridGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGridGenerator.swift; sourceTree = "<group>"; };
 		3F9EDB8C238E81980088E1B9 /* MultipleChoice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultipleChoice.storyboard; sourceTree = "<group>"; };
+		3FA67BAC2396927D00D74308 /* Challenge5ViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge5ViewControllerUITests.swift; sourceTree = "<group>"; };
 		3FEAC0C723955D7B00A9E8FC /* GuessWhoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessWhoTests.swift; sourceTree = "<group>"; };
 		3FEAC0C923955EC200A9E8FC /* GuessWho.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessWho.swift; sourceTree = "<group>"; };
 		3FEAC0CB239579BD00A9E8FC /* Challenge5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge5ViewController.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			children = (
 				7250F0E2238D82E000DF02FF /* JackTheRipperUITests.swift */,
 				7250F0E4238D82E000DF02FF /* Info.plist */,
+				3FA67BAC2396927D00D74308 /* Challenge5ViewControllerUITests.swift */,
 			);
 			path = JackTheRipperUITests;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA67BAD2396927D00D74308 /* Challenge5ViewControllerUITests.swift in Sources */,
 				7250F0E3238D82E000DF02FF /* JackTheRipperUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

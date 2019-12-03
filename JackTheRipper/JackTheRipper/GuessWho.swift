@@ -13,7 +13,7 @@ class GuessWho {
     func question(input: String) -> String {
         let words = input.lowercased().split{ !$0.isLetter }
         let hasABeard = words.contains("beard")
-        let hasAMustache = words.contains("mustache") || words.contains("moustache")
+        let hasAMustache = words.contains("mustache") || words.contains("moustache")  || words.contains("facial")
         let hasGlasses = words.contains("glasses") || words.contains("spectacles")
         let hasHair = words.contains("hair") || words.contains("bald") || words.contains("balding")
         
