@@ -29,9 +29,5 @@ class IntroViewControllerTests: XCTestCase {
         func testContinueButtonIsThere() {
             XCTAssertNotNil(introViewController.continueButton)
         }
-        
-        func testThereIsANewGame() {
-            XCTAssertNotNil(introViewController.game)
-               }
 
     }

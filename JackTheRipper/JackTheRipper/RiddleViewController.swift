@@ -67,5 +67,12 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
         checkAnswer(answer: answer.lowercased())
         return true
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         if let Congrats2ViewController = segue.destination as? Congrats2ViewController {
+             Congrats2ViewController.score = game?.score;
+             Congrats2ViewController.name = game?.title
+         }
+     }
 }
 

@@ -11,9 +11,15 @@ import UIKit
 import UserNotifications
 
 class Map3ViewController: MapViewController{
+    var score: Int? = nil
+    var name: String? = nil
+    var game : Game?
 
     override func viewDidLoad() {
         
+        game = Game()
+        game?.title = name ?? "Error"
+        game?.score = score ?? 0
         locationManager.stopMonitoring(for: geoFenceRegion1)
         locationManager.stopMonitoring(for: geoFenceRegion2)
         locationManager.startMonitoring(for: geoFenceRegion3)
