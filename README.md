@@ -1,4 +1,4 @@
-<h1 align="center">🔎 Team-6 🕵️‍♀️ 🕵</h1>
+cd <h1 align="center">🔎 Team-6 🕵️‍♀️ 🕵</h1>
 
 
 ## Card Wall:

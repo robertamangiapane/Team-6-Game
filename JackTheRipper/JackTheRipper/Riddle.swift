@@ -9,7 +9,7 @@
 import Foundation
 
 class Riddle {
-    var correctAnswer = "Correct"
+    var correctAnswer = "correct"
     let game = Game()
     
     func isSolved(answer: String) -> String {
