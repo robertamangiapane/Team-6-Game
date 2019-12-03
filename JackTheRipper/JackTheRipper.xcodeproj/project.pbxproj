@@ -40,6 +40,7 @@
 		7250F0CD238D82E000DF02FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7250F0CB238D82E000DF02FF /* LaunchScreen.storyboard */; };
 		7250F0D8238D82E000DF02FF /* JackTheRipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0D7238D82E000DF02FF /* JackTheRipperTests.swift */; };
 		7250F0E3238D82E000DF02FF /* JackTheRipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0E2238D82E000DF02FF /* JackTheRipperUITests.swift */; };
+		725B9A9E2396B23C00F202C3 /* MultipleChoiceViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725B9A9D2396B23C00F202C3 /* MultipleChoiceViewControllerTests.swift */; };
 		AF45A2E523968A6400C1D466 /* Congratulations1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF45A2E423968A6400C1D466 /* Congratulations1ViewController.swift */; };
 		AF45A2E723969BEF00C1D466 /* Info2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF45A2E623969BEF00C1D466 /* Info2ViewController.swift */; };
 		AFB9FF87238D8976001381C5 /* Map1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB9FF86238D8976001381C5 /* Map1ViewController.swift */; };
@@ -106,6 +107,7 @@
 		7250F0DE238D82E000DF02FF /* JackTheRipperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JackTheRipperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7250F0E2238D82E000DF02FF /* JackTheRipperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JackTheRipperUITests.swift; sourceTree = "<group>"; };
 		7250F0E4238D82E000DF02FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		725B9A9D2396B23C00F202C3 /* MultipleChoiceViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceViewControllerTests.swift; sourceTree = "<group>"; };
 		AF45A2E423968A6400C1D466 /* Congratulations1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Congratulations1ViewController.swift; sourceTree = "<group>"; };
 		AF45A2E623969BEF00C1D466 /* Info2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info2ViewController.swift; sourceTree = "<group>"; };
 		AFB9FF86238D8976001381C5 /* Map1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map1ViewController.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				3F5E52F223903A15003A2D2B /* RiddleTests.swift */,
 				721FC1F3238EF0070026E35E /* ViewControllerTests.swift */,
 				721FC1FB238EF2B20026E35E /* IntroViewControllerTests.swift */,
+				725B9A9D2396B23C00F202C3 /* MultipleChoiceViewControllerTests.swift */,
 			);
 			path = JackTheRipperTests;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				725B9A9E2396B23C00F202C3 /* MultipleChoiceViewControllerTests.swift in Sources */,
 				3F5E52F1239039BC003A2D2B /* RiddleViewTests.swift in Sources */,
 				3F5E52F323903A15003A2D2B /* RiddleTests.swift in Sources */,
 				721FC1F4238EF0070026E35E /* ViewControllerTests.swift in Sources */,
