@@ -86,7 +86,7 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     private func checkWordFound() -> Bool {
-        if wordsFound == gridGenerator.words {
+        if Set(wordsFound) == Set(gridGenerator.words) {
             return true
         } else {
             return false
@@ -132,7 +132,7 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
                 //check if the player found all the word. end the game
                 wordsFound.append(word)
                 
-                if checkWordFound() {
+                if checkWordFound() == true {
 
                     gameResult.isHidden = false
                 }
