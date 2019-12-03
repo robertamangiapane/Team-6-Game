@@ -44,6 +44,8 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
             scoreLabel.text = "Score:\(riddle.game.score)"
             titleLabel.text = "\(riddle.game.title)"
             tryAgainLabel.text = "Correct!"
+            userAnswer.isEnabled = false
+            userAnswer.placeholder = "Press Next"
             tryAgainLabel.isHidden = false
             toCongrats2.isHidden = false
                }
