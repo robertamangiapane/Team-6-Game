@@ -190,6 +190,7 @@
 				7250F0C4238D82E000DF02FF /* ViewController.swift */,
 				721FC1FD238EF2C60026E35E /* IntroViewController.swift */,
 				AFB9FF86238D8976001381C5 /* Map1ViewController.swift */,
+				72BCCC3B2398250900666807 /* Info1ViewController.swift */,
 				72265F54239560E900C0912C /* MultipleChoiceViewController.swift */,
 				7283F404239702DA003E93F1 /* Congrats1ViewController.swift */,
 				612B5561238E7D48002B168C /* Map2ViewController.swift */,
@@ -217,7 +218,6 @@
 				3F41C31F239565DE00A58B2E /* ImageViewCVCell.swift */,
 				3F801CAF23953564006AB7D7 /* MyCollectionViewCell.swift */,
 				61FC7AB023958D2C00790744 /* MapViewController.swift */,
-				72BCCC3B2398250900666807 /* Info1ViewController.swift */,
 			);
 			path = JackTheRipper;
 			sourceTree = "<group>";
