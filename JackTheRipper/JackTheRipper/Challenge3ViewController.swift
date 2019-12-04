@@ -152,11 +152,14 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
                 
                 //check if the player found all the word. end the game
                 if checkWordFound() == true {
+                    gameResult.isHidden = false
+                    print("here")
+                    self.navigationItem.hidesBackButton = true
+
                     game?.rightAnswer()
                     scoreLabel.text = "Score: \(game?.score ?? 0)"
                     titleLabel.text = "\(game?.title ?? "Error")"
                     delegate?.setScore(score: game?.score, name: game?.title)
-                    gameResult.isHidden = false
                 }
             } else if let word = gridGenerator.wordMap[keyReverse] {
                 if wordsFound.contains(word) {
@@ -170,6 +173,7 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
                 //check if the player found all the word. end the game
                 if checkWordFound() == true {
                     gameResult.isHidden = false
+                    self.navigationItem.hidesBackButton = true
                     game?.rightAnswer()
                     scoreLabel.text = "Score: \(game?.score ?? 0)"
                     titleLabel.text = "\(game?.title ?? "Error")"
