@@ -9,7 +9,14 @@
 import Foundation
 import UIKit
 
+protocol MultipleChoiceViewControllerDelegate : class  {
+    func setScore (score:Int?, name:String?)
+}
+
 class MultipleChoiceViewController: UIViewController {
+    weak var delegate : MultipleChoiceViewControllerDelegate?
+    var score: Int? = nil
+    var name: String? = nil
     var game : Game?
     let correctAnswer = 0
     
@@ -26,6 +33,9 @@ class MultipleChoiceViewController: UIViewController {
     override func viewDidLoad(){
         super.viewDidLoad()
         game = Game()
+        game?.title = name ?? "Novice Detective"
+        game?.score = score ?? 0
+        
         nextButton.isHidden = true
         titleLabel.text = "\(game?.title ?? "Error")"
         scoreLable.text = "Score: \(game?.score ?? 0)"
@@ -43,11 +53,13 @@ class MultipleChoiceViewController: UIViewController {
             answerLabel.isHidden = false
             nextButton.isHidden = false
             disableButtons()
+            delegate?.setScore(score: game?.score, name: game?.title)
         } else {
             title = "Incorrect"
             answerLabel.text = "Incorrect."
             answerLabel.isHidden = false
             game?.wrongAnswer()
+            delegate?.setScore(score: game?.score, name: game?.title)
         }
     }
     

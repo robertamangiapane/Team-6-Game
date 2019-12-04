@@ -51,6 +51,7 @@
 		7283F417239735EA003E93F1 /* Congrats5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283F416239735EA003E93F1 /* Congrats5ViewController.swift */; };
 		7283F419239737D6003E93F1 /* Info5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283F418239737D6003E93F1 /* Info5ViewController.swift */; };
 		7283F41B23973AB5003E93F1 /* Congrats4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283F41A23973AB5003E93F1 /* Congrats4ViewController.swift */; };
+		72BCCC3C2398250900666807 /* Info1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BCCC3B2398250900666807 /* Info1ViewController.swift */; };
 		AFB9FF87238D8976001381C5 /* Map1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB9FF86238D8976001381C5 /* Map1ViewController.swift */; };
 		AFB9FF8F239032A0001381C5 /* Riddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB9FF8E239032A0001381C5 /* Riddle.swift */; };
 		AFB9FF9123903328001381C5 /* RiddleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB9FF9023903328001381C5 /* RiddleViewController.swift */; };
@@ -124,6 +125,7 @@
 		7283F416239735EA003E93F1 /* Congrats5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Congrats5ViewController.swift; sourceTree = "<group>"; };
 		7283F418239737D6003E93F1 /* Info5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info5ViewController.swift; sourceTree = "<group>"; };
 		7283F41A23973AB5003E93F1 /* Congrats4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Congrats4ViewController.swift; sourceTree = "<group>"; };
+		72BCCC3B2398250900666807 /* Info1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info1ViewController.swift; sourceTree = "<group>"; };
 		AFB9FF86238D8976001381C5 /* Map1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map1ViewController.swift; sourceTree = "<group>"; };
 		AFB9FF8E239032A0001381C5 /* Riddle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Riddle.swift; sourceTree = "<group>"; };
 		AFB9FF9023903328001381C5 /* RiddleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleViewController.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				7250F0C4238D82E000DF02FF /* ViewController.swift */,
 				721FC1FD238EF2C60026E35E /* IntroViewController.swift */,
 				AFB9FF86238D8976001381C5 /* Map1ViewController.swift */,
+				72BCCC3B2398250900666807 /* Info1ViewController.swift */,
 				72265F54239560E900C0912C /* MultipleChoiceViewController.swift */,
 				7283F404239702DA003E93F1 /* Congrats1ViewController.swift */,
 				612B5561238E7D48002B168C /* Map2ViewController.swift */,
@@ -405,6 +408,7 @@
 				7250F0C3238D82E000DF02FF /* SceneDelegate.swift in Sources */,
 				61FC7AB123958D2C00790744 /* MapViewController.swift in Sources */,
 				612B5566238E8573002B168C /* Map3ViewController.swift in Sources */,
+				72BCCC3C2398250900666807 /* Info1ViewController.swift in Sources */,
 				7283F41323972FBB003E93F1 /* Congrats3ViewController.swift in Sources */,
 				3F41C2F6238D8F0D00A58B2E /* Game.swift in Sources */,
 				3F41C320239565DE00A58B2E /* ImageViewCVCell.swift in Sources */,
@@ -591,6 +595,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J243CS7L67;
 				INFOPLIST_FILE = JackTheRipper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -608,6 +613,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J243CS7L67;
 				INFOPLIST_FILE = JackTheRipper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
