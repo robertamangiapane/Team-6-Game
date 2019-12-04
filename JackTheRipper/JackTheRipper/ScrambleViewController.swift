@@ -86,6 +86,17 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
                 let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
                 alert.addAction(okAction)
                 self.present(alert, animated: true, completion: nil)
+                if self.numberOfMoves > 10 {
+                    self.game?.wrongAnswer()
+                    self.game?.wrongAnswer()
+                }
+                if self.numberOfMoves > 14 {
+                    self.game?.wrongAnswer()
+                    self.game?.wrongAnswer()
+                }
+                self.game?.rightAnswer()
+                self.scoreLabel.text = "Score: \(self.game?.score ?? 0)"
+                self.titleLabel.text = "\(self.game?.title ?? "Error")"
             }
         }
     }
