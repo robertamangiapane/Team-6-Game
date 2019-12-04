@@ -21,6 +21,8 @@ class Map5ViewController: MapViewController {
         game?.title = name ?? "Error"
         game?.score = score ?? 0
         
+//        self.navigationItem.rightBarButtonItem?.isEnabled = false
+        
         locationManager.stopMonitoring(for: geoFenceRegion1)
         locationManager.stopMonitoring(for: geoFenceRegion2)
         locationManager.stopMonitoring(for: geoFenceRegion3)
@@ -102,15 +104,13 @@ class Map5ViewController: MapViewController {
                      
         func crimescene5entered() {
                      
-                let alert = UIAlertController(title: "You arrive at the crimescene", message: "On the floor lays the bloody corpse of a young woman", preferredStyle: .alert)
-                let action = UIAlertAction(title: "Investigate the area for clues", style: .default) { (action) -> Void in
-                let viewControllerYouWantToPresent = self.storyboard?.instantiateViewController(withIdentifier: "Info5")
-                    self.present(viewControllerYouWantToPresent!, animated: true, completion: nil)
-                     }
-                    alert.addAction(action)
-                    self.present(alert, animated: true, completion: nil)
-                     
-                 }
+            let alert = UIAlertController(title: "You arrive at the crimescene", message: "On the floor lays the bloody corpse of a young woman", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Investigate the area for clues", style: .default)
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+            self.navigationItem.rightBarButtonItem?.isEnabled = true
+                 
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if let Info5ViewController = segue.destination as? Info5ViewController {
