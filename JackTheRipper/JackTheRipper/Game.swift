@@ -41,7 +41,6 @@ class Game{
         }
     }
     
-    
     func wrongAnswer() {
         if turnScore == turnMin {
             turnScore = turnMin
