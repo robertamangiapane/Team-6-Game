@@ -80,7 +80,6 @@ class Challenge5ViewControllerTests: XCTestCase {
     }
     
     func testPlayerTitleIsUpdated() {
-        
         viewController.game?.title = "Detective"
         viewController.game?.score = 17
         viewController.game?.changeTitle()

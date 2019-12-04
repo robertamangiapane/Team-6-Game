@@ -69,8 +69,10 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
             wrongAnswer.isHidden = true
             CorrectButton.isHidden = false
             userQuestion.isEnabled = false
+            game?.rightAnswer()
         } else {
             wrongAnswer.isHidden = false
+            game?.wrongAnswer()
             sender.setImage(UIImage(named: "redCross.png"), for: .normal)
         }
     }
