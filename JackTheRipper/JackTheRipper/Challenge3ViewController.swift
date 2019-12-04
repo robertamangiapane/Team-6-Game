@@ -138,6 +138,10 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
             let keyReverse = WordGridGenerator.wordKey(for: pos, and: startPos)
 
             if let word = gridGenerator.wordMap[key] {
+                if wordsFound.contains(word) {
+                    overlayView.removeTempLine()
+                    break
+                }
                 overlayView.acceptLastLine()
                 
                 wordsFound.append(word)
@@ -148,6 +152,10 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
                 }
             }
             else if let word = gridGenerator.wordMap[keyReverse] {
+                if wordsFound.contains(word) {
+                    overlayView.removeTempLine()
+                    break
+                }
                 overlayView.acceptLastLine()
 
                 wordsFound.append(word)
