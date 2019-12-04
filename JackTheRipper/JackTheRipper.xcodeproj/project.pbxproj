@@ -27,6 +27,8 @@
 		612B5566238E8573002B168C /* Map3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B5565238E8573002B168C /* Map3ViewController.swift */; };
 		612B556A238E8905002B168C /* Map4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B5569238E8905002B168C /* Map4ViewController.swift */; };
 		612B556E238E8B01002B168C /* Map5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B556D238E8B01002B168C /* Map5ViewController.swift */; };
+		6152FD262397FB25003E9525 /* TenBellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6152FD252397FB25003E9525 /* TenBellsViewController.swift */; };
+		6152FD282397FBD1003E9525 /* TenBellsMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6152FD272397FBD1003E9525 /* TenBellsMap.storyboard */; };
 		61FC7AB123958D2C00790744 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC7AB023958D2C00790744 /* MapViewController.swift */; };
 		721FC1F4238EF0070026E35E /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FC1F3238EF0070026E35E /* ViewControllerTests.swift */; };
 		721FC1FC238EF2B20026E35E /* IntroViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FC1FB238EF2B20026E35E /* IntroViewControllerTests.swift */; };
@@ -92,6 +94,8 @@
 		612B5565238E8573002B168C /* Map3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map3ViewController.swift; sourceTree = "<group>"; };
 		612B5569238E8905002B168C /* Map4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map4ViewController.swift; sourceTree = "<group>"; };
 		612B556D238E8B01002B168C /* Map5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map5ViewController.swift; sourceTree = "<group>"; };
+		6152FD252397FB25003E9525 /* TenBellsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenBellsViewController.swift; sourceTree = "<group>"; };
+		6152FD272397FBD1003E9525 /* TenBellsMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TenBellsMap.storyboard; sourceTree = "<group>"; };
 		61FC7AB023958D2C00790744 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		721FC1F3238EF0070026E35E /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		721FC1FB238EF2B20026E35E /* IntroViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewControllerTests.swift; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				7250F0C6238D82E000DF02FF /* Main.storyboard */,
+				6152FD252397FB25003E9525 /* TenBellsViewController.swift */,
+				6152FD272397FBD1003E9525 /* TenBellsMap.storyboard */,
 				3F801CB12395369E006AB7D7 /* Line.swift */,
 				3F801CB3239536BF006AB7D7 /* OverLay.swift */,
 				3F801CB5239536DE006AB7D7 /* WordGridGenerator.swift */,
@@ -343,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6152FD282397FBD1003E9525 /* TenBellsMap.storyboard in Resources */,
 				7250F0CD238D82E000DF02FF /* LaunchScreen.storyboard in Resources */,
 				7250F0CA238D82E000DF02FF /* Assets.xcassets in Resources */,
 				7250F0C8238D82E000DF02FF /* Main.storyboard in Resources */,
@@ -388,6 +395,7 @@
 				7283F41523973175003E93F1 /* Info4ViewController.swift in Sources */,
 				3F801CB22395369E006AB7D7 /* Line.swift in Sources */,
 				7283F419239737D6003E93F1 /* Info5ViewController.swift in Sources */,
+				6152FD262397FB25003E9525 /* TenBellsViewController.swift in Sources */,
 				3FEAC0CA23955EC200A9E8FC /* GuessWho.swift in Sources */,
 				7283F40723970D0E003E93F1 /* Info2ViewController.swift in Sources */,
 				3FEAC0CC239579BD00A9E8FC /* Challenge5ViewController.swift in Sources */,

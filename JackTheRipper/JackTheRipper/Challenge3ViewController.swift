@@ -17,9 +17,6 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     
-    
-    
-    
     @IBOutlet weak var overlayView: OverLay!
     
     @IBOutlet weak var gridCollectionView: UICollectionView!
@@ -93,9 +90,6 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
         // Setup pan gesture
          let panGR = UIPanGestureRecognizer(target: self, action: #selector(panHandling(gestureRecognizer:)))
           gridCollectionView.addGestureRecognizer(panGR)
-        
-        print("panGR")
-        print(panGR)
 
     }
     
@@ -114,66 +108,69 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
     
     @objc func panHandling(gestureRecognizer: UIPanGestureRecognizer) {
         let point = gestureRecognizer.location(in: gridCollectionView)
-        print("inside panhandling")
         
         guard let indexPath = gridCollectionView.indexPathForItem(at: point) else {
-            print("indexPath")
-//            gridCollectionView.deselectItem(at: indexPath, animated: true)
             overlayView.removeTempLine()
             return
         }
         let pos = position(from: indexPath.row)
-        print("before switch case")
-        print(gestureRecognizer)
         
         switch gestureRecognizer.state {
         case .began:
-            print("inside switch case began")
             overlayView.addTempLine(at: pos)
             gridCollectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
 
         case .changed:
             if overlayView.moveTempLine(to: pos) {
                 gridCollectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
-                print("switch case changed")
             }
 
         case .ended:
             // Stop animation
             gridCollectionView.deselectItem(at: indexPath, animated: true)
-            print("inside case ended before guard let")
-            print("startPos")
+            
             guard let startPos = overlayView.tempLine?.startPos else {
-                print("inside case ended after guard let")
                 return
             }
 //
 //            // Get the word from the pre-computed map
             let key = WordGridGenerator.wordKey(for: startPos, and: pos)
+            let keyReverse = WordGridGenerator.wordKey(for: pos, and: startPos)
 
             if let word = gridGenerator.wordMap[key] {
-                print("inside view controller function panhandling if let word")
+                if wordsFound.contains(word) {
+                    overlayView.removeTempLine()
+                    break
+                }
                 overlayView.acceptLastLine()
                 
-                //check if the player found all the word. end the game
                 wordsFound.append(word)
                 
+                //check if the player found all the word. end the game
                 if checkWordFound() == true {
                     gameResult.isHidden = false
                 }
             }
+            else if let word = gridGenerator.wordMap[keyReverse] {
+                if wordsFound.contains(word) {
+                    overlayView.removeTempLine()
+                    break
+                }
+                overlayView.acceptLastLine()
 
+                wordsFound.append(word)
+
+                //check if the player found all the word. end the game
+                if checkWordFound() == true {
+                    gameResult.isHidden = false
+                }
+
+            }
 //            // Remove the temp line
-            print("inside case ended after checkWordFound")
             overlayView.removeTempLine()
-        default:
-            print("inside default")
-            gridCollectionView.deselectItem(at: indexPath, animated: true)
-            overlayView.removeTempLine()
-            break
+        default: break
 
         }
-        print("after switch case")
     }
     
     //this function count number of item, to set number of cells in the view

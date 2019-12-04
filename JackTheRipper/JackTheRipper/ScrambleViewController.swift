@@ -86,6 +86,17 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
                 let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
                 alert.addAction(okAction)
                 self.present(alert, animated: true, completion: nil)
+                if self.numberOfMoves > 10 {
+                    self.game?.wrongAnswer()
+                    self.game?.wrongAnswer()
+                }
+                if self.numberOfMoves > 14 {
+                    self.game?.wrongAnswer()
+                    self.game?.wrongAnswer()
+                }
+                self.game?.rightAnswer()
+                self.scoreLabel.text = "Score: \(self.game?.score ?? 0)"
+                self.titleLabel.text = "\(self.game?.title ?? "Error")"
             }
         }
     }
@@ -157,13 +168,13 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         self.view.addSubview(myCollectionView)
         myCollectionView.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 20).isActive=true
-        myCollectionView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 20).isActive=true
+        myCollectionView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 100).isActive=true
         myCollectionView.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -21).isActive=true
         myCollectionView.heightAnchor.constraint(equalTo: myCollectionView.widthAnchor).isActive=true
         
         self.view.addSubview(btnSwap)
         btnSwap.widthAnchor.constraint(equalToConstant: 200).isActive=true
-        btnSwap.topAnchor.constraint(equalTo: myCollectionView.bottomAnchor, constant: 20).isActive=true
+        btnSwap.topAnchor.constraint(equalTo: myCollectionView.bottomAnchor, constant: 0).isActive=true
         btnSwap.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive=true
         btnSwap.heightAnchor.constraint(equalToConstant: 50).isActive=true
         btnSwap.addTarget(self, action: #selector(btnSwapAction), for: .touchUpInside)

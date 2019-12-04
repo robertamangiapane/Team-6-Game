@@ -28,6 +28,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UNUserNoti
     
     let geoFenceRegion5:CLCircularRegion = CLCircularRegion(center: CLLocationCoordinate2D(latitude: 51.519076,
     longitude: -0.075825), radius: 20, identifier: "Victim")
+    
+    let geoFenceRegion6:CLCircularRegion = CLCircularRegion(center: CLLocationCoordinate2D(latitude: 51.519393,
+    longitude: -0.074271), radius: 10, identifier: "Victim")
 
      override func viewDidLoad() {
             super.viewDidLoad()
