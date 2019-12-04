@@ -82,7 +82,7 @@ class Map3ViewController: MapViewController{
                  
     func crimescene3entered() {
                  
-        let alert = UIAlertController(title: "You arrive at the crimescene", message: "On the floor lays the bloody corpse of a young woman", preferredStyle: .alert)
+        let alert = UIAlertController(title: "You arrive at the crimescene", message: "The body of Elizabeth Stride was discovered by a steward just after 1:00 AM on September 30, 1888.", preferredStyle: .alert)
         let action = UIAlertAction(title: "Investigate the area for clues", style: .default)
         alert.addAction(action)
         self.present(alert, animated: true, completion: nil)

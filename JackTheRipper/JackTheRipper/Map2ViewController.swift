@@ -70,7 +70,7 @@ class Map2ViewController: MapViewController {
              
          func crimescene2entered() {
              
-             let alert = UIAlertController(title: "You arrive at the crimescene", message: "The body of Annie Chapman was discovered by a market porter just after 6 A.M. on September 8, 1888.", preferredStyle: .alert)
+             let alert = UIAlertController(title: "You arrive at the crimescene", message: "The body of Annie Chapman was discovered by a market porter just after 6:00 AM on September 8, 1888.", preferredStyle: .alert)
              let action = UIAlertAction(title: "Investigate the area for clues", style: .default)
              alert.addAction(action)
              self.present(alert, animated: true, completion: nil)
