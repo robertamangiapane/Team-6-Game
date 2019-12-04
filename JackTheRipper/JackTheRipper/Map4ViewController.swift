@@ -11,9 +11,15 @@ import UIKit
 import UserNotifications
 
 class Map4ViewController: MapViewController {
-
+    var score: Int? = nil
+    var name: String? = nil
+    var game : Game?
+    
     override func viewDidLoad() {
         
+        game = Game()
+        game?.title = name ?? "Error"
+        game?.score = score ?? 0
         locationManager.stopMonitoring(for: geoFenceRegion1)
         locationManager.stopMonitoring(for: geoFenceRegion2)
         locationManager.stopMonitoring(for: geoFenceRegion3)
@@ -93,6 +99,13 @@ class Map4ViewController: MapViewController {
             self.present(alert, animated: true, completion: nil)
                      
         }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let Info4ViewController = segue.destination as? Info4ViewController {
+        Info4ViewController .score = game?.score;
+        Info4ViewController .name = game?.title
+        }
+    }
 
 
     @IBOutlet weak var mapView: MKMapView!

@@ -200,4 +200,11 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
         
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let Congrats3ViewController = segue.destination as? Congrats3ViewController {
+            Congrats3ViewController.score = game?.score;
+            Congrats3ViewController.name = game?.title
+        }
+    }
 }

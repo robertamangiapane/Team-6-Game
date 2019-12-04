@@ -9,7 +9,9 @@ import Foundation
 import UIKit
 
 class Challenge5ViewController: UIViewController, UITextFieldDelegate {
-    
+    var score: Int? = nil
+    var name: String? = nil
+    var game : Game?
     var guessWho: GuessWho?
     var input = ""
     
@@ -21,6 +23,9 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        game = Game()
+        game?.title = name ?? "Error"
+        game?.score = score ?? 0
         ResponseDisplay.isHidden = true
         CorrectButton.isHidden = true
         wrongAnswer.isHidden = true
