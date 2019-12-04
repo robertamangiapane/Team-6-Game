@@ -9,7 +9,12 @@
 //import Foundation
 import UIKit
 
+protocol Challenge3ViewControllerDelegate : class {
+    func setScore (score:Int?, name:String?)
+}
+
 class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    weak var delegate : Challenge3ViewControllerDelegate?
     var score: Int? = nil
     var name: String? = nil
     var game : Game?
@@ -45,18 +50,17 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
         gameResult.setTitle("You found all the clues", for: .normal)
         gameResult.isHidden = true
         
+        super.viewDidLoad()
+        setupGridCollectionView()
+        setupOverlayView()
+        loadGame()
+    
         game = Game()
         game?.title = name ?? "Error"
         game?.score = score ?? 0
         scoreLabel.text = "Score: \(game?.score ?? 0)"
         titleLabel.text = "\(game?.title ?? "Error")"
         
-        super.viewDidLoad()
-        setupGridCollectionView()
-        setupOverlayView()
-        loadGame()
-        
-
         // Do any additional setup after loading the view.
     }
     
@@ -148,10 +152,13 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
                 
                 //check if the player found all the word. end the game
                 if checkWordFound() == true {
+                    game?.rightAnswer()
+                    scoreLabel.text = "Score: \(game?.score ?? 0)"
+                    titleLabel.text = "\(game?.title ?? "Error")"
+                    delegate?.setScore(score: game?.score, name: game?.title)
                     gameResult.isHidden = false
                 }
-            }
-            else if let word = gridGenerator.wordMap[keyReverse] {
+            } else if let word = gridGenerator.wordMap[keyReverse] {
                 if wordsFound.contains(word) {
                     overlayView.removeTempLine()
                     break
@@ -163,8 +170,15 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
                 //check if the player found all the word. end the game
                 if checkWordFound() == true {
                     gameResult.isHidden = false
+                    game?.rightAnswer()
+                    scoreLabel.text = "Score: \(game?.score ?? 0)"
+                    titleLabel.text = "\(game?.title ?? "Error")"
+                    delegate?.setScore(score: game?.score, name: game?.title)
                 }
 
+            } else {
+                game?.wrongAnswer()
+                delegate?.setScore(score: game?.score, name: game?.title)
             }
 //            // Remove the temp line
             overlayView.removeTempLine()
