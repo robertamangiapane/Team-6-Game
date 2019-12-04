@@ -14,7 +14,19 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JTR" translatesAutoresizingMaskIntoConstraints="NO" id="u5T-kV-0eb">
+                                <rect key="frame" x="87" y="333" width="240" height="240"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="quaternarySystemFillColor" red="0.4549019608" green="0.4549019608" blue="0.50196078430000002" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="u5T-kV-0eb" secondAttribute="trailing" constant="40" id="3vl-9V-5jn"/>
+                            <constraint firstItem="u5T-kV-0eb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Bcl-jx-orP"/>
+                            <constraint firstItem="u5T-kV-0eb" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="15:56" id="UCi-as-y6g"/>
+                            <constraint firstItem="u5T-kV-0eb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="c2T-SL-muG"/>
+                            <constraint firstItem="u5T-kV-0eb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="yqN-xq-6Mt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -23,4 +35,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="JTR" width="485" height="240"/>
+    </resources>
 </document>

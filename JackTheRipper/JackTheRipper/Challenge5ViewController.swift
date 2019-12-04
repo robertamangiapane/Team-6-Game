@@ -22,6 +22,7 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var CorrectButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var Suspect2: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,13 +66,15 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func SuspectButtons(_ sender: UIButton) {
         if sender == Suspect1 {
-            wrongAnswer.isHidden = true;
-            CorrectButton.isHidden = false;
-            userQuestion.isEnabled = false;
+            wrongAnswer.isHidden = true
+            CorrectButton.isHidden = false
+            userQuestion.isEnabled = false
+            game?.rightAnswer()
         } else {
-            wrongAnswer.isHidden = false;
+            wrongAnswer.isHidden = false
+            game?.wrongAnswer()
+            sender.setImage(UIImage(named: "redCross.png"), for: .normal)
         }
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
