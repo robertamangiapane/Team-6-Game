@@ -120,6 +120,12 @@
                                     <constraint firstAttribute="width" constant="414" id="w6r-gf-mIx"/>
                                 </constraints>
                             </mapView>
+                            <view userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ard-x4-kda">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -145,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HI1-h4-A35" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1645" y="139"/>
+            <point key="canvasLocation" x="1644.9275362318842" y="138.61607142857142"/>
         </scene>
         <!--Info1-->
         <scene sceneID="vJc-4H-WP4">
@@ -379,6 +385,12 @@
                                     <constraint firstAttribute="height" constant="818" id="woq-wd-eTQ"/>
                                 </constraints>
                             </mapView>
+                            <view userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="boq-Rs-bmZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -402,7 +414,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7HD-NP-Qyc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-788" y="806"/>
+            <point key="canvasLocation" x="-788.40579710144937" y="805.58035714285711"/>
         </scene>
         <!--Info2ViewController-->
         <scene sceneID="Bzo-Kj-R5L">
@@ -625,17 +637,23 @@
         <scene sceneID="YRc-hn-BJI">
             <objects>
                 <viewController restorationIdentifier="Map3Controller" storyboardIdentifier="Map3Controller" id="E4q-fY-Cdl" customClass="Map3ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LXh-fj-T8Y">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="LXh-fj-T8Y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gNt-s1-OIg">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gNt-s1-OIg">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="JTx-HA-HBt"/>
                                     <constraint firstAttribute="height" constant="818" id="X4U-Ji-up3"/>
                                 </constraints>
                             </mapView>
+                            <view userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GSB-MF-rhy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -659,7 +677,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ay-Re-KP0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2168" y="806"/>
+            <point key="canvasLocation" x="2166.666666666667" y="805.58035714285711"/>
         </scene>
         <!--Challenge3 View Controller-->
         <scene sceneID="4sS-pY-oMf">
@@ -802,17 +820,23 @@
         <scene sceneID="H8R-x4-y5D">
             <objects>
                 <viewController restorationIdentifier="Map4Controller" storyboardIdentifier="Map4Controller" id="frt-1c-fIh" customClass="Map4ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SgU-y4-dK2">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="SgU-y4-dK2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QZv-mo-CGE">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QZv-mo-CGE">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="818" id="8Eq-nY-g1i"/>
                                     <constraint firstAttribute="width" constant="414" id="Qjf-MS-TbC"/>
                                 </constraints>
                             </mapView>
+                            <view userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cLQ-lx-TXi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -836,7 +860,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNh-TE-wve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="619" y="1493"/>
+            <point key="canvasLocation" x="618.84057971014499" y="1492.6339285714284"/>
         </scene>
         <!--Info4ViewController-->
         <scene sceneID="UnX-fL-r4D">
@@ -1184,17 +1208,23 @@
         <scene sceneID="cfd-9B-xCb">
             <objects>
                 <viewController restorationIdentifier="Map5Controller" storyboardIdentifier="Map5Controller" id="Y61-NX-ckq" customClass="Map5ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9ab-RW-3tw">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="9ab-RW-3tw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8zz-ci-FG6">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8zz-ci-FG6">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="818" id="Jyo-DR-Jcd"/>
                                     <constraint firstAttribute="width" constant="414" id="ex8-oa-8qu"/>
                                 </constraints>
                             </mapView>
+                            <view userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X9h-Hg-fXj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -1218,7 +1248,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YAs-3D-MEU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-788" y="2179"/>
+            <point key="canvasLocation" x="-788.40579710144937" y="2178.3482142857142"/>
         </scene>
         <!--Info5ViewController-->
         <scene sceneID="AGz-aJ-rRg">
