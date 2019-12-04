@@ -1081,6 +1081,20 @@
                                     <segue destination="q2R-Nj-Szg" kind="show" id="9vB-tk-tco"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQl-a9-GfZ">
+                                <rect key="frame" x="20" y="88" width="103" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Novice Detective" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82o-R5-7T6">
+                                <rect key="frame" x="231" y="88" width="148" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="quaternarySystemFillColor" red="0.4549019608" green="0.4549019608" blue="0.50196078430000002" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1111,6 +1125,8 @@
                         <outlet property="CorrectButton" destination="ySa-2c-IVE" id="opA-mz-8tf"/>
                         <outlet property="ResponseDisplay" destination="E5u-LV-ljd" id="RQc-nc-bOY"/>
                         <outlet property="Suspect1" destination="ici-wl-TN6" id="zhA-sr-5pZ"/>
+                        <outlet property="scoreLabel" destination="IQl-a9-GfZ" id="Rjv-TT-Mro"/>
+                        <outlet property="titleLabel" destination="82o-R5-7T6" id="yyK-RA-5wX"/>
                         <outlet property="userQuestion" destination="VE5-rB-uJG" id="lPj-PD-mIf"/>
                         <outlet property="wrongAnswer" destination="fMI-hK-RGG" id="3e4-0E-tXT"/>
                     </connections>
@@ -1119,10 +1135,10 @@
             </objects>
             <point key="canvasLocation" x="2021.7391304347827" y="1498.6607142857142"/>
         </scene>
-        <!--Congrats5-->
+        <!--Congrats5ViewController-->
         <scene sceneID="FrV-4g-A4A">
             <objects>
-                <viewController title="Congrats5" id="q2R-Nj-Szg" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Congrats5ViewController" title="Congrats5ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="q2R-Nj-Szg" customClass="Congrats5ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oGd-5V-zRw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1136,11 +1152,29 @@
                                     <segue destination="Y61-NX-ckq" kind="show" id="wmd-Yo-YPW"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMU-77-2uN">
+                                <rect key="frame" x="291" y="102" width="103" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Novice Detective" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2UK-iR-qy7">
+                                <rect key="frame" x="246" y="134" width="148" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="FGQ-LU-yB3"/>
                     </view>
                     <navigationItem key="navigationItem" id="mN6-z1-kvZ"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="DMU-77-2uN" id="M3V-Xn-sS8"/>
+                        <outlet property="titleLabel" destination="2UK-iR-qy7" id="h5O-4q-D49"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LBV-Qe-Yll" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
