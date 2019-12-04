@@ -9,7 +9,7 @@
 import Foundation
 
 class Riddle {
-    var correctAnswer = "correct"
+    var correctAnswer = "leather apron"
     
     func isSolved(answer: String) -> String {
         if answer == correctAnswer {
