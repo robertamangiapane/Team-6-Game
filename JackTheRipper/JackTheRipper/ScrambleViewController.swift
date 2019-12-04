@@ -29,6 +29,13 @@ public extension UIAlertController {
 }
 
 class ScrambleViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    var score: Int? = nil
+    var name: String? = nil
+    var game : Game?
+    
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    
         
     let questionImageArray = [#imageLiteral(resourceName: "7"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "10"), #imageLiteral(resourceName: "11"), #imageLiteral(resourceName: "12"), #imageLiteral(resourceName: "1"), #imageLiteral(resourceName: "3"), #imageLiteral(resourceName: "5"), #imageLiteral(resourceName: "4"), #imageLiteral(resourceName: "8"), #imageLiteral(resourceName: "9"), #imageLiteral(resourceName: "2")]
     let correctAns = [4,3,2,10,9,0,1,7,8,6,11,5]
@@ -40,11 +47,16 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
     var firstIndexPath: IndexPath?
     var secondIndexPath: IndexPath?
     
+     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Scramble"
         self.navigationController?.navigationBar.isTranslucent = false
-        
+        game = Game()
+        game?.title = name ?? "Error"
+        game?.score = score ?? 0
+        scoreLabel.text = "Score: \(game?.score ?? 0)"
+        titleLabel.text = "\(game?.title ?? "Error")"
         wrongImageArray = questionImageArray
         setupViews()
     }
@@ -203,5 +215,11 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
         lbl.translatesAutoresizingMaskIntoConstraints=false
         return lbl
     }()
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let Congrats4ViewController = segue.destination as? Congrats4ViewController {
+            Congrats4ViewController.score = game?.score;
+            Congrats4ViewController.name = game?.title
+        }
+    }
 }
 

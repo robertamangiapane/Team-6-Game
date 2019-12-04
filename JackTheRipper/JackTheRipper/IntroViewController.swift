@@ -10,14 +10,12 @@ import Foundation
 import UIKit
 
 class IntroViewController: UIViewController {
-    var game: Game?
     
     //MARK: Properties
     @IBOutlet weak var TitleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         game = Game()
         // Do any additional setup after loading the view.
     }
     

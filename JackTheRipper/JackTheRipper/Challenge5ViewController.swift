@@ -9,7 +9,9 @@ import Foundation
 import UIKit
 
 class Challenge5ViewController: UIViewController, UITextFieldDelegate {
-    
+    var score: Int? = nil
+    var name: String? = nil
+    var game : Game?
     var guessWho: GuessWho?
     var input = ""
     
@@ -18,9 +20,16 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var Suspect1: UIButton!
     @IBOutlet weak var wrongAnswer: UILabel!
     @IBOutlet weak var CorrectButton: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        game = Game()
+        game?.title = name ?? "Error"
+        game?.score = score ?? 0
+        scoreLabel.text = "Score: \(game?.score ?? 0)"
+        titleLabel.text = "\(game?.title ?? "Error")"
         ResponseDisplay.isHidden = true
         CorrectButton.isHidden = true
         wrongAnswer.isHidden = true
@@ -56,12 +65,19 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func SuspectButtons(_ sender: UIButton) {
         if sender == Suspect1 {
-            wrongAnswer.isHidden = true
-            CorrectButton.isHidden = false
-            userQuestion.isEnabled = false
+            wrongAnswer.isHidden = true;
+            CorrectButton.isHidden = false;
+            userQuestion.isEnabled = false;
         } else {
-            wrongAnswer.isHidden = false
+            wrongAnswer.isHidden = false;
         }
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let Congrats5ViewController = segue.destination as? Congrats5ViewController {
+            Congrats5ViewController.score = game?.score;
+            Congrats5ViewController.name = game?.title
+        }
     }
 }
