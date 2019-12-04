@@ -28,10 +28,6 @@ class Challenge5ViewControllerTests: XCTestCase {
             super.tearDown()
         }
     
-    func test() {
-        XCTAssertTrue(true)
-    }
-    
     func testHasAGuessWho() {
         XCTAssertNotNil(viewController.guessWho)
     }
