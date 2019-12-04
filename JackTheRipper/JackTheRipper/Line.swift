@@ -87,13 +87,11 @@ class Line: CAShapeLayer {
     /// - Parameter endPos: target end position of the line
     /// - Returns: if the end position is valid or not
     func attempt(endPos: Position) -> Bool {
-        print("inside Line func attempt")
         if isHorizontal(with: endPos) ||
             isVertical(with: endPos) ||
             isDiagonal(with: endPos) {
             self.endPos = endPos
-            print("end position - inside attempt")
-            print(endPos)
+
             return true
         }
         return false
@@ -105,10 +103,8 @@ class Line: CAShapeLayer {
     /// - Parameter view: containing view
     // draw the blu hightlight while selecting words
     func draw(on view: UIView) {
-        print("inside Line func draw")
         guard let startPos = startPos,
             let endPos = endPos else {
-                print("out of grid")
                 return
         }
         self.removeFromSuperlayer()

@@ -41,7 +41,6 @@ class OverLay: UIView {
     
     // function called at the start of a move, to starting drawing the blu highlight
     func addTempLine(at position: Position) {
-        print("inside overLay func addTempline")
         tempLine = Line(style: selectingStyle)
         tempLine?.cellSize = cellSize
         tempLine?.startPos = position
@@ -54,7 +53,6 @@ class OverLay: UIView {
     /// - Parameter position: target end position
     /// - Returns: true if the line should be updated/drawn.
     func moveTempLine(to position: Position) -> Bool {
-        print("inside overLay func moveTempline")
         if tempLine?.attempt(endPos: position) == true {
             tempLine?.draw(on: self)
             return true
@@ -64,15 +62,12 @@ class OverLay: UIView {
     
     // function called when a moved is finish, after checked the word is not in the array of the words to search. it removes the blu highlighting
     func removeTempLine() {
-        print("inside overLay func removeTempline")
         self.tempLine?.clear()
         self.tempLine = nil
     }
     
     /// User has selected a corrected word, convert to a permanent line
     func acceptLastLine() {
-        print("inside overLay func acceptLastLine")
-//        print(tempLine)
         if let permLine = tempLine {
             permLine.lineStyle = selectedStyle
             permanentLines.append(permLine)
@@ -87,7 +82,6 @@ class OverLay: UIView {
     ///
     /// - Parameter rect: rect
     override func draw(_ rect: CGRect) {
-        print("inside overlay draw")
         //called 2 times when the grid is created
         super.draw(rect)
         tempLine?.cellSize = cellSize
