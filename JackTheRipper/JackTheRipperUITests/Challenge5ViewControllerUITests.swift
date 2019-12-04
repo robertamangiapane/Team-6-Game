@@ -27,8 +27,10 @@ class Challenge5ViewControllerUITests: XCTestCase {
     }
 
     func testSuspectButton() {
-//        XCUIApplication().buttons["Suspect1"].tap()
-              
+        let app = XCUIApplication()
+        let suspect1 = app.buttons["Suspect1"]
+//        suspect1.tap()
+//        XCTAssert
     }
 
 }
