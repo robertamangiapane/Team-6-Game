@@ -1220,10 +1220,10 @@
             </objects>
             <point key="canvasLocation" x="-788" y="2179"/>
         </scene>
-        <!--Info5-->
+        <!--Info5ViewController-->
         <scene sceneID="AGz-aJ-rRg">
             <objects>
-                <viewController storyboardIdentifier="Info5" title="Info5" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tlo-kg-mpc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Info5ViewController" title="Info5ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tlo-kg-mpc" customClass="Info5ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7tE-hv-8es">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1237,15 +1237,33 @@
                                     <segue destination="GlC-PM-9AB" kind="show" id="NxN-Vd-0JU"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42f-TP-dGd">
+                                <rect key="frame" x="291" y="88" width="103" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Novice Detective" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAJ-fB-9dk">
+                                <rect key="frame" x="242" y="116" width="152" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="oGW-wb-ThE"/>
                     </view>
                     <navigationItem key="navigationItem" id="Fzb-SG-Uyf"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="42f-TP-dGd" id="ghw-fP-eI0"/>
+                        <outlet property="titleLabel" destination="eAJ-fB-9dk" id="rlr-h1-IG0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d02-S1-H7f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="99" y="2186"/>
+            <point key="canvasLocation" x="98.550724637681171" y="2185.7142857142858"/>
         </scene>
         <!--Scramble View Controller-->
         <scene sceneID="ROE-nP-bqd">
@@ -1263,20 +1281,38 @@
                                     <segue destination="VB1-cK-9WU" kind="show" id="su4-Yn-1IV"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQQ-cf-h9n">
+                                <rect key="frame" x="43" y="758" width="103" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Novice Detective" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3y-dQ-h2A">
+                                <rect key="frame" x="246" y="758" width="148" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="kG8-5M-yzw"/>
                     </view>
                     <navigationItem key="navigationItem" id="Vxm-fo-op7"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="SQQ-cf-h9n" id="0tJ-RI-8Dc"/>
+                        <outlet property="titleLabel" destination="D3y-dQ-h2A" id="suN-Fp-Hxn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dj-xg-IYN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="922" y="2188"/>
         </scene>
-        <!--Congrats4-->
+        <!--Congrats4ViewController-->
         <scene sceneID="5vA-RW-lcd">
             <objects>
-                <viewController title="Congrats4" id="VB1-cK-9WU" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Congrats4ViewController" title="Congrats4ViewController" id="VB1-cK-9WU" customClass="Congrats4ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jpt-75-6gi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1286,15 +1322,33 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button to Map5"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxf-hL-W3c">
+                                <rect key="frame" x="297" y="88" width="103" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Novice Detective" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHJ-Q2-lEu">
+                                <rect key="frame" x="252" y="120" width="148" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ONf-nt-dKD"/>
                     </view>
                     <navigationItem key="navigationItem" id="7EU-iI-htQ"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="Fxf-hL-W3c" id="1EW-fZ-uGD"/>
+                        <outlet property="titleLabel" destination="lHJ-Q2-lEu" id="M95-Hg-RsY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Zi-mP-uvw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1571" y="2186"/>
+            <point key="canvasLocation" x="1569.5652173913045" y="2185.7142857142858"/>
         </scene>
     </scenes>
     <resources>

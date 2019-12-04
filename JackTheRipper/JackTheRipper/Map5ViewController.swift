@@ -113,9 +113,9 @@ class Map5ViewController: MapViewController {
                  }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if let Map5ViewController = segue.destination as? Map5ViewController {
-            Map5ViewController.score = game?.score;
-            Map5ViewController.name = game?.title
+    if let Info5ViewController = segue.destination as? Info5ViewController {
+            Info5ViewController.score = game?.score;
+            Info5ViewController.name = game?.title
         }
     }
 
