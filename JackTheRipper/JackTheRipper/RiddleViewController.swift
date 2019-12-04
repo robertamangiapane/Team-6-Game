@@ -9,7 +9,12 @@
 import Foundation
 import UIKit
 
+protocol RiddleViewControllerDelegate : class  {
+    func setScore (score:Int?, name:String?)
+}
+
 class RiddleViewController: UIViewController, UITextFieldDelegate {
+    weak var delegate : RiddleViewControllerDelegate?
     let riddle = Riddle()
     var game : Game?
     var score: Int? = nil
@@ -44,6 +49,7 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
             game?.wrongAnswer()
             tryAgainLabel.text = "Incorrect"
             tryAgainLabel.isHidden = false
+            delegate?.setScore(score: game?.score, name: game?.title)
                } else {
             game?.rightAnswer()
             scoreLabel.text = "Score:\(game?.score ?? 0)"
@@ -53,6 +59,7 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
             userAnswer.placeholder = "Press Next"
             tryAgainLabel.isHidden = false
             toCongrats2.isHidden = false
+            delegate?.setScore(score: game?.score, name: game?.title)
                }
     }
     

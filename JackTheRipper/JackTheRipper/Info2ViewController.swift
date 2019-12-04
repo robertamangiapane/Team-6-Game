@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Info2ViewController: UIViewController {
+class Info2ViewController: UIViewController, RiddleViewControllerDelegate {
     
     var score: Int? = nil
     var name: String? = nil
@@ -31,6 +31,12 @@ class Info2ViewController: UIViewController {
         if let RiddleViewController = segue.destination as? RiddleViewController {
             RiddleViewController.score = game?.score;
             RiddleViewController.name = game?.title
+            RiddleViewController.delegate = self
         }
+    }
+    
+    func setScore (score: Int?, name: String?) {
+     game?.title = name ?? "Error"
+     game?.score = score ?? 0
     }
 }
