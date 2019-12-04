@@ -1090,9 +1090,8 @@
                                 <color key="textColor" red="1" green="0.87058823529999996" blue="0.49019607840000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySa-2c-IVE">
-                                <rect key="frame" x="163" y="805" width="86" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySa-2c-IVE">
+                                <rect key="frame" x="145" y="782" width="124" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -1119,6 +1118,7 @@
                             <constraint firstItem="0Pc-tC-H62" firstAttribute="width" secondItem="9k8-yC-qd3" secondAttribute="width" multiplier="0.830918" constant="-5.2000000039242877e-05" id="gz0-rx-MMk"/>
                             <constraint firstItem="0Pc-tC-H62" firstAttribute="height" secondItem="9k8-yC-qd3" secondAttribute="height" multiplier="0.0379464" constant="2.5600000000736145e-05" id="hgd-MU-RGD"/>
                             <constraint firstItem="VE5-rB-uJG" firstAttribute="centerX" secondItem="bkg-31-hGO" secondAttribute="centerX" id="jXq-DR-MPM"/>
+                            <constraint firstItem="ySa-2c-IVE" firstAttribute="bottom" secondItem="bkg-31-hGO" secondAttribute="bottom" constant="17" id="kcH-rH-tsC"/>
                             <constraint firstItem="0Pc-tC-H62" firstAttribute="top" secondItem="bkg-31-hGO" secondAttribute="top" constant="175" id="mAP-mB-WYr"/>
                             <constraint firstItem="VE5-rB-uJG" firstAttribute="top" secondItem="bkg-31-hGO" secondAttribute="top" constant="64" id="mpD-IM-a8i"/>
                         </constraints>
