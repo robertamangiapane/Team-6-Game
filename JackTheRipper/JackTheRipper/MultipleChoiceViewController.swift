@@ -64,6 +64,7 @@ class MultipleChoiceViewController: UIViewController {
     }
     
     func disableButtons(){
+        self.navigationItem.hidesBackButton = true
         rightAnswer.isUserInteractionEnabled = false
         wrongAnswer1.isUserInteractionEnabled = false
         wrongAnswer2.isUserInteractionEnabled = false
