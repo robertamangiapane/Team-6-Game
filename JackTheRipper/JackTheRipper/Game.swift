@@ -27,13 +27,13 @@ class Game{
     func changeTitle() {
          if score < 5 {
             title = "Novice Detective"
-        } else if score > 4  && score < 11 {
+        } else if score >= 5  && score < 10{
             title = "Junior Detective"
-        } else if score > 10 && score < 16 {
+        } else if score >= 10 && score < 15 {
             title = "Detective"
-        } else if score > 15 && score < 21 {
+        } else if score >= 15 && score < 20 {
             title = "Senior Detective"
-        } else if score > 20 {
+        } else if score >= 20 {
             title = "Master Detective"
             }
         }
