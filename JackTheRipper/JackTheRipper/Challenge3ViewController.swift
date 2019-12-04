@@ -135,18 +135,29 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
 //
 //            // Get the word from the pre-computed map
             let key = WordGridGenerator.wordKey(for: startPos, and: pos)
+            let keyReverse = WordGridGenerator.wordKey(for: pos, and: startPos)
 
             if let word = gridGenerator.wordMap[key] {
                 overlayView.acceptLastLine()
                 
-                //check if the player found all the word. end the game
                 wordsFound.append(word)
                 
+                //check if the player found all the word. end the game
                 if checkWordFound() == true {
                     gameResult.isHidden = false
                 }
             }
+            else if let word = gridGenerator.wordMap[keyReverse] {
+                overlayView.acceptLastLine()
 
+                wordsFound.append(word)
+
+                //check if the player found all the word. end the game
+                if checkWordFound() == true {
+                    gameResult.isHidden = false
+                }
+
+            }
 //            // Remove the temp line
             overlayView.removeTempLine()
         default: break
