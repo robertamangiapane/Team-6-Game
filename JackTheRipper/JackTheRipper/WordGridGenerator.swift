@@ -40,7 +40,7 @@ fileprivate extension Grid {
 
 class WordGridGenerator {
     
-    var words: [String] = ["LONDON", "JACK", "RIPPER"]
+    var words: [String] = ["DUTFIELDS", "YARD", "GOLDSTEIN", "LEON", "MORTIMER"]
     var nRow: Int = 10
     var nCol: Int = 10
     var wordMap: [String: String] = [:]
@@ -56,8 +56,10 @@ class WordGridGenerator {
         
         var grid = Grid(repeating: [Character](repeating: WordGridGenerator.placeholder, count: nCol), count: nRow)
         grid = assignWord(word: words[0], grid: grid, start: Position(row: 0, col: 0), direction: "v")
-        grid = assignWord(word: words[1], grid: grid, start: Position(row: 1, col: 1), direction: "h")
-        grid = assignWord(word: words[2], grid: grid, start: Position(row: 2, col: 2), direction: "d")
+        grid = assignWord(word: words[1], grid: grid, start: Position(row: 1, col: 4), direction: "h")
+        grid = assignWord(word: words[2], grid: grid, start: Position(row: 1, col: 1), direction: "d")
+        grid = assignWord(word: words[3], grid: grid, start: Position(row: 6, col: 0), direction: "h")
+        grid = assignWord(word: words[4], grid: grid, start: Position(row: 1, col: 9), direction: "v")
         
         return grid.randomizePlaceHolders()
     }
