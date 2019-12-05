@@ -77,14 +77,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A message from Scotland Yard:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxX-PQ-qtf">
-                                <rect key="frame" x="37" y="213" width="343" height="84"/>
+                                <rect key="frame" x="37" y="298" width="343" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="36"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A ghastly murder has taken place in Whitechapel. You must go to the following location immediately to look for clues!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36b-rY-MaU">
-                                <rect key="frame" x="35" y="305" width="345" height="229"/>
+                                <rect key="frame" x="35" y="390" width="345" height="229"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -101,11 +101,18 @@
                                     <segue destination="nnn-fW-z9h" kind="show" id="on1-3V-sLt"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="blood1" translatesAutoresizingMaskIntoConstraints="NO" id="3Jg-0i-jST">
+                                <rect key="frame" x="1" y="153" width="413" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UAV-8T-Iif"/>
                     </view>
                     <navigationItem key="navigationItem" id="0dz-sz-xIS"/>
+                    <connections>
+                        <outlet property="bloodImg" destination="3Jg-0i-jST" id="X7i-iS-QTS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UIB-FW-YeF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -352,7 +359,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No time to dally though,  another murder has just been reported!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1J6-0U-GiJ">
-                                <rect key="frame" x="56" y="388" width="302" height="220"/>
+                                <rect key="frame" x="56" y="418" width="302" height="220"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="28"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -366,14 +373,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The direction of the wounds from left to right suggest that the culprit was left-handed." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXi-GJ-5at">
-                                <rect key="frame" x="21" y="223" width="373" height="248"/>
+                                <rect key="frame" x="21" y="253" width="373" height="248"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="28"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are right!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBQ-lR-QBK">
-                                <rect key="frame" x="92" y="201" width="231" height="49"/>
+                                <rect key="frame" x="92" y="231" width="231" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="42"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -397,12 +404,17 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="blood2" translatesAutoresizingMaskIntoConstraints="NO" id="d7p-kg-kOY">
+                                <rect key="frame" x="118" y="301" width="227" height="448"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Jkd-7i-Jvo"/>
                     </view>
                     <navigationItem key="navigationItem" id="qqS-Ou-h4F"/>
                     <connections>
+                        <outlet property="bloodImg" destination="d7p-kg-kOY" id="BvB-qa-uBh"/>
                         <outlet property="scoreLabel" destination="ydq-fR-lFV" id="u8O-l3-G2G"/>
                         <outlet property="titleLabel" destination="wmg-Sw-OQO" id="cll-sI-dbu"/>
                     </connections>
@@ -643,12 +655,17 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="blood3" translatesAutoresizingMaskIntoConstraints="NO" id="rbB-52-bNK">
+                                <rect key="frame" x="-1" y="427" width="419" height="388"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="PuR-Du-cd9"/>
                     </view>
                     <navigationItem key="navigationItem" id="DAA-nW-lf3"/>
                     <connections>
+                        <outlet property="bloodImg" destination="rbB-52-bNK" id="vWa-FZ-nAj"/>
                         <outlet property="scoreLabel" destination="DY2-3Y-XLp" id="iba-iv-jF1"/>
                         <outlet property="titleLabel" destination="iTx-Z4-4fD" id="kpd-45-Gbh"/>
                     </connections>
@@ -908,6 +925,10 @@
                                     <segue destination="frt-1c-fIh" kind="show" id="4PV-NU-BRs"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="blood4" translatesAutoresizingMaskIntoConstraints="NO" id="f19-gr-xof">
+                                <rect key="frame" x="-8" y="299" width="425" height="517"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -915,6 +936,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="kAO-qH-qP6"/>
                     <connections>
+                        <outlet property="bloodImg" destination="f19-gr-xof" id="nZd-RI-GiR"/>
                         <outlet property="scoreLabel" destination="0UL-Nf-RIf" id="n0k-3Z-mcT"/>
                         <outlet property="titleLabel" destination="vF9-Lg-CuJ" id="aWE-XQ-8fF"/>
                     </connections>
@@ -1696,6 +1718,10 @@
     </scenes>
     <resources>
         <image name="JTR" width="485" height="240"/>
+        <image name="blood1" width="640" height="464"/>
+        <image name="blood2" width="325" height="640"/>
+        <image name="blood3" width="640" height="593"/>
+        <image name="blood4" width="640" height="778"/>
         <image name="suspect1" width="707" height="944"/>
         <image name="suspect2" width="683" height="1073"/>
         <image name="suspect3" width="620" height="799"/>

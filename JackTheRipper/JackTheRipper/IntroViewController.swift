@@ -11,11 +11,14 @@ import UIKit
 
 class IntroViewController: UIViewController {
     
+    @IBOutlet weak var bloodImg: UIImageView!
+    
     //MARK: Properties
     @IBOutlet weak var TitleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bloodImg.alpha = 0.45
         // Do any additional setup after loading the view.
     }
     
