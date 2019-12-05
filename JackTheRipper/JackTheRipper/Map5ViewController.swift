@@ -104,7 +104,7 @@ class Map5ViewController: MapViewController {
                      
         func crimescene5entered() {
                      
-            let alert = UIAlertController(title: "You arrive at the crimescene", message: "On the floor lays the bloody corpse of a young woman", preferredStyle: .alert)
+            let alert = UIAlertController(title: "You arrive at the crime scene", message: "Here lays the bloody corpse of a young woman", preferredStyle: .alert)
             let action = UIAlertAction(title: "Investigate the area for clues", style: .default)
             alert.addAction(action)
             self.present(alert, animated: true, completion: nil)
