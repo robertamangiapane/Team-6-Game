@@ -13,30 +13,31 @@ class Info2ViewController: UIViewController, RiddleViewControllerDelegate {
     
     var score: Int? = nil
     var name: String? = nil
+    var turnScore: Int? = nil
     var game : Game?
-
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      game = Game()
-      game?.title = name ?? "Error"
-      game?.score = score ?? 0
-     scoreLabel.text = "Score: \(game?.score ?? 0)"
-    titleLabel.text = "\(game?.title ?? "Error")"
-    }
+            game = Game()
+            game?.title = name ?? "Novice Detective"
+            game?.score = score ?? 0
+            scoreLabel.text = "Score: \(game?.score ?? 0)"
+            titleLabel.text = "\(game?.title ?? "Novice Detective")"
+        }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let RiddleViewController = segue.destination as? RiddleViewController {
+            RiddleViewController.turnScore = game?.turnScore;
             RiddleViewController.score = game?.score;
             RiddleViewController.name = game?.title
             RiddleViewController.delegate = self
+            }
         }
-    }
     
-    func setScore (score: Int?, name: String?) {
-     game?.title = name ?? "Error"
-     game?.score = score ?? 0
+    func setScore (turnScore: Int?) {
+        game?.turnScore = turnScore ?? 0
+     
     }
 }
