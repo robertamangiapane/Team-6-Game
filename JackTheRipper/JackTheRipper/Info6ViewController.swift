@@ -13,10 +13,12 @@ class Info6ViewController: UIViewController {
     var name: String? = nil
     var game : Game?
     
+    @IBOutlet weak var detectiveImg: UIImageView!
     @IBOutlet weak var scoreLabel: UILabel!
     
     @IBOutlet weak var titleLabel: UILabel!
     override func viewDidLoad() {
+        detectiveImg.alpha = 0.4
         super.viewDidLoad()
             game = Game()
             game?.title = name ?? "Error"
