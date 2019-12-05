@@ -47,7 +47,7 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     override func viewDidLoad() {
-        gameResult.setTitle("You found all the clues", for: .normal)
+        gameResult.setTitle("Continue", for: .normal)
         gameResult.isHidden = true
         
         super.viewDidLoad()
@@ -153,7 +153,6 @@ class Challenge3ViewController: UIViewController, UICollectionViewDelegate, UICo
                 //check if the player found all the word. end the game
                 if checkWordFound() == true {
                     gameResult.isHidden = false
-                    print("here")
                     self.navigationItem.hidesBackButton = true
 
                     game?.rightAnswer()
