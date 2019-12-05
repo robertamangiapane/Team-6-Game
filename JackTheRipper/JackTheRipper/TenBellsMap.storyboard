@@ -24,19 +24,26 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="818" id="w5N-Sw-U2F"/>
                                 </constraints>
                             </mapView>
-                            <view alpha="0.25" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c6P-kV-Rn6">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6P-kV-Rn6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="818" id="mPw-YE-EXw"/>
+                                    <constraint firstAttribute="width" constant="414" id="poK-K8-hFq"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="KvV-4q-uIV" firstAttribute="top" secondItem="ejE-2G-sii" secondAttribute="top" id="6YV-uu-fIc"/>
                             <constraint firstItem="ejE-2G-sii" firstAttribute="bottom" secondItem="KvV-4q-uIV" secondAttribute="bottom" id="6pU-JE-a5E"/>
+                            <constraint firstItem="c6P-kV-Rn6" firstAttribute="top" secondItem="o2p-Lu-cy2" secondAttribute="topMargin" id="907-gC-2c9"/>
                             <constraint firstItem="KvV-4q-uIV" firstAttribute="leading" secondItem="ejE-2G-sii" secondAttribute="leading" id="DUf-9T-KEc"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="c6P-kV-Rn6" secondAttribute="bottom" id="Ehl-P3-O5P"/>
                             <constraint firstItem="KvV-4q-uIV" firstAttribute="trailing" secondItem="ejE-2G-sii" secondAttribute="trailing" id="QOX-wP-zGJ"/>
+                            <constraint firstItem="c6P-kV-Rn6" firstAttribute="leading" secondItem="ejE-2G-sii" secondAttribute="leading" id="clQ-4H-uXn"/>
+                            <constraint firstItem="c6P-kV-Rn6" firstAttribute="trailing" secondItem="ejE-2G-sii" secondAttribute="trailing" id="mPD-1K-PuV"/>
                             <constraint firstAttribute="bottomMargin" secondItem="KvV-4q-uIV" secondAttribute="bottom" id="oku-Vw-Dh7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ejE-2G-sii"/>
