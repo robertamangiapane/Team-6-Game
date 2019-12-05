@@ -70,7 +70,7 @@ class Map2ViewController: MapViewController {
              
          func crimescene2entered() {
              
-             let alert = UIAlertController(title: "You arrive at the crime scene", message: "Here lays the bloody corpse of a young woman", preferredStyle: .alert)
+             let alert = UIAlertController(title: "You arrive at the crime scene", message: "Here lies the bloody corpse of a young woman", preferredStyle: .alert)
              let action = UIAlertAction(title: "Investigate the area for clues", style: .default)
              alert.addAction(action)
              self.present(alert, animated: true, completion: nil)
