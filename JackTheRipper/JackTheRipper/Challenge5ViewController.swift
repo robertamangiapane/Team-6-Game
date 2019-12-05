@@ -68,6 +68,8 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
             ResponseDisplay.isHidden = true
             Suspect1.isEnabled = false
             game?.rightAnswer()
+            scoreLabel.text = "Score: \(game?.score ?? 0)"
+            titleLabel.text = "\(game?.title ?? "Error")"
         } else {
             wrongAnswer.isHidden = false
             game?.wrongAnswer()
