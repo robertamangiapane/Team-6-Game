@@ -45,6 +45,7 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
             tryAgainLabel.text = "Incorrect"
             tryAgainLabel.isHidden = false
                } else {
+            self.navigationItem.hidesBackButton = true
             game?.rightAnswer()
             scoreLabel.text = "Score:\(game?.score ?? 0)"
             titleLabel.text = "\(game?.title ?? "Error")"
@@ -65,7 +66,6 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
         answer = userAnswer.text!
         userAnswer.text = ""
         checkAnswer(answer: answer.lowercased())
-        print (answer)
         return true
     }
     
