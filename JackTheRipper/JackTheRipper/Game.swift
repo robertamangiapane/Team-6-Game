@@ -2,7 +2,6 @@
 //  Game.swift
 //  JackTheRipper
 //
-//  Created by Student on 26/11/2019.
 //  Copyright © 2019 Team6. All rights reserved.
 //
 
@@ -25,27 +24,24 @@ class Game{
     }
     
     func changeTitle() {
-        switch score {
-        case ...3:
+         if score < 5 {
             title = "Novice Detective"
-        case 4...8:
+        } else if score >= 5  && score < 11{
             title = "Junior Detective"
-        case 9...12:
+        } else if score >= 11 && score < 17 {
             title = "Detective"
-        case 13...19:
+        } else if score >= 17 && score < 22 {
             title = "Senior Detective"
-        case 20...:
+        } else if score >= 22 {
             title = "Master Detective"
-        default:
-            title = "Error"
+            }
         }
-    }
     
     func wrongAnswer() {
         if turnScore == turnMin {
             turnScore = turnMin
          } else {
-            turnScore = turnScore - 1
+            turnScore -= 1
          }
      }
         
@@ -63,4 +59,4 @@ class Game{
         changeTitle()
     }
 }
-import Foundation
+

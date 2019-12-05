@@ -62,9 +62,11 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func SuspectButtons(_ sender: UIButton) {
         if sender == Suspect1 {
+            self.navigationItem.hidesBackButton = true
             wrongAnswer.isHidden = true
             CorrectButton.isHidden = false
             ResponseDisplay.isHidden = true
+            Suspect1.isEnabled = false
             game?.rightAnswer()
         } else {
             wrongAnswer.isHidden = false
