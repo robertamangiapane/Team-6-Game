@@ -46,11 +46,11 @@ class Challenge5ViewControllerTests: XCTestCase {
       let result = viewController.question(input: "Does he have a big nose?")
       XCTAssertEqual(result, "The witness isn't sure, try asking them a different question.")
   }
-    
-    func testHasAGame() {
-        XCTAssertNotNil(viewController.game)
-    }
-    
+//    
+//    func testHasAGame() {
+//        XCTAssertNotNil(viewController.game)
+//    }
+//    
     func testTurnScoreIsReducedByWrongAnswer() {
         viewController.game?.wrongAnswer()
         let newScore = viewController.game?.turnScore
