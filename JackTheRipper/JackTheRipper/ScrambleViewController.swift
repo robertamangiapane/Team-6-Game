@@ -158,14 +158,14 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.width
-        return CGSize(width: width/3, height: width/6)
+        return CGSize(width: width/3, height: width/4)
     }
     
     func setupViews() {
         myCollectionView.delegate=self
         myCollectionView.dataSource=self
         myCollectionView.register(ImageViewCVCell.self, forCellWithReuseIdentifier: "Cell")
-        myCollectionView.backgroundColor=UIColor.white
+        myCollectionView.backgroundColor=UIColor.clear
         
         self.view.addSubview(myCollectionView)
         myCollectionView.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 20).isActive=true
@@ -182,7 +182,7 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         self.view.addSubview(btnUndo)
         btnUndo.widthAnchor.constraint(equalToConstant: 200).isActive=true
-        btnUndo.topAnchor.constraint(equalTo: btnSwap.bottomAnchor, constant: 30).isActive=true
+        btnUndo.topAnchor.constraint(equalTo: btnSwap.bottomAnchor, constant: 15).isActive=true
         btnUndo.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive=true
         btnUndo.heightAnchor.constraint(equalToConstant: 50).isActive=true
         btnUndo.addTarget(self, action: #selector(btnUndoAction), for: .touchUpInside)
@@ -208,6 +208,7 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
     let btnSwap: UIButton = {
         let btn=UIButton(type: .system)
         btn.setTitle("Swap", for: .normal)
+        btn.setTitleColor(UIColor.gray, for: .normal)
         btn.titleLabel?.font = UIFont.systemFont(ofSize: 20)
         btn.translatesAutoresizingMaskIntoConstraints=false
         return btn
@@ -224,6 +225,7 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
     let lblMoves: UILabel = {
         let lbl=UILabel()
         lbl.textAlignment = .center
+        lbl.textColor = (UIColor.gray)
         lbl.translatesAutoresizingMaskIntoConstraints=false
         return lbl
     }()
