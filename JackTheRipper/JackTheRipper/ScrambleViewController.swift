@@ -82,6 +82,7 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
             self.lblMoves.text = "Moves: \(self.numberOfMoves)"
             if self.wrongAns == self.correctAns {
                 let alert=UIAlertController(title: "Success! The message becomes clear:", message: "From hell.\nMr Lusk,\nSir\nI send you half the Kidne I took from one women preserved it for you tother piece I fried and ate it was very nice. I may send you the bloody knife that took it out if you only wate a while longer.\nSigned\nCatch me when you can Mishter Lusk", preferredStyle: .alert)
+                self.navigationItem.hidesBackButton = true
                 alert.setMessageAlignment(.left)
                 let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
                 alert.addAction(okAction)
