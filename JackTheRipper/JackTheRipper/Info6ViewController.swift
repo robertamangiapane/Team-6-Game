@@ -16,8 +16,6 @@ class Info6ViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     
     @IBOutlet weak var titleLabel: UILabel!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
             game = Game()

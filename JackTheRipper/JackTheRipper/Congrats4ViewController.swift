@@ -27,5 +27,13 @@ class Congrats4ViewController: UIViewController {
         scoreLabel.text = "Score: \(game?.score ?? 0)"
         titleLabel.text = "\(game?.title ?? "Error")"
         }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       if let TenBellsViewController = segue.destination as? TenBellsViewController {
+               TenBellsViewController.score = game?.score;
+               TenBellsViewController.name = game?.title
+           }
+       }
     }
+
 
