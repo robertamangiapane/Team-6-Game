@@ -28,7 +28,6 @@
 		612B556A238E8905002B168C /* Map4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B5569238E8905002B168C /* Map4ViewController.swift */; };
 		612B556E238E8B01002B168C /* Map5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B556D238E8B01002B168C /* Map5ViewController.swift */; };
 		6152FD262397FB25003E9525 /* TenBellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6152FD252397FB25003E9525 /* TenBellsViewController.swift */; };
-		6152FD282397FBD1003E9525 /* TenBellsMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6152FD272397FBD1003E9525 /* TenBellsMap.storyboard */; };
 		61FC7AB123958D2C00790744 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC7AB023958D2C00790744 /* MapViewController.swift */; };
 		721FC1F4238EF0070026E35E /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FC1F3238EF0070026E35E /* ViewControllerTests.swift */; };
 		721FC1FC238EF2B20026E35E /* IntroViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FC1FB238EF2B20026E35E /* IntroViewControllerTests.swift */; };
@@ -39,9 +38,9 @@
 		7250F0C5238D82E000DF02FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0C4238D82E000DF02FF /* ViewController.swift */; };
 		7250F0C8238D82E000DF02FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7250F0C6238D82E000DF02FF /* Main.storyboard */; };
 		7250F0CA238D82E000DF02FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7250F0C9238D82E000DF02FF /* Assets.xcassets */; };
-		7250F0CD238D82E000DF02FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7250F0CB238D82E000DF02FF /* LaunchScreen.storyboard */; };
 		7250F0D8238D82E000DF02FF /* JackTheRipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0D7238D82E000DF02FF /* JackTheRipperTests.swift */; };
 		7250F0E3238D82E000DF02FF /* JackTheRipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250F0E2238D82E000DF02FF /* JackTheRipperUITests.swift */; };
+		7252C396239921760069F70F /* Info6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7252C395239921760069F70F /* Info6ViewController.swift */; };
 		7283F405239702DA003E93F1 /* Congrats1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283F404239702DA003E93F1 /* Congrats1ViewController.swift */; };
 		7283F40723970D0E003E93F1 /* Info2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283F40623970D0E003E93F1 /* Info2ViewController.swift */; };
 		7283F40F2397278C003E93F1 /* Congrats2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283F40E2397278B003E93F1 /* Congrats2ViewController.swift */; };
@@ -96,7 +95,6 @@
 		612B5569238E8905002B168C /* Map4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map4ViewController.swift; sourceTree = "<group>"; };
 		612B556D238E8B01002B168C /* Map5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map5ViewController.swift; sourceTree = "<group>"; };
 		6152FD252397FB25003E9525 /* TenBellsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenBellsViewController.swift; sourceTree = "<group>"; };
-		6152FD272397FBD1003E9525 /* TenBellsMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TenBellsMap.storyboard; sourceTree = "<group>"; };
 		61FC7AB023958D2C00790744 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		721FC1F3238EF0070026E35E /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		721FC1FB238EF2B20026E35E /* IntroViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewControllerTests.swift; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 		7250F0C4238D82E000DF02FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7250F0C7238D82E000DF02FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7250F0C9238D82E000DF02FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7250F0CC238D82E000DF02FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7250F0CE238D82E000DF02FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7250F0D3238D82E000DF02FF /* JackTheRipperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JackTheRipperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7250F0D7238D82E000DF02FF /* JackTheRipperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JackTheRipperTests.swift; sourceTree = "<group>"; };
@@ -116,6 +113,7 @@
 		7250F0DE238D82E000DF02FF /* JackTheRipperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JackTheRipperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7250F0E2238D82E000DF02FF /* JackTheRipperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JackTheRipperUITests.swift; sourceTree = "<group>"; };
 		7250F0E4238D82E000DF02FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7252C395239921760069F70F /* Info6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info6ViewController.swift; sourceTree = "<group>"; };
 		7283F404239702DA003E93F1 /* Congrats1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Congrats1ViewController.swift; sourceTree = "<group>"; };
 		7283F40623970D0E003E93F1 /* Info2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info2ViewController.swift; sourceTree = "<group>"; };
 		7283F40E2397278B003E93F1 /* Congrats2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Congrats2ViewController.swift; sourceTree = "<group>"; };
@@ -181,12 +179,10 @@
 			children = (
 				7250F0C6238D82E000DF02FF /* Main.storyboard */,
 				6152FD252397FB25003E9525 /* TenBellsViewController.swift */,
-				6152FD272397FBD1003E9525 /* TenBellsMap.storyboard */,
 				3F801CB12395369E006AB7D7 /* Line.swift */,
 				3F801CB3239536BF006AB7D7 /* OverLay.swift */,
 				3F801CB5239536DE006AB7D7 /* WordGridGenerator.swift */,
 				7250F0C9238D82E000DF02FF /* Assets.xcassets */,
-				7250F0CB238D82E000DF02FF /* LaunchScreen.storyboard */,
 				7250F0C4238D82E000DF02FF /* ViewController.swift */,
 				721FC1FD238EF2C60026E35E /* IntroViewController.swift */,
 				AFB9FF86238D8976001381C5 /* Map1ViewController.swift */,
@@ -218,6 +214,7 @@
 				3F41C31F239565DE00A58B2E /* ImageViewCVCell.swift */,
 				3F801CAF23953564006AB7D7 /* MyCollectionViewCell.swift */,
 				61FC7AB023958D2C00790744 /* MapViewController.swift */,
+				7252C395239921760069F70F /* Info6ViewController.swift */,
 			);
 			path = JackTheRipper;
 			sourceTree = "<group>";
@@ -352,8 +349,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6152FD282397FBD1003E9525 /* TenBellsMap.storyboard in Resources */,
-				7250F0CD238D82E000DF02FF /* LaunchScreen.storyboard in Resources */,
 				7250F0CA238D82E000DF02FF /* Assets.xcassets in Resources */,
 				7250F0C8238D82E000DF02FF /* Main.storyboard in Resources */,
 			);
@@ -382,6 +377,7 @@
 			files = (
 				612B5562238E7D48002B168C /* Map2ViewController.swift in Sources */,
 				AFB9FF9123903328001381C5 /* RiddleViewController.swift in Sources */,
+				7252C396239921760069F70F /* Info6ViewController.swift in Sources */,
 				7250F0C5238D82E000DF02FF /* ViewController.swift in Sources */,
 				3F41C31A23955ED500A58B2E /* ScrambleViewController.swift in Sources */,
 				721FC1FE238EF2C60026E35E /* IntroViewController.swift in Sources */,
@@ -463,14 +459,6 @@
 				7250F0C7238D82E000DF02FF /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7250F0CB238D82E000DF02FF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7250F0CC238D82E000DF02FF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
