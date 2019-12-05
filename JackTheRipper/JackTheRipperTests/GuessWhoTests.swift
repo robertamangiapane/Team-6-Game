@@ -42,4 +42,9 @@ class GuessWhoTests: XCTestCase {
         let result = guesswho.question(input: "Was he bald?")
         XCTAssertTrue(result == "The suspect had short hair.")
         }
+    
+    func testQuestionResponseToEdgeCase() {
+        let result = guesswho.question(input: "Does he have facial hair?")
+        XCTAssertTrue(result == "The suspect had a mustache.")
+        }
 }
