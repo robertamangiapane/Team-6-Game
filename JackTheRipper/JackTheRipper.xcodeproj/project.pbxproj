@@ -178,7 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				7250F0C6238D82E000DF02FF /* Main.storyboard */,
-				6152FD252397FB25003E9525 /* TenBellsViewController.swift */,
 				3F801CB12395369E006AB7D7 /* Line.swift */,
 				3F801CB3239536BF006AB7D7 /* OverLay.swift */,
 				3F801CB5239536DE006AB7D7 /* WordGridGenerator.swift */,
@@ -205,6 +204,8 @@
 				7283F418239737D6003E93F1 /* Info5ViewController.swift */,
 				3F41C31923955ED500A58B2E /* ScrambleViewController.swift */,
 				7283F41A23973AB5003E93F1 /* Congrats4ViewController.swift */,
+				6152FD252397FB25003E9525 /* TenBellsViewController.swift */,
+				7252C395239921760069F70F /* Info6ViewController.swift */,
 				3F41C2F5238D8F0D00A58B2E /* Game.swift */,
 				AFB9FF8E239032A0001381C5 /* Riddle.swift */,
 				3FEAC0C923955EC200A9E8FC /* GuessWho.swift */,
@@ -214,7 +215,6 @@
 				3F41C31F239565DE00A58B2E /* ImageViewCVCell.swift */,
 				3F801CAF23953564006AB7D7 /* MyCollectionViewCell.swift */,
 				61FC7AB023958D2C00790744 /* MapViewController.swift */,
-				7252C395239921760069F70F /* Info6ViewController.swift */,
 			);
 			path = JackTheRipper;
 			sourceTree = "<group>";
