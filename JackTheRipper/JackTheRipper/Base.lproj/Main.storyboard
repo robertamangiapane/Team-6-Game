@@ -52,6 +52,14 @@
                                     <constraint firstAttribute="width" secondItem="oYp-xX-jSx" secondAttribute="height" multiplier="133:120" id="dfZ-OY-djy"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4T-wS-xQa">
+                                <rect key="frame" x="74" y="660" width="156" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Challenge 5 :) "/>
+                                <connections>
+                                    <segue destination="XM1-hb-UC6" kind="show" id="hMi-1h-gdr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="quaternarySystemFillColor" red="0.4549019608" green="0.4549019608" blue="0.50196078430000002" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -127,7 +135,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ypw-NJ-sse">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="818"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="818" id="Bkv-Ke-feK"/>
                                     <constraint firstAttribute="width" constant="414" id="w6r-gf-mIx"/>
@@ -432,7 +440,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XKz-S4-JRT">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="818"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="0Zi-Nd-kTQ"/>
                                     <constraint firstAttribute="height" constant="818" id="woq-wd-eTQ"/>
@@ -574,13 +582,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqt-Pu-6In">
                                 <rect key="frame" x="58" y="182" width="298" height="332"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Oh no, you dropped your notepad in a puddle on Hanworth Street and the ink has run together! Do you remember what the name of your main suspect is? Here's a hint... their nickname is an anagram of "elephant roar"!</string>
+                                <string key="text">Oh no, you dropped your notepad in a puddle on Hanworth Street and the ink has run together! What was the name of the main suspect? Here's a hint... their nickname is an anagram of "elephant roar"!</string>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="28"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qaZ-2o-mtC">
-                                <rect key="frame" x="20" y="532" width="368" height="34"/>
+                                <rect key="frame" x="23" y="502" width="368" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -738,7 +746,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gNt-s1-OIg">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="818"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="JTx-HA-HBt"/>
                                     <constraint firstAttribute="height" constant="818" id="X4U-Ji-up3"/>
@@ -906,10 +914,10 @@
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jga-z9-ITt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jga-z9-ITt">
                                 <rect key="frame" x="68" y="157" width="279" height="509"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Well done, you were able to eliminate one suspect from the inquiry. But what's this? A new message! Not even an hour as passed since Elizabeth Stride's body was found, and there's been another murder! London is gripped by fear. Quick, get to Mitre Square, where PC Watkins has found the fourth body!</string>
+                                <string key="text">Well done, you were able to eliminate one suspect from the inquiry. His alibi checked out. But what's this? A new message! Not even an hour has passed since Elizabeth Stride's body was found, and there's been another murder! London is gripped by fear. Quick, get to Mitre Square, where PC Watkins has found the fourth body!</string>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="26"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1066,9 +1074,6 @@
                                 <rect key="frame" x="40" y="152" width="334" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="userQuestion:" destination="hSg-gt-p5N" eventType="editingDidEnd" id="BIu-fy-OZT"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask the Witness a question:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E67-LV-Qff">
                                 <rect key="frame" x="53" y="116" width="308" height="32"/>
@@ -1239,6 +1244,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Response" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5u-LV-ljd">
                                 <rect key="frame" x="40" y="198" width="334" height="25"/>
+                                <accessibility key="accessibilityConfiguration" identifier="ResponseDisplay"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1257,14 +1263,16 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySa-2c-IVE">
-                                <rect key="frame" x="144" y="773" width="124" height="32"/>
-                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
-                                <state key="normal" title="Continue">
-                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySa-2c-IVE">
+                                <rect key="frame" x="148" y="767" width="118" height="48"/>
+                                <accessibility key="accessibilityConfiguration" label="ContinueButton">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Continue"/>
                                 <connections>
-                                    <segue destination="q2R-Nj-Szg" kind="show" id="DOE-aj-eAe"/>
+                                    <segue destination="q2R-Nj-Szg" kind="show" id="ZSW-1h-t21"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1279,29 +1287,32 @@
                             <constraint firstItem="E5u-LV-ljd" firstAttribute="top" secondItem="bkg-31-hGO" secondAttribute="top" constant="110" id="GpW-3A-Opz"/>
                             <constraint firstItem="E67-LV-Qff" firstAttribute="centerX" secondItem="bkg-31-hGO" secondAttribute="centerX" id="HRm-xK-fmN"/>
                             <constraint firstItem="bkg-31-hGO" firstAttribute="bottom" secondItem="VoR-Lk-ode" secondAttribute="bottom" constant="48" id="KJk-5V-fLq"/>
+                            <constraint firstItem="ySa-2c-IVE" firstAttribute="top" secondItem="fMI-hK-RGG" secondAttribute="bottom" id="Paa-8z-wEL"/>
                             <constraint firstItem="bkg-31-hGO" firstAttribute="trailing" secondItem="VE5-rB-uJG" secondAttribute="trailing" constant="40" id="QVW-pF-tDF"/>
+                            <constraint firstItem="ySa-2c-IVE" firstAttribute="centerX" secondItem="bkg-31-hGO" secondAttribute="centerX" id="Qej-C0-cSe"/>
                             <constraint firstItem="E67-LV-Qff" firstAttribute="top" secondItem="bkg-31-hGO" secondAttribute="top" constant="28" id="ROW-Aj-KgN"/>
                             <constraint firstItem="E5u-LV-ljd" firstAttribute="centerX" secondItem="bkg-31-hGO" secondAttribute="centerX" id="RUJ-bh-X34"/>
                             <constraint firstItem="VE5-rB-uJG" firstAttribute="leading" secondItem="bkg-31-hGO" secondAttribute="leading" constant="40" id="Saf-sL-HOk"/>
+                            <constraint firstItem="bkg-31-hGO" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ySa-2c-IVE" secondAttribute="trailing" constant="40" id="TPw-d4-N38"/>
                             <constraint firstItem="bkg-31-hGO" firstAttribute="trailing" secondItem="E5u-LV-ljd" secondAttribute="trailing" constant="40" id="cB9-Jw-cwc"/>
                             <constraint firstItem="0Pc-tC-H62" firstAttribute="width" secondItem="9k8-yC-qd3" secondAttribute="width" multiplier="0.830918" constant="-5.2000000039242877e-05" id="gz0-rx-MMk"/>
                             <constraint firstItem="0Pc-tC-H62" firstAttribute="height" secondItem="9k8-yC-qd3" secondAttribute="height" multiplier="0.0379464" constant="2.5600000000736145e-05" id="hgd-MU-RGD"/>
                             <constraint firstItem="VE5-rB-uJG" firstAttribute="centerX" secondItem="bkg-31-hGO" secondAttribute="centerX" id="jXq-DR-MPM"/>
-                            <constraint firstItem="ySa-2c-IVE" firstAttribute="bottom" secondItem="bkg-31-hGO" secondAttribute="bottom" constant="17" id="kcH-rH-tsC"/>
                             <constraint firstItem="0Pc-tC-H62" firstAttribute="top" secondItem="bkg-31-hGO" secondAttribute="top" constant="175" id="mAP-mB-WYr"/>
                             <constraint firstItem="VE5-rB-uJG" firstAttribute="top" secondItem="bkg-31-hGO" secondAttribute="top" constant="64" id="mpD-IM-a8i"/>
+                            <constraint firstItem="ySa-2c-IVE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bkg-31-hGO" secondAttribute="leading" constant="40" id="tLT-KV-KqN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bkg-31-hGO"/>
                     </view>
                     <navigationItem key="navigationItem" id="CPm-cR-aka"/>
                     <connections>
-                        <outlet property="CorrectButton" destination="ySa-2c-IVE" id="opA-mz-8tf"/>
+                        <outlet property="CorrectButton" destination="ySa-2c-IVE" id="Yr5-Op-PBJ"/>
                         <outlet property="ResponseDisplay" destination="E5u-LV-ljd" id="RQc-nc-bOY"/>
                         <outlet property="Suspect1" destination="ici-wl-TN6" id="zhA-sr-5pZ"/>
                         <outlet property="Suspect2" destination="Cdd-nY-wTV" id="WNU-n1-Sl9"/>
                         <outlet property="scoreLabel" destination="IQl-a9-GfZ" id="Rjv-TT-Mro"/>
                         <outlet property="titleLabel" destination="82o-R5-7T6" id="yyK-RA-5wX"/>
-                        <outlet property="userQuestion" destination="VE5-rB-uJG" id="lPj-PD-mIf"/>
+                        <outlet property="userInput" destination="VE5-rB-uJG" id="hQt-fL-1AW"/>
                         <outlet property="wrongAnswer" destination="fMI-hK-RGG" id="3e4-0E-tXT"/>
                     </connections>
                 </viewController>
@@ -1373,7 +1384,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8zz-ci-FG6">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="818"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="818" id="Jyo-DR-Jcd"/>
                                     <constraint firstAttribute="width" constant="414" id="ex8-oa-8qu"/>
@@ -1590,14 +1601,14 @@
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You acheived the rank of" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEW-19-Hk5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You achieved the rank of" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEW-19-Hk5">
                                 <rect key="frame" x="108" y="521" width="209" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="21"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Though you didn't catch the elusive Jack the Rippter, you came closer than most. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulW-aD-QBi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Though you didn't catch the elusive Jack the Ripper, you came closer than most. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulW-aD-QBi">
                                 <rect key="frame" x="25" y="231" width="374" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="22"/>
@@ -1641,7 +1652,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7WW-3V-huD">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="818"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="ThX-fA-Nrb"/>
                                     <constraint firstAttribute="width" constant="414" id="V32-Ye-2al"/>
@@ -1733,6 +1744,7 @@
         <image name="suspect9" width="649" height="885"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="n2z-iw-BSp"/>
         <segue reference="UWM-w4-96s"/>
     </inferredMetricsTieBreakers>
 </document>
