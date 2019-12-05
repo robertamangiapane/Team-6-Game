@@ -15,7 +15,7 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
     var guessWho: GuessWho?
     var input = ""
     
-    @IBOutlet weak var userQuestion: UITextField!
+    @IBOutlet weak var userInput: UITextField!
     @IBOutlet weak var ResponseDisplay: UILabel!
     @IBOutlet weak var Suspect1: UIButton!
     @IBOutlet weak var wrongAnswer: UILabel!
@@ -34,8 +34,8 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
         ResponseDisplay.isHidden = true
         CorrectButton.isHidden = true
         wrongAnswer.isHidden = true
-        userQuestion.placeholder = "Write your question here..."
-        self.userQuestion.delegate = self
+        userInput.placeholder = "type your question here..."
+        self.userInput.delegate = self
         guessWho = GuessWho()
     }
     
@@ -49,18 +49,14 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
             return "GuessWho is nil!"
         }
         let response = unwrappedGuessWho.question(input: input)
-        ResponseDisplay.text = response
-        ResponseDisplay.isHidden = false
         return response
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-    //        userQuestion.resignFirstResponder()
-    //        this method resignFirstResponder dismiss the keyboard
-    //        self.view.endEditing(true) another way of doing resignFirstResponder
-        input = userQuestion.text!
-        userQuestion.text = ""
-        question(input: input)
+            input = userInput.text!
+            userInput.text = ""
+            ResponseDisplay.text = question(input: input)
+            ResponseDisplay.isHidden = false
         return true
     }
     
@@ -68,7 +64,7 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
         if sender == Suspect1 {
             wrongAnswer.isHidden = true
             CorrectButton.isHidden = false
-            userQuestion.isEnabled = false
+            ResponseDisplay.isHidden = true
             game?.rightAnswer()
         } else {
             wrongAnswer.isHidden = false

@@ -23,14 +23,26 @@ class JackTheRipperUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+    // Josh's notes on UI testing:
+    // UI Tests use the app’s user-interface controls as a real user would, they determine whether the user can complete a specific task using the app.
+//    Where UI tests imitate complex workflows comprising multiple distinct steps, use XCTActivity to organize and name the shared steps. Create helper methods to share implementations of activities that are used in multiple tests.
+    // https://developer.apple.com/documentation/xctest/activities_and_attachments/grouping_tests_into_substeps_with_activities
+    
+    
+    
+    // the example below passes at time of creating, although navigation is likely to change so will leave commented out.
+    
+//    func testUIShowsUserScoreChange() {
+//        // UI tests must launch the application that they test.
+//        let app = XCUIApplication()
+//        app.launch()
+//        app.buttons["Start Game"].tap()
+//        app.buttons["Continue"].tap()
+//        app.buttons["Next"].tap()
+//        app.buttons["Continue"].tap()
+//        app.buttons["A left-handed person"].tap()
+//        XCTAssertTrue(app.staticTexts["Score: 5"].exists)
+//    }
 
 //    func testLaunchPerformance() {
 //        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {

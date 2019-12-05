@@ -11,22 +11,26 @@ import Foundation
 class GuessWho {
     
     func question(input: String) -> String {
-        let words = input.lowercased().split{ !$0.isLetter }
-        let hasABeard = words.contains("beard")
-        let hasAMustache = words.contains("mustache") || words.contains("moustache")  || words.contains("facial")
-        let hasGlasses = words.contains("glasses") || words.contains("spectacles")
-        let hasHair = words.contains("hair") || words.contains("bald") || words.contains("balding")
-        
-        if hasABeard {
-            return "The suspect did not have a beard."
-        } else if hasAMustache {
-            return "The suspect had a mustache."
-        } else if hasGlasses {
-            return "The suspect did not wear glasses."
-        } else if hasHair {
-            return "The suspect had short hair."
-        } else {
-            return "The witness isn't sure, try asking them a different question."
+      let words = input.lowercased().split{ !$0.isLetter }
+      var response = "The witness isn't sure, try asking them a different question."
+      for word in words {
+        switch word {
+          case "beard":
+             response = "The suspect did not have a beard."
+          case "mustache", "moustache":
+            response = "The suspect had a mustache."
+          case "glasses", "spectacles":
+            response = "The suspect did not wear glasses."
+          case "hair", "bald", "balding":
+            response = "The suspect had short hair."
+          default: ()
         }
+      }
+      if words.contains("facial") && words.contains("hair") {
+        response = "The suspect had a mustache."
+      }
+      return response
     }
 }
+
+

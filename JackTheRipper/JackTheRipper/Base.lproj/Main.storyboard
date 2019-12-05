@@ -997,9 +997,6 @@
                                 <rect key="frame" x="40" y="152" width="334" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="userQuestion:" destination="hSg-gt-p5N" eventType="editingDidEnd" id="BIu-fy-OZT"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask the Witness a question:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E67-LV-Qff">
                                 <rect key="frame" x="53" y="116" width="308" height="32"/>
@@ -1170,6 +1167,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Response" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5u-LV-ljd">
                                 <rect key="frame" x="40" y="198" width="334" height="25"/>
+                                <accessibility key="accessibilityConfiguration" identifier="ResponseDisplay"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1190,10 +1188,14 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySa-2c-IVE">
                                 <rect key="frame" x="148" y="767" width="118" height="48"/>
+                                <accessibility key="accessibilityConfiguration" label="ContinueButton">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Continue"/>
                                 <connections>
-                                    <segue destination="q2R-Nj-Szg" kind="show" id="DOE-aj-eAe"/>
+                                    <segue destination="q2R-Nj-Szg" kind="show" id="ZSW-1h-t21"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1227,13 +1229,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="CPm-cR-aka"/>
                     <connections>
-                        <outlet property="CorrectButton" destination="ySa-2c-IVE" id="opA-mz-8tf"/>
+                        <outlet property="CorrectButton" destination="ySa-2c-IVE" id="Yr5-Op-PBJ"/>
                         <outlet property="ResponseDisplay" destination="E5u-LV-ljd" id="RQc-nc-bOY"/>
                         <outlet property="Suspect1" destination="ici-wl-TN6" id="zhA-sr-5pZ"/>
                         <outlet property="Suspect2" destination="Cdd-nY-wTV" id="WNU-n1-Sl9"/>
                         <outlet property="scoreLabel" destination="IQl-a9-GfZ" id="Rjv-TT-Mro"/>
                         <outlet property="titleLabel" destination="82o-R5-7T6" id="yyK-RA-5wX"/>
-                        <outlet property="userQuestion" destination="VE5-rB-uJG" id="lPj-PD-mIf"/>
+                        <outlet property="userInput" destination="VE5-rB-uJG" id="hQt-fL-1AW"/>
                         <outlet property="wrongAnswer" destination="fMI-hK-RGG" id="3e4-0E-tXT"/>
                     </connections>
                 </viewController>
@@ -1300,11 +1302,11 @@
         <scene sceneID="cfd-9B-xCb">
             <objects>
                 <viewController restorationIdentifier="Map5Controller" storyboardIdentifier="Map5Controller" id="Y61-NX-ckq" customClass="Map5ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9ab-RW-3tw">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="9ab-RW-3tw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8zz-ci-FG6">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8zz-ci-FG6">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="818" id="Jyo-DR-Jcd"/>
