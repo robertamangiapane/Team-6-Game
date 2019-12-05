@@ -34,7 +34,7 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
         ResponseDisplay.isHidden = true
         CorrectButton.isHidden = true
         wrongAnswer.isHidden = true
-        userInput.placeholder = "type your question here..."
+        userInput.placeholder = "Ask the witness about the identity of the suspect..."
         self.userInput.delegate = self
         guessWho = GuessWho()
     }
