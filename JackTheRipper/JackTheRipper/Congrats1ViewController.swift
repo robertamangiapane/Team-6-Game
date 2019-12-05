@@ -14,10 +14,13 @@ class Congratulations1ViewController: UIViewController {
     var name: String? = nil
     var game : Game?
     
+    @IBOutlet weak var bloodImg: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     
     override func viewDidLoad() {
+        bloodImg.alpha = 0.4
+        bloodImg.transform = CGAffineTransform.identity.rotated(by: CGFloat(Double.pi/2))
         super.viewDidLoad()
         game = Game()
         game?.title = name ?? "Error"
