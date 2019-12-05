@@ -11,6 +11,7 @@ import UIKit
 class Info1ViewController: UIViewController, MultipleChoiceViewControllerDelegate {
   
     var score: Int? = nil
+    var turnScore: Int? = nil
     var name: String? = nil
     var game : Game?
 
@@ -20,21 +21,21 @@ class Info1ViewController: UIViewController, MultipleChoiceViewControllerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
       game = Game()
-      game?.title = name ?? "Error"
-      game?.score = score ?? 0
     }
     
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let MultipleChoiceViewController = segue.destination as? MultipleChoiceViewController {
             MultipleChoiceViewController.score = game?.score;
+            MultipleChoiceViewController.turnScore = game?.turnScore;
             MultipleChoiceViewController.name = game?.title;
             MultipleChoiceViewController.delegate = self
         }
     }
 
-    func setScore (score: Int?, name: String?) {
+    func setScore (score: Int?, name: String?, turnScore: Int?) {
         game?.title = name ?? "Error"
         game?.score = score ?? 0
+        game?.turnScore = turnScore ?? 0
        }
 }
