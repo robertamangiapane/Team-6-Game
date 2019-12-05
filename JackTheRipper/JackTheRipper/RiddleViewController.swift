@@ -9,11 +9,17 @@
 import Foundation
 import UIKit
 
+protocol RiddleViewControllerDelegate : class  {
+    func setScore (turnScore:Int?)
+}
+
 class RiddleViewController: UIViewController, UITextFieldDelegate {
+    weak var delegate : RiddleViewControllerDelegate?
     let riddle = Riddle()
     var game : Game?
-    var score: Int? = nil
-    var name: String? = nil
+    var name : String? = nil
+    var score : Int? = nil
+    var turnScore: Int? = nil
     var answer = ""
     
     @IBOutlet weak var userAnswer: UITextField!
@@ -28,6 +34,7 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
         game = Game()
         game?.title = name ?? "Error"
         game?.score = score ?? 0
+        game?.turnScore = turnScore ?? 5
         userAnswer.placeholder = "Enter your answer here"
         tryAgainLabel.isHidden = true
         toCongrats2.isHidden = true
@@ -44,6 +51,7 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
             game?.wrongAnswer()
             tryAgainLabel.text = "Incorrect"
             tryAgainLabel.isHidden = false
+            delegate?.setScore(turnScore: game?.turnScore)
                } else {
             game?.rightAnswer()
             scoreLabel.text = "Score:\(game?.score ?? 0)"
@@ -53,6 +61,7 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
             userAnswer.placeholder = "Press Next"
             tryAgainLabel.isHidden = false
             toCongrats2.isHidden = false
+            delegate?.setScore(turnScore: game?.turnScore)
                }
     }
     
@@ -65,6 +74,7 @@ class RiddleViewController: UIViewController, UITextFieldDelegate {
         answer = userAnswer.text!
         userAnswer.text = ""
         checkAnswer(answer: answer.lowercased())
+        print (answer)
         return true
     }
     

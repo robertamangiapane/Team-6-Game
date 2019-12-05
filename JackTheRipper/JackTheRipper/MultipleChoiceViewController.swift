@@ -9,7 +9,15 @@
 import Foundation
 import UIKit
 
+protocol MultipleChoiceViewControllerDelegate : class  {
+    func setScore (score:Int?, name:String?, turnScore: Int?)
+}
+
 class MultipleChoiceViewController: UIViewController {
+    weak var delegate : MultipleChoiceViewControllerDelegate?
+    var score: Int? = nil
+    var turnScore: Int? = nil
+    var name: String? = nil
     var game : Game?
     let correctAnswer = 0
     
@@ -26,6 +34,10 @@ class MultipleChoiceViewController: UIViewController {
     override func viewDidLoad(){
         super.viewDidLoad()
         game = Game()
+        game?.title = name ?? "Novice Detective"
+        game?.score = score ?? 0
+        game?.turnScore = turnScore ?? 5
+        
         nextButton.isHidden = true
         titleLabel.text = "\(game?.title ?? "Error")"
         scoreLable.text = "Score: \(game?.score ?? 0)"
@@ -43,15 +55,18 @@ class MultipleChoiceViewController: UIViewController {
             answerLabel.isHidden = false
             nextButton.isHidden = false
             disableButtons()
+            delegate?.setScore(score: game?.score, name: game?.title, turnScore: game?.turnScore)
         } else {
             title = "Incorrect"
             answerLabel.text = "Incorrect."
             answerLabel.isHidden = false
             game?.wrongAnswer()
+            delegate?.setScore(score: game?.score, name: game?.title, turnScore: game?.turnScore)
         }
     }
     
     func disableButtons(){
+        self.navigationItem.hidesBackButton = true
         rightAnswer.isUserInteractionEnabled = false
         wrongAnswer1.isUserInteractionEnabled = false
         wrongAnswer2.isUserInteractionEnabled = false

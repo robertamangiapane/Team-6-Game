@@ -9,14 +9,13 @@
 import Foundation
 import UIKit
 
-class Info3ViewController: UIViewController {
+class Info3ViewController: UIViewController, Challenge3ViewControllerDelegate {
     
     var score: Int? = nil
     var name: String? = nil
     var game : Game?
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +30,14 @@ class Info3ViewController: UIViewController {
         if let Challenge3ViewController = segue.destination as? Challenge3ViewController {
                 Challenge3ViewController.score = game?.score;
                 Challenge3ViewController.name = game?.title
+            Challenge3ViewController.delegate = self
             }
         }
+    
+    func setScore (score: Int?, name: String?) {
+        game?.title = name ?? "Error"
+        game?.score = score ?? 0
     }
+}
 
 
