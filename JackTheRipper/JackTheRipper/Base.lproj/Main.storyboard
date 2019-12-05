@@ -120,7 +120,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ypw-NJ-sse">
-                                <rect key="frame" x="0.0" y="88" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="818" id="Bkv-Ke-feK"/>
                                     <constraint firstAttribute="width" constant="414" id="w6r-gf-mIx"/>
@@ -728,7 +728,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gNt-s1-OIg">
-                                <rect key="frame" x="0.0" y="88" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="JTx-HA-HBt"/>
                                     <constraint firstAttribute="height" constant="818" id="X4U-Ji-up3"/>
@@ -1358,7 +1358,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8zz-ci-FG6">
-                                <rect key="frame" x="0.0" y="88" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="818" id="Jyo-DR-Jcd"/>
                                     <constraint firstAttribute="width" constant="414" id="ex8-oa-8qu"/>
@@ -1527,6 +1527,17 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scI-LI-ypI">
+                                <rect key="frame" x="160" y="715" width="117" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="31"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JRd-82-F5y" kind="show" id="IxE-g1-Thc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1541,6 +1552,153 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Zi-mP-uvw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1569.5652173913045" y="2185.7142857142858"/>
+        </scene>
+        <!--Info6 View Controller-->
+        <scene sceneID="SXb-BG-ZBA">
+            <objects>
+                <viewController storyboardIdentifier="Info6ViewController" id="xIW-3b-wfm" customClass="Info6ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Azs-s2-ZPs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDf-dM-MrF">
+                                <rect key="frame" x="192" y="431" width="30" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Master Detective" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKV-eL-pp4">
+                                <rect key="frame" x="100" y="569" width="224" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aj9-6e-unM">
+                                <rect key="frame" x="47" y="155" width="303" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="45"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You finished with an overall score of:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYx-c0-63H">
+                                <rect key="frame" x="58" y="348" width="309" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="21"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You acheived the rank of" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEW-19-Hk5">
+                                <rect key="frame" x="108" y="521" width="209" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="21"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Though you didn't catch the elusive Jack the Rippter, you came closer than most. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulW-aD-QBi">
+                                <rect key="frame" x="25" y="231" width="374" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="22"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fZX-y4-y31"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mmo-5p-tek"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="QDf-dM-MrF" id="nzO-ZP-yyE"/>
+                        <outlet property="titleLabel" destination="fKV-eL-pp4" id="w8w-pA-yQm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N28-Yl-ITc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3044.9275362318845" y="2191.0714285714284"/>
+        </scene>
+        <!--Ten Bells View Controller-->
+        <scene sceneID="cR6-Rv-6aH">
+            <objects>
+                <viewController id="JRd-82-F5y" customClass="TenBellsViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GM2-MU-uMO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7WW-3V-huD">
+                                <rect key="frame" x="0.0" y="88" width="414" height="818"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="ThX-fA-Nrb"/>
+                                    <constraint firstAttribute="width" constant="414" id="V32-Ye-2al"/>
+                                    <constraint firstAttribute="height" constant="818" id="aJo-eX-kZO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="818" id="qDl-yW-yhy"/>
+                                </constraints>
+                            </mapView>
+                            <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ure-0l-aqr">
+                                <rect key="frame" x="0.0" y="88" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="g3V-DL-FM9"/>
+                                    <constraint firstAttribute="height" constant="818" id="zYm-4b-Ghk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HTw-Ki-ePK" firstAttribute="bottom" secondItem="7WW-3V-huD" secondAttribute="bottom" id="7Lb-TV-lWz"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Ure-0l-aqr" secondAttribute="bottom" id="B9V-ma-p6a"/>
+                            <constraint firstItem="Ure-0l-aqr" firstAttribute="top" secondItem="GM2-MU-uMO" secondAttribute="topMargin" id="JEJ-G5-mwO"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="7WW-3V-huD" secondAttribute="bottom" id="PVq-dq-q4b"/>
+                            <constraint firstItem="Ure-0l-aqr" firstAttribute="leading" secondItem="HTw-Ki-ePK" secondAttribute="leading" id="Qai-1p-0WM"/>
+                            <constraint firstItem="7WW-3V-huD" firstAttribute="top" secondItem="HTw-Ki-ePK" secondAttribute="top" id="ggn-bj-uPi"/>
+                            <constraint firstItem="Ure-0l-aqr" firstAttribute="trailing" secondItem="HTw-Ki-ePK" secondAttribute="trailing" id="pak-Xe-TNc"/>
+                            <constraint firstItem="7WW-3V-huD" firstAttribute="trailing" secondItem="HTw-Ki-ePK" secondAttribute="trailing" id="qk0-KZ-c9N"/>
+                            <constraint firstItem="7WW-3V-huD" firstAttribute="leading" secondItem="HTw-Ki-ePK" secondAttribute="leading" id="tBC-yH-X7j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HTw-Ki-ePK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QvU-f8-A3u">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="Chm-wv-x10">
+                            <connections>
+                                <segue destination="xIW-3b-wfm" kind="show" id="h4z-fw-40D"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="7WW-3V-huD" id="fWP-IT-hKI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Z1-bw-Tbo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2328" y="2191"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NGo-vO-8Bk">
+            <objects>
+                <viewController id="gtk-v5-v3B" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bcu-bK-8Dx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JTR" translatesAutoresizingMaskIntoConstraints="NO" id="w5b-F2-MXU">
+                                <rect key="frame" x="87" y="333" width="240" height="240"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="quaternarySystemFillColor" red="0.4549019608" green="0.4549019608" blue="0.50196078430000002" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w5b-F2-MXU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="njZ-NA-CWe" secondAttribute="leading" constant="40" id="ClN-OM-sBO"/>
+                            <constraint firstItem="njZ-NA-CWe" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="w5b-F2-MXU" secondAttribute="trailing" constant="40" id="KBe-wR-hOu"/>
+                            <constraint firstItem="w5b-F2-MXU" firstAttribute="centerX" secondItem="njZ-NA-CWe" secondAttribute="centerX" id="S8v-dt-MnV"/>
+                            <constraint firstItem="w5b-F2-MXU" firstAttribute="centerY" secondItem="njZ-NA-CWe" secondAttribute="centerY" id="kgp-eL-0S6"/>
+                            <constraint firstItem="w5b-F2-MXU" firstAttribute="width" secondItem="bcu-bK-8Dx" secondAttribute="height" multiplier="15:56" id="sd2-oc-nXO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="njZ-NA-CWe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8do-b7-rZ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1594" y="143"/>
         </scene>
     </scenes>
     <resources>
