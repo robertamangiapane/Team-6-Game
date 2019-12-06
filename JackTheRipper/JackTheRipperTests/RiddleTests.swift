@@ -22,8 +22,7 @@ class RiddleTests: XCTestCase {
     }
 
     func testAnswerIsRight() {
-        riddle.correctAnswer = "Correct"
-        let result = riddle.isSolved(answer: "Correct")
+        let result = riddle.isSolved(answer: "leather apron")
         XCTAssertEqual(result, "new location")
     }
     
