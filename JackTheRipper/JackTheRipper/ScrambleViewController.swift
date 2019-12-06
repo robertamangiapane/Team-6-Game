@@ -35,6 +35,7 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var continueButton: UIButton!
     
         
     let questionImageArray = [#imageLiteral(resourceName: "7"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "10"), #imageLiteral(resourceName: "11"), #imageLiteral(resourceName: "12"), #imageLiteral(resourceName: "1"), #imageLiteral(resourceName: "3"), #imageLiteral(resourceName: "5"), #imageLiteral(resourceName: "4"), #imageLiteral(resourceName: "8"), #imageLiteral(resourceName: "9"), #imageLiteral(resourceName: "2")]
@@ -58,6 +59,7 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
         scoreLabel.text = "Score: \(game?.score ?? 0)"
         titleLabel.text = "\(game?.title ?? "Error")"
         wrongImageArray = questionImageArray
+        continueButton?.isHidden = true
         setupViews()
     }
     
@@ -96,6 +98,7 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
                     self.game?.wrongAnswer()
                 }
                 self.game?.rightAnswer()
+                self.continueButton.isHidden = false
                 self.scoreLabel.text = "Score: \(self.game?.score ?? 0)"
                 self.titleLabel.text = "\(self.game?.title ?? "Error")"
             }
@@ -119,6 +122,14 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
             self.undoMovesArray.removeLast()
             self.numberOfMoves += 1
             self.lblMoves.text = "Moves: \(self.numberOfMoves)"
+        }
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let Congrats4ViewController = segue.destination as? Congrats4ViewController {
+            Congrats4ViewController.score = game?.score;
+            Congrats4ViewController.name = game?.title
         }
     }
     
@@ -193,6 +204,7 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
         lblMoves.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive=true
         lblMoves.heightAnchor.constraint(equalToConstant: 50).isActive=true
         lblMoves.text = "Moves: \(numberOfMoves)"
+        
     }
     
     let myCollectionView: UICollectionView = {
@@ -229,11 +241,6 @@ class ScrambleViewController: UIViewController, UICollectionViewDelegate, UIColl
         lbl.translatesAutoresizingMaskIntoConstraints=false
         return lbl
     }()
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if let Congrats4ViewController = segue.destination as? Congrats4ViewController {
-            Congrats4ViewController.score = game?.score;
-            Congrats4ViewController.name = game?.title
-        }
-    }
+    
 }
 
