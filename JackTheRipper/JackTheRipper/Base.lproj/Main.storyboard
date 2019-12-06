@@ -955,7 +955,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QZv-mo-CGE">
-                                <rect key="frame" x="0.0" y="88" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="818" id="8Eq-nY-g1i"/>
                                     <constraint firstAttribute="width" constant="414" id="Qjf-MS-TbC"/>
@@ -1504,6 +1504,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Vxm-fo-op7"/>
                     <connections>
+                        <outlet property="continueButton" destination="T1J-JG-MoI" id="rDT-Dq-MPb"/>
                         <outlet property="scoreLabel" destination="SQQ-cf-h9n" id="0tJ-RI-8Dc"/>
                         <outlet property="titleLabel" destination="D3y-dQ-h2A" id="suN-Fp-Hxn"/>
                     </connections>
@@ -1545,6 +1546,14 @@
                                     <segue destination="JRd-82-F5y" kind="show" id="IxE-g1-Thc"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVd-Oy-4VL">
+                                <rect key="frame" x="41" y="160" width="332" height="552"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Is this letter some kind of hoax? Or is the killer taunting you from afar? With a heavy heart you realise that if the latter is true, then the ripper may have been one step ahead of you this entire time. You have one last stop to make on your journey. Not to pursue any further leads, but rather to drown your sorrows while you pray that no further bodies are discovered.</string>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="26"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
