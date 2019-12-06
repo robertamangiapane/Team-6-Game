@@ -50,6 +50,7 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            userInput.resignFirstResponder()
             input = userInput.text!
             userInput.text = ""
             ResponseDisplay.text = question(input: input)

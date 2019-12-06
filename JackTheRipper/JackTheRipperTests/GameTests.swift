@@ -64,6 +64,18 @@ class GameTests: XCTestCase {
         XCTAssertTrue(game.score == 6 )
     }
     
+    func testUserDoesNotLevelUp() {
+        game.score = 0
+        game.wrongAnswer()
+        game.wrongAnswer()
+        game.wrongAnswer()
+        game.wrongAnswer()
+        game.wrongAnswer()
+        game.rightAnswer()
+        XCTAssertTrue(game.score == 1 )
+        XCTAssertTrue(game.title == "Novice Detective")
+    }
+    
     func testGameScoreDoesNotExceed25() {
         game.score = 25
         game.rightAnswer()
