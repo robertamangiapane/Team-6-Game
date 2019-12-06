@@ -18,7 +18,6 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var userInput: UITextField!
     @IBOutlet weak var ResponseDisplay: UILabel!
     @IBOutlet weak var Suspect1: UIButton!
-    @IBOutlet weak var wrongAnswer: UILabel!
     @IBOutlet weak var CorrectButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -31,10 +30,8 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
         game?.score = score ?? 0
         scoreLabel.text = "Score: \(game?.score ?? 0)"
         titleLabel.text = "\(game?.title ?? "Error")"
-        ResponseDisplay.isHidden = true
         CorrectButton.isHidden = true
-        wrongAnswer.isHidden = true
-        userInput.placeholder = "type your question here..."
+        userInput.placeholder = "Ask the witness a question!"
         self.userInput.delegate = self
         guessWho = GuessWho()
     }
@@ -56,24 +53,23 @@ class Challenge5ViewController: UIViewController, UITextFieldDelegate {
             input = userInput.text!
             userInput.text = ""
             ResponseDisplay.text = question(input: input)
-            ResponseDisplay.isHidden = false
         return true
     }
     
     @IBAction func SuspectButtons(_ sender: UIButton) {
         if sender == Suspect1 {
             self.navigationItem.hidesBackButton = true
-            wrongAnswer.isHidden = true
+            ResponseDisplay.text = "That's him!"
             CorrectButton.isHidden = false
-            ResponseDisplay.isHidden = true
             Suspect1.isEnabled = false
             game?.rightAnswer()
             scoreLabel.text = "Score: \(game?.score ?? 0)"
             titleLabel.text = "\(game?.title ?? "Error")"
         } else {
-            wrongAnswer.isHidden = false
+            ResponseDisplay.text = "No, that's not the guy."
             game?.wrongAnswer()
             sender.setImage(UIImage(named: "redCross.png"), for: .normal)
+            sender.isEnabled = false
         }
     }
     
