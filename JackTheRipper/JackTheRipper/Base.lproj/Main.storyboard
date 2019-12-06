@@ -1503,6 +1503,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Vxm-fo-op7"/>
                     <connections>
+                        <outlet property="continueButton" destination="T1J-JG-MoI" id="rDT-Dq-MPb"/>
                         <outlet property="scoreLabel" destination="SQQ-cf-h9n" id="0tJ-RI-8Dc"/>
                         <outlet property="titleLabel" destination="D3y-dQ-h2A" id="suN-Fp-Hxn"/>
                     </connections>
