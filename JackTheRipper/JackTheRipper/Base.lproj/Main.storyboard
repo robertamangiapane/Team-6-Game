@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ui2-LN-hSZ">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,7 +12,7 @@
             <objects>
                 <navigationController storyboardIdentifier="NavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ui2-LN-hSZ" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8as-TL-mB3">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -28,11 +28,15 @@
             <objects>
                 <viewController storyboardIdentifier="TitleController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" userLabel="Title View Controller" customClass="ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JTR" translatesAutoresizingMaskIntoConstraints="NO" id="oYp-xX-jSx">
+                                <rect key="frame" x="61" y="76" width="253" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pu6-zi-69s">
-                                <rect key="frame" x="138" y="731" width="141" height="47"/>
+                                <rect key="frame" x="117" y="451" width="141" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
                                 <state key="normal" title="Start Game">
@@ -46,52 +50,40 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JTR" translatesAutoresizingMaskIntoConstraints="NO" id="oYp-xX-jSx">
-                                <rect key="frame" x="40" y="324.33333333333337" width="334" height="301.33333333333337"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="oYp-xX-jSx" secondAttribute="height" multiplier="133:120" id="dfZ-OY-djy"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="quaternarySystemFillColor" red="0.4549019608" green="0.4549019608" blue="0.50196078430000002" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oYp-xX-jSx" secondAttribute="trailing" constant="40" id="31O-J5-w7b"/>
-                            <constraint firstItem="oYp-xX-jSx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="LsW-qw-Fdr"/>
-                            <constraint firstItem="oYp-xX-jSx" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="c1k-JU-xGN"/>
-                            <constraint firstItem="oYp-xX-jSx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dVU-uE-lHn"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="a98-xi-Ti5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+            <point key="canvasLocation" x="136.80000000000001" y="138.0809595202399"/>
         </scene>
         <!--Intro View Controller-->
         <scene sceneID="gUj-bG-Xcq">
             <objects>
                 <viewController storyboardIdentifier="IntroViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ihq-dX-moD" userLabel="Intro View Controller" customClass="IntroViewController" customModule="JackTheRipper" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vcp-vz-fHv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A message from Scotland Yard:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxX-PQ-qtf">
-                                <rect key="frame" x="37" y="298" width="343" height="84"/>
+                                <rect key="frame" x="16" y="92" width="343" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="36"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A ghastly murder has taken place in Whitechapel. You must go to the following location immediately to look for clues!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36b-rY-MaU">
-                                <rect key="frame" x="35" y="390" width="345" height="229"/>
+                                <rect key="frame" x="15" y="245" width="345" height="229"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LjZ-kT-RbR">
-                                <rect key="frame" x="120" y="720" width="170" height="65"/>
+                                <rect key="frame" x="102" y="575" width="170" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
                                 <state key="normal" title="Continue">
@@ -102,7 +94,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="blood1" translatesAutoresizingMaskIntoConstraints="NO" id="3Jg-0i-jST">
-                                <rect key="frame" x="1" y="153" width="413" height="299"/>
+                                <rect key="frame" x="15" y="108" width="360" height="427"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -116,25 +108,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UIB-FW-YeF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="921.73913043478262" y="138.61607142857142"/>
+            <point key="canvasLocation" x="920.79999999999995" y="138.0809595202399"/>
         </scene>
         <!--Map1 View Controller-->
         <scene sceneID="IPW-8v-SbJ">
             <objects>
                 <viewController id="nnn-fW-z9h" customClass="Map1ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ky4-vv-tSk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ypw-NJ-sse">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="818" id="Bkv-Ke-feK"/>
                                     <constraint firstAttribute="width" constant="414" id="w6r-gf-mIx"/>
                                 </constraints>
                             </mapView>
                             <view userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ard-x4-kda">
-                                <rect key="frame" x="0.0" y="88" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="818"/>
                                 <color key="backgroundColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -178,18 +170,26 @@
             <objects>
                 <viewController storyboardIdentifier="ChallengeLink" title="Info1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vhu-J9-Dgk" customClass="Info1ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uoq-wp-GbT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Police Report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdH-o1-oqM">
-                                <rect key="frame" x="95" y="149" width="224" height="59"/>
+                                <rect key="frame" x="75" y="75" width="224" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="40"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpZ-6k-uj8">
+                                <rect key="frame" x="29" y="88" width="317" height="469"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The body was examined by local surgeon, Dr. Llewellyn, and the victim was pronounced dead. His examination of the deceased found that her throat was cut down to the vertebrae, as well as several deep cuts in her abdomen. All cuts ran left to right. The wounds suggest the murder was commited with a long-bladed knife and great violence.</string>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="25"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPS-wt-Xes">
-                                <rect key="frame" x="120" y="720" width="170" height="65"/>
+                                <rect key="frame" x="103" y="581" width="168" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
                                 <state key="normal" title="Continue">
@@ -199,14 +199,6 @@
                                     <segue destination="qOI-kq-lm1" kind="show" id="jQh-Jc-IKB"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpZ-6k-uj8">
-                                <rect key="frame" x="26" y="186" width="363" height="502"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">The body was examined by local surgeon, Dr. Llewellyn, and the victim was pronounced dead. His examination of the deceased found that her throat was cut down to the vertebrae, as well as several deep cuts in her abdomen. All cuts ran left to right. The wounds suggest the murder was commited with a long-bladed knife and great violence.</string>
-                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="28"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zEp-fN-eKZ"/>
@@ -215,34 +207,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f2M-0f-xR0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2328" y="143"/>
+            <point key="canvasLocation" x="2327.1999999999998" y="142.57871064467767"/>
         </scene>
         <!--Multiple Choice View Controller-->
         <scene sceneID="tRo-aT-oQY">
             <objects>
                 <viewController storyboardIdentifier="MultipleChoiceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qOI-kq-lm1" customClass="MultipleChoiceViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uuv-33-YBU" customClass="MultipleChoice">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NKi-Co-aLd">
-                                <rect key="frame" x="32" y="367" width="357" height="495"/>
+                                <rect key="frame" x="9" y="245" width="357" height="495"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="973-Hd-dmi">
-                                        <rect key="frame" x="81" y="64" width="202" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="21"/>
-                                        <state key="normal" title="A right-handed person">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="buttonTapped:" destination="qOI-kq-lm1" eventType="touchUpInside" id="lQ5-9C-WpV"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8q2-nn-elC">
-                                        <rect key="frame" x="81" y="144" width="202" height="60"/>
+                                        <rect key="frame" x="77" y="139" width="202" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="21"/>
@@ -254,7 +234,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipt-uV-9kW">
-                                        <rect key="frame" x="81" y="-19" width="202" height="60"/>
+                                        <rect key="frame" x="77" y="1" width="202" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="21"/>
@@ -265,15 +245,8 @@
                                             <action selector="buttonTapped:" destination="qOI-kq-lm1" eventType="touchUpInside" id="7Ti-NC-Rwj"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Answer?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irF-td-1NU">
-                                        <rect key="frame" x="95" y="311" width="165" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qon-mr-P3J">
-                                        <rect key="frame" x="81" y="-20" width="202" height="60"/>
+                                        <rect key="frame" x="77" y="0.0" width="202" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="21"/>
@@ -285,7 +258,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXv-Jw-7SC">
-                                        <rect key="frame" x="81" y="224" width="202" height="60"/>
+                                        <rect key="frame" x="77" y="208" width="202" height="52"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="21"/>
@@ -297,7 +270,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boI-ol-Bd9">
-                                        <rect key="frame" x="96" y="358" width="170" height="65"/>
+                                        <rect key="frame" x="88" y="320" width="170" height="65"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
                                         <state key="normal" title="Continue">
@@ -307,26 +280,45 @@
                                             <segue destination="RLx-kF-dzr" kind="show" id="GV7-Kh-JrZ"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="973-Hd-dmi">
+                                        <rect key="frame" x="77" y="71" width="202" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="21"/>
+                                        <state key="normal" title="A right-handed person">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="qOI-kq-lm1" eventType="touchUpInside" id="lQ5-9C-WpV"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Answer?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irF-td-1NU">
+                                        <rect key="frame" x="88" y="284" width="165" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detective" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="Ljm-L5-F8G">
-                                <rect key="frame" x="173" y="142" width="200" height="23"/>
+                                <rect key="frame" x="159" y="89" width="200" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSB-BG-jMy">
+                                <rect key="frame" x="159" y="69" width="200" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Does the evidence suggest that the murder was committed by..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tf6-ZG-311">
-                                <rect key="frame" x="27" y="181" width="366" height="142"/>
+                                <rect key="frame" x="4" y="100" width="366" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSB-BG-jMy">
-                                <rect key="frame" x="173" y="111" width="200" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -348,46 +340,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJK-K3-pKj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3066.666666666667" y="138.61607142857142"/>
+            <point key="canvasLocation" x="3066.4000000000001" y="138.0809595202399"/>
         </scene>
         <!--Congratulations1-->
         <scene sceneID="16x-KA-plO">
             <objects>
                 <viewController storyboardIdentifier="Congratulations1" title="Congratulations1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RLx-kF-dzr" customClass="Congratulations1ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OhA-zd-xOw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No time to dally though,  another murder has just been reported!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1J6-0U-GiJ">
-                                <rect key="frame" x="56" y="418" width="302" height="220"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="28"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydq-fR-lFV">
-                                <rect key="frame" x="173" y="111" width="200" height="23"/>
+                                <rect key="frame" x="159" y="63" width="200" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The direction of the wounds from left to right suggest that the culprit was left-handed." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXi-GJ-5at">
-                                <rect key="frame" x="21" y="253" width="373" height="248"/>
+                                <rect key="frame" x="2" y="106" width="373" height="248"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="28"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are right!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBQ-lR-QBK">
-                                <rect key="frame" x="92" y="231" width="231" height="49"/>
+                                <rect key="frame" x="73" y="106" width="231" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="42"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltj-fB-TSC">
-                                <rect key="frame" x="120" y="720" width="170" height="65"/>
+                                <rect key="frame" x="106" y="575" width="162" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
                                 <state key="normal" title="Continue">
@@ -398,16 +383,23 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detective" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmg-Sw-OQO">
-                                <rect key="frame" x="173" y="142" width="200" height="23"/>
+                                <rect key="frame" x="159" y="82" width="200" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="blood2" translatesAutoresizingMaskIntoConstraints="NO" id="d7p-kg-kOY">
-                                <rect key="frame" x="118" y="301" width="227" height="448"/>
+                                <rect key="frame" x="132" y="170" width="227" height="448"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No time to dally though,  another murder has just been reported!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1J6-0U-GiJ">
+                                <rect key="frame" x="37" y="300" width="302" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="28"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Jkd-7i-Jvo"/>
@@ -421,25 +413,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ak3-Vx-aGk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3750.7246376811595" y="138.61607142857142"/>
+            <point key="canvasLocation" x="3749.5999999999999" y="138.0809595202399"/>
         </scene>
         <!--Map2 View Controller-->
         <scene sceneID="xcq-68-auh">
             <objects>
                 <viewController restorationIdentifier="Map2Controller" storyboardIdentifier="Map2Controller" id="eck-er-z6T" customClass="Map2ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="98o-fe-OqO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XKz-S4-JRT">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="0Zi-Nd-kTQ"/>
                                     <constraint firstAttribute="height" constant="818" id="woq-wd-eTQ"/>
                                 </constraints>
                             </mapView>
                             <view userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="boq-Rs-bmZ">
-                                <rect key="frame" x="0.0" y="88" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="818"/>
                                 <color key="backgroundColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -481,25 +473,25 @@
             <objects>
                 <viewController storyboardIdentifier="Info2ViewController" title="Info2ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nh3-9a-iwe" customClass="Info2ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sdc-Sf-7ue">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4my-Ha-u2r">
-                                <rect key="frame" x="173" y="111" width="200" height="23"/>
+                                <rect key="frame" x="159" y="63" width="200" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detective" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGd-8C-piu">
-                                <rect key="frame" x="173" y="142" width="200" height="23"/>
+                                <rect key="frame" x="159" y="87" width="200" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4g-Md-oV4">
-                                <rect key="frame" x="120" y="720" width="170" height="65"/>
+                                <rect key="frame" x="96" y="570" width="170" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
                                 <state key="normal" title="Continue">
@@ -510,7 +502,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUr-AX-j2G">
-                                <rect key="frame" x="40" y="224" width="335" height="418"/>
+                                <rect key="frame" x="20" y="109" width="335" height="418"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">On interviewing witnesses at the scene of Annie Chapman's death, you discover that a man wearing a leather apron and deer-stalking hat is feared by women in the area.  A man called "Leather Apron" is allegedly extorting and threatening them with a sharp leather knife. </string>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="28"/>
@@ -529,18 +521,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XSf-fA-1Uz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-100.00000000000001" y="805.58035714285711"/>
+            <point key="canvasLocation" x="-100" y="805.54722638680664"/>
         </scene>
         <!--Riddle View Controller-->
         <scene sceneID="0NF-jw-84T">
             <objects>
                 <viewController storyboardIdentifier="RiddleViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rhs-Fg-UyV" customClass="RiddleViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ibA-Xu-Xbt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hv1-Hp-lx7">
-                                <rect key="frame" x="120" y="720" width="170" height="65"/>
+                                <rect key="frame" x="102" y="570" width="170" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
                                 <state key="normal" title="Continue">
@@ -550,37 +542,30 @@
                                     <segue destination="BWU-JR-ouB" kind="show" id="67m-tj-oB0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detective" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfb-br-kXV">
-                                <rect key="frame" x="173" y="142" width="200" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Answer?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J27-Wa-fFf">
-                                <rect key="frame" x="48" y="676" width="318" height="44"/>
+                                <rect key="frame" x="28" y="397" width="318" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7N7-eS-prQ">
-                                <rect key="frame" x="173" y="111" width="200" height="23"/>
+                                <rect key="frame" x="166" y="58" width="200" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqt-Pu-6In">
-                                <rect key="frame" x="58" y="182" width="298" height="332"/>
+                                <rect key="frame" x="38" y="58" width="298" height="301"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Oh no, you dropped your notepad in a puddle on Hanworth Street and the ink has run together! What was the name of the main suspect? Here's a hint... their nickname is an anagram of "elephant roar"!</string>
-                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="23"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qaZ-2o-mtC">
-                                <rect key="frame" x="23" y="502" width="368" height="34"/>
+                                <rect key="frame" x="3" y="332" width="368" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -589,6 +574,13 @@
                                     <action selector="userAnswer:forEvent:" destination="AAZ-ru-Xj5" eventType="editingDidEndOnExit" id="1YE-xB-zgR"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detective" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfb-br-kXV">
+                                <rect key="frame" x="166" y="80" width="200" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Du2-v4-q4y"/>
@@ -605,25 +597,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VxX-Md-r6j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="AAZ-ru-Xj5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="663.768115942029" y="805.58035714285711"/>
+            <point key="canvasLocation" x="663.20000000000005" y="805.54722638680664"/>
         </scene>
         <!--Congrats2ViewController-->
         <scene sceneID="0On-vG-pDj">
             <objects>
                 <viewController storyboardIdentifier="Congrats2ViewController" title="Congrats2ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BWU-JR-ouB" customClass="Congrats2ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WQg-vU-daG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detective" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTx-Z4-4fD">
-                                <rect key="frame" x="173" y="142" width="200" height="23"/>
+                                <rect key="frame" x="159" y="80" width="200" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xe-eG-cNw">
+                                <rect key="frame" x="47" y="262" width="281" height="269"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Detective! You have another message from Scotland Yard. A third body has been discovered not far from your location - get to Berner Street without delay!</string>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="28"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Police picked up the suspect John Pizer, a.k.a. Leather Apron, but his alibi checked out." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvH-GZ-89E">
+                                <rect key="frame" x="47" y="106" width="281" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="28"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DY2-3Y-XLp">
+                                <rect key="frame" x="159" y="60" width="200" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="blood3" translatesAutoresizingMaskIntoConstraints="NO" id="rbB-52-bNK">
+                                <rect key="frame" x="-22" y="106" width="419" height="388"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2f-lS-84v">
-                                <rect key="frame" x="120" y="720" width="170" height="65"/>
+                                <rect key="frame" x="102" y="572" width="170" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
                                 <state key="normal" title="Continue">
@@ -633,32 +651,6 @@
                                     <segue destination="E4q-fY-Cdl" kind="show" id="gnn-VN-NG4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xe-eG-cNw">
-                                <rect key="frame" x="71" y="379" width="281" height="269"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Detective! You have another message from Scotland Yard. A third body has been discovered not far from your location - get to Berner Street without delay!</string>
-                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="28"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Police picked up the suspect John Pizer, a.k.a. Leather Apron, but his alibi checked out." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvH-GZ-89E">
-                                <rect key="frame" x="71" y="223" width="281" height="148"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="28"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DY2-3Y-XLp">
-                                <rect key="frame" x="173" y="111" width="200" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="blood3" translatesAutoresizingMaskIntoConstraints="NO" id="rbB-52-bNK">
-                                <rect key="frame" x="-1" y="427" width="419" height="388"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="PuR-Du-cd9"/>
@@ -672,32 +664,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X5c-D8-VPy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1385.5072463768117" y="805.58035714285711"/>
+            <point key="canvasLocation" x="1384.8" y="805.54722638680664"/>
         </scene>
         <!--Info3ViewController-->
         <scene sceneID="7Oy-tC-7yc">
             <objects>
                 <viewController storyboardIdentifier="Info3ViewController" title="Info3ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="33A-Vq-And" customClass="Info3ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6e1-rp-cih">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVb-yg-ruq">
-                                <rect key="frame" x="173" y="111" width="200" height="23"/>
+                                <rect key="frame" x="161" y="63" width="200" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detective" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apb-56-HZp">
-                                <rect key="frame" x="173" y="142" width="200" height="23"/>
+                                <rect key="frame" x="161" y="83" width="200" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fz-z7-1Hz">
+                                <rect key="frame" x="37" y="58" width="301" height="493"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">In a small street called Dutfield's Yard, the body of Elizabeth Stride has been found by a steward from the neighbouring Workers' Club. Mrs Mortimer, who was standing in Berner Street listening to singing coming from the club, saw a man with a shiny black bag racing past. You need to find the man, Leon Goldstein!</string>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="26"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoZ-du-vle">
-                                <rect key="frame" x="120" y="720" width="170" height="65"/>
+                                <rect key="frame" x="102" y="559" width="170" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
                                 <state key="normal" title="Continue">
@@ -707,14 +707,6 @@
                                     <segue destination="xQ2-zW-FzL" kind="show" id="bNa-7p-Fzn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fz-z7-1Hz">
-                                <rect key="frame" x="60" y="211" width="301" height="493"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">In a small street called Dutfield's Yard, the body of Elizabeth Stride has been found by a steward from the neighbouring Workers' Club. Mrs Mortimer, who was standing in Berner Street listening to singing coming from the club, saw a man with a shiny black bag racing past. You need to find the man, Leon Goldstein!</string>
-                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="26"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="f6I-JQ-R1s"/>
@@ -727,25 +719,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rri-xp-U0e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2944.9275362318845" y="805.58035714285711"/>
+            <point key="canvasLocation" x="2944.8000000000002" y="805.54722638680664"/>
         </scene>
         <!--Map3 View Controller-->
         <scene sceneID="YRc-hn-BJI">
             <objects>
                 <viewController restorationIdentifier="Map3Controller" storyboardIdentifier="Map3Controller" id="E4q-fY-Cdl" customClass="Map3ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LXh-fj-T8Y">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gNt-s1-OIg">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="JTx-HA-HBt"/>
                                     <constraint firstAttribute="height" constant="818" id="X4U-Ji-up3"/>
                                 </constraints>
                             </mapView>
                             <view userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GSB-MF-rhy">
-                                <rect key="frame" x="0.0" y="88" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="818"/>
                                 <color key="backgroundColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -787,7 +779,7 @@
             <objects>
                 <viewController id="xQ2-zW-FzL" customClass="Challenge3ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="peD-Wz-4nt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXh-Zf-t39">
@@ -889,7 +881,7 @@
             <objects>
                 <viewController title="Congrats3ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1Q4-Cg-0af" customClass="Congrats3ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KxR-nb-1jJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UL-Nf-RIf">
@@ -950,18 +942,18 @@
             <objects>
                 <viewController restorationIdentifier="Map4Controller" storyboardIdentifier="Map4Controller" id="frt-1c-fIh" customClass="Map4ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SgU-y4-dK2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QZv-mo-CGE">
-                                <rect key="frame" x="0.0" y="88" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="818" id="8Eq-nY-g1i"/>
                                     <constraint firstAttribute="width" constant="414" id="Qjf-MS-TbC"/>
                                 </constraints>
                             </mapView>
                             <view userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLQ-lx-TXi">
-                                <rect key="frame" x="0.0" y="88" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1003,7 +995,7 @@
             <objects>
                 <viewController storyboardIdentifier="Info4ViewController" title="Info4ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XM1-hb-UC6" customClass="Info4ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ehh-wP-OQY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gT-9e-Fua">
@@ -1059,16 +1051,16 @@
             <objects>
                 <viewController storyboardIdentifier="ViewController5" id="hSg-gt-p5N" customClass="Challenge5ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9k8-yC-qd3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="VE5-rB-uJG">
-                                <rect key="frame" x="40" y="178" width="334" height="34"/>
+                                <rect key="frame" x="40" y="134" width="295" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VoR-Lk-ode">
-                                <rect key="frame" x="41.333333333333343" y="301.33333333333326" width="331.33333333333326" height="496.66666666666674"/>
+                                <rect key="frame" x="37.5" y="153" width="300" height="450"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ldu-Z5-lH9">
                                         <rect key="frame" x="-42" y="-10" width="416" height="457"/>
@@ -1076,7 +1068,7 @@
                                         <color key="backgroundColor" red="0.74173806978361256" green="0.74173806978361256" blue="0.74173806978361256" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ici-wl-TN6">
-                                        <rect key="frame" x="0.0" y="0.0" width="99.333333333333329" height="138.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="126"/>
                                         <accessibility key="accessibilityConfiguration" identifier="Suspect1" label="Suspect1"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ici-wl-TN6" secondAttribute="height" multiplier="608:850" id="rcw-kh-ojA"/>
@@ -1089,7 +1081,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kg-Eh-L7h">
-                                        <rect key="frame" x="231.99999999999997" y="0.0" width="99.333333333333343" height="138.33333333333334"/>
+                                        <rect key="frame" x="210" y="0.0" width="90" height="125.5"/>
                                         <accessibility key="accessibilityConfiguration" identifier="Suspect3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="8kg-Eh-L7h" secondAttribute="height" multiplier="61:85" id="wud-TK-dlN"/>
@@ -1100,7 +1092,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUe-0u-iLu">
-                                        <rect key="frame" x="116" y="148.66666666666669" width="99.333333333333314" height="137.66666666666669"/>
+                                        <rect key="frame" x="105" y="136" width="90" height="124.5"/>
                                         <accessibility key="accessibilityConfiguration" identifier="Suspect5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="VUe-0u-iLu" secondAttribute="height" multiplier="57:79" id="9ev-dL-iHD"/>
@@ -1111,7 +1103,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2a-kW-pph">
-                                        <rect key="frame" x="5" y="148.66666666666669" width="99.333333333333329" height="128.66666666666669"/>
+                                        <rect key="frame" x="5" y="136" width="90" height="116.5"/>
                                         <accessibility key="accessibilityConfiguration" identifier="Suspect4"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="a2a-kW-pph" secondAttribute="height" multiplier="61:79" id="9O1-oF-EZg"/>
@@ -1122,7 +1114,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQD-oF-9su">
-                                        <rect key="frame" x="231.99999999999997" y="148.33333333333337" width="99.333333333333343" height="138.33333333333337"/>
+                                        <rect key="frame" x="210" y="135.5" width="90" height="125.5"/>
                                         <accessibility key="accessibilityConfiguration" identifier="Suspect6"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="AQD-oF-9su" secondAttribute="height" multiplier="61:85" id="Gd0-if-ACj"/>
@@ -1133,7 +1125,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdd-nY-wTV">
-                                        <rect key="frame" x="116" y="0.0" width="99.333333333333314" height="138.66666666666666"/>
+                                        <rect key="frame" x="105" y="0.0" width="90" height="126"/>
                                         <accessibility key="accessibilityConfiguration" identifier="Suspect2"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Cdd-nY-wTV" secondAttribute="height" multiplier="608:850" id="VMP-U5-Uzr"/>
@@ -1144,7 +1136,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tn-JG-Lqd">
-                                        <rect key="frame" x="0.0" y="292.33333333333331" width="99.333333333333329" height="138.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="267.5" width="90" height="125.5"/>
                                         <accessibility key="accessibilityConfiguration" identifier="Suspect7"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="2tn-JG-Lqd" secondAttribute="height" multiplier="61:85" id="fQJ-RV-r2P"/>
@@ -1155,7 +1147,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9a-Wa-TVg">
-                                        <rect key="frame" x="116" y="296.33333333333331" width="99.333333333333314" height="138.66666666666669"/>
+                                        <rect key="frame" x="105" y="270.5" width="90" height="125.5"/>
                                         <accessibility key="accessibilityConfiguration" identifier="Suspect8"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="f9a-Wa-TVg" secondAttribute="height" multiplier="61:85" id="4vn-Xm-qXI"/>
@@ -1166,7 +1158,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8X-xb-bzT">
-                                        <rect key="frame" x="231.99999999999997" y="296.66666666666669" width="99.333333333333343" height="138.66666666666669"/>
+                                        <rect key="frame" x="210" y="271" width="90" height="125"/>
                                         <accessibility key="accessibilityConfiguration" identifier="Suspect9"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="i8X-xb-bzT" secondAttribute="height" multiplier="61:85" id="SgO-z8-1yZ"/>
@@ -1217,7 +1209,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What would you like to know?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5u-LV-ljd">
-                                <rect key="frame" x="40" y="228" width="334" height="27.666666666666657"/>
+                                <rect key="frame" x="40" y="184" width="295" height="27.5"/>
                                 <accessibility key="accessibilityConfiguration" identifier="ResponseDisplay"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="22"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1238,7 +1230,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySa-2c-IVE">
-                                <rect key="frame" x="150" y="751" width="114" height="47"/>
+                                <rect key="frame" x="130.5" y="556" width="114" height="47"/>
                                 <accessibility key="accessibilityConfiguration" label="ContinueButton">
                                     <accessibilityTraits key="traits" button="YES"/>
                                     <bool key="isElement" value="YES"/>
@@ -1252,7 +1244,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a suspect to Arrest:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Pc-tC-H62">
-                                <rect key="frame" x="78" y="298" width="258" height="31"/>
+                                <rect key="frame" x="58.5" y="254" width="258" height="31"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="27"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1300,7 +1292,7 @@
             <objects>
                 <viewController storyboardIdentifier="Congrats5ViewController" title="Congrats5ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="q2R-Nj-Szg" customClass="Congrats5ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oGd-5V-zRw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMU-77-2uN">
@@ -1360,18 +1352,18 @@
             <objects>
                 <viewController restorationIdentifier="Map5Controller" storyboardIdentifier="Map5Controller" id="Y61-NX-ckq" customClass="Map5ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9ab-RW-3tw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8zz-ci-FG6">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="818" id="Jyo-DR-Jcd"/>
                                     <constraint firstAttribute="width" constant="414" id="ex8-oa-8qu"/>
                                 </constraints>
                             </mapView>
                             <view userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X9h-Hg-fXj">
-                                <rect key="frame" x="0.0" y="88" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1413,7 +1405,7 @@
             <objects>
                 <viewController storyboardIdentifier="Info5ViewController" title="Info5ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tlo-kg-mpc" customClass="Info5ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7tE-hv-8es">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42f-TP-dGd">
@@ -1468,7 +1460,7 @@
             <objects>
                 <viewController id="GlC-PM-9AB" customClass="ScrambleViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a4V-Mx-6sQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQQ-cf-h9n">
@@ -1516,7 +1508,7 @@
             <objects>
                 <viewController storyboardIdentifier="Congrats4ViewController" title="Congrats4ViewController" id="VB1-cK-9WU" customClass="Congrats4ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jpt-75-6gi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxf-hL-W3c">
@@ -1564,7 +1556,7 @@
             <objects>
                 <viewController storyboardIdentifier="Info6ViewController" id="xIW-3b-wfm" customClass="Info6ViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Azs-s2-ZPs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="detective" translatesAutoresizingMaskIntoConstraints="NO" id="one-JY-hX9">
@@ -1633,11 +1625,11 @@
             <objects>
                 <viewController id="JRd-82-F5y" customClass="TenBellsViewController" customModule="JackTheRipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GM2-MU-uMO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7WW-3V-huD">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="ThX-fA-Nrb"/>
                                     <constraint firstAttribute="width" constant="414" id="V32-Ye-2al"/>
@@ -1646,7 +1638,7 @@
                                 </constraints>
                             </mapView>
                             <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ure-0l-aqr">
-                                <rect key="frame" x="0.0" y="88" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.43921568630000002" green="0.25882352939999997" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1689,11 +1681,11 @@
             <objects>
                 <viewController id="gtk-v5-v3B" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bcu-bK-8Dx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JTR" translatesAutoresizingMaskIntoConstraints="NO" id="w5b-F2-MXU">
-                                <rect key="frame" x="87" y="333" width="240" height="240"/>
+                                <rect key="frame" x="98" y="213.5" width="179" height="240"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="quaternarySystemFillColor" red="0.4549019608" green="0.4549019608" blue="0.50196078430000002" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
