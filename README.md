@@ -40,7 +40,7 @@ https://medium.com/team-6
 > xed .
 ```
 ⚡️ Run tests using key shortcut '⌘cmd' + 'u'  
-⚡️ Click the '▻' Play button (Top left menu) to launch the app in an iOS simulator.  
+⚡️ Click the '▻' Play button (Top left menu) to launch the app in an iOS simulator (make sure you select iPhone 11 Pro Max as the device).  
 ⚡️ Enjoy the App!
 
 ## Technologies used:
